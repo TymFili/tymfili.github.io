@@ -4,17 +4,17 @@ Source code and materials for my personal website, hosted at [tymfili.github.io]
 
 ## Overview
 
-* **About:** Academic background and interests in theoretical computer science and discrete mathematics.
-* **Teaching:** Course resources, study materials, and the draft lecture script *Introduction to Mathematical Logic*.
-* **Blog:** Notes and expositions on mathematical logic, proof theory, and discrete mathematics.
+- **About:** Academic background and interests in theoretical computer science and discrete mathematics.
+- **Teaching:** Course resources, study materials, and the draft lecture script _Introduction to Mathematical Logic_.
+- **Blog:** Notes and expositions on mathematical logic, proof theory, and discrete mathematics.
 
 ## Repository Structure
 
-* `_pages/` — Core site pages (About, Teaching, Blog index).
-* `_posts/` — Mathematical notes and articles.
-* `assets/pdf/` — Compiled lecture notes and handouts.
-* `assets/img/` — Figures and standalone vector graphics (SVG).
-* `_config.yml` — Site metadata and layout configuration.
+- `_pages/` — Core site pages (About, Teaching, Blog index).
+- `_posts/` — Mathematical notes and articles.
+- `assets/pdf/` — Compiled lecture notes and handouts.
+- `assets/img/` — Figures and standalone vector graphics (SVG).
+- `_config.yml` — Site metadata and layout configuration.
 
 ## Deployment
 
@@ -22,5 +22,5 @@ The website is compiled and published automatically to GitHub Pages using GitHub
 
 ## Licence
 
-* **Manuscripts, lecture notes, and diagrams:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
-* **Website source code:** [MIT Licence](LICENSE.md), adapted from the [al-folio](https://github.com/alshedivat/al-folio) theme.
+- **Manuscripts, lecture notes, and diagrams:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+- **Website source code:** [MIT Licence](LICENSE.md), adapted from the [al-folio](https://github.com/alshedivat/al-folio) theme.
