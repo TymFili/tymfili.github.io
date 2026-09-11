@@ -356,7 +356,7 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ['discrete-math', 'relations', 'logic']
+display_tags: ['discrete-mathematics', 'relations', 'logic']
 display_categories: []
 
 # -----------------------------------------------------------------------------

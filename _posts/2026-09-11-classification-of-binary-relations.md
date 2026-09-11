@@ -3,7 +3,7 @@ layout: post
 title: "A Visual Taxonomy of Binary Relations"
 date: 2026-09-11
 description: "Visualising the 16 distinct classes of binary relations between two sets."
-tags: [discrete-math, relations, logic]
+tags: [discrete-mathematics, relations, logic]
 categories: [mathematics]
 ---
 

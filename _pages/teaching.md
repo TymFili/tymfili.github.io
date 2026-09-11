@@ -11,7 +11,7 @@ nav_order: 2
 > 
 > I deeply apologise to my students for failing to deliver a complete and finished script by now. It is my responsibility to provide you with comprehensive study materials, and there is no excuse for presenting an incomplete manuscript. I sincerely regret any inconvenience or uncertainty this delay may cause to your studies.
 > 
-> While the later sections remain a work in progress, Chapters 1 to 6 have been verified and are provided below so as not to withhold useful material from your preparation. I am actively working to complete the remaining chapters to the standard of rigor and clarity you deserve.
+> While the later sections remain a work in progress, Chapters 1 to 6 have been verified and are provided below so as not to withhold useful material from your preparation. I am actively working to complete the remaining chapters to the standard of rigour and clarity you deserve.
 
 ---
 
@@ -27,10 +27,10 @@ nav_order: 2
   * **Chapter 4: Proof Theory** — Hilbert systems, consistency, Natural Deduction derivations, and the Deduction Theorem.
   * **Chapter 5: First-Order Logic** — Signatures, Polish prefix notation, unique readability, Tarskian structures, and first-order Natural Deduction.
   * **Chapter 6: Metatheory of Classical Logic** — The Compactness Theorem, Henkin constants, Lindenbaum’s lemma, and Gödel’s Completeness Theorem.
-  * *(Axiomatic set theory and computability chapters in preparation)*
+  * *(Axiomatic set theory, computability theory, and incompleteness theorem chapters are in preparation)*
 
 ---
 
-### Inquiries & Corrections
+### Enquiries & Corrections
 
 If you discover any typographical errors, flawed proofs, or passages lacking clarity in this draft, please inform me directly by email. I would be immensely grateful for your corrections so that the text may be improved for everyone.
