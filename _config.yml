@@ -13,8 +13,16 @@ description: >
   Personal website and blog covering mathematics, theoretical computer science and logic.
 
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with 
-  <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+  <style>
+    :root {
+      --global-theme-color: #205c3b !important;
+      --global-hover-color: #164029 !important;
+    }
+    html[data-theme="dark"] {
+      --global-theme-color: #57b87b !important;
+      --global-hover-color: #6ec890 !important;
+    }
+  </style>
 
 keywords: theoretical computer science, discrete math, algorithms, complexity theory, teaching, lecture notes
 
