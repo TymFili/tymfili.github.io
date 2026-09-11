@@ -1,25 +1,5 @@
 # Personal Website & Academic Hub
 
-Source code for my personal website, mathematical logic lecture script, and teaching resources, hosted at [tymfili.github.io](https://tymfili.github.io).
-
-## Overview
-
-- **Homepage & About:** Short background and research interests in theoretical computer science and discrete mathematics.
-- **Blog:** Notes and expositions on logic, proof theory, and discrete mathematics.
-- **Teaching:** Course notes, problem sheets, and study materials, including the draft monograph _Introduction to Mathematical Logic_.
-
-## Structure
-
-```text
-├── _pages/       # Static site pages (About, Teaching, Blog index)
-├── _posts/       # Markdown articles and mathematical write-ups
-├── assets/
-│   ├── img/      # Standalone figures and vector graphics (SVG)
-│   └── pdf/      # Compiled lecture notes and handouts
-└── _config.yml   # Jekyll configuration and site metadata
-cat << 'EOF' > README.md
-# Personal Website & Academic Hub
-
 Source code and materials for my personal website, hosted at [tymfili.github.io](https://tymfili.github.io).
 
 ## Overview
@@ -44,4 +24,3 @@ The website is compiled and published automatically to GitHub Pages using GitHub
 
 * **Manuscripts, lecture notes, and diagrams:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 * **Website source code:** [MIT Licence](LICENSE.md), adapted from the [al-folio](https://github.com/alshedivat/al-folio) theme.
-```
