@@ -357,7 +357,7 @@ jekyll-archives:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: ['discrete-math', 'relations', 'logic']
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_categories: []
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
