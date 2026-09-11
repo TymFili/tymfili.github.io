@@ -18,4 +18,4 @@ I use this website for two main things:
 1. **[Blog](/blog/):** Short notes, theorem explanations, and proofs that I find elegant or interesting.
 2. **[Teaching](/teaching/):** Lecture scripts, handouts, problem sets, and study guides for students and peers.
 
-Feel free to reach out via email if you have questions about any of the materials or if you spot a typo.
+Feel free to reach out via [email](mailto:your.email@domain.com) if you have questions about any of the materials or if you spot a typo.
