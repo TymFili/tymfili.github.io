@@ -17,7 +17,7 @@ nav_order: 2
 
 ### Course Notes & Manuscripts
 
-* **[Introduction to Mathematical Logic (Draft PDF)](/assets/pdf/logic_notes.pdf)**  
+* **[Introduction to Mathematical Logic (Draft PDF)](/assets/pdf/logic.pdf)**  
   *Lecture script — Autumn Term 2026*  
   
   Current contents:
