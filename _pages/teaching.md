@@ -1,15 +1,19 @@
 ---
 layout: page
+title: Teaching
 permalink: /teaching/
-title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Course materials, study guides, and problem sets.
 nav: true
-nav_order: 6
-calendar: true
+nav_order: 2
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+Here are some materials and resources I've prepared for peer tutoring, study sessions, and teaching:
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+### Logic
+* **Logic lecture script** — *Coming soon.*
 
-{% include courses.liquid %}
+### Algorithms & Theoretical CS
+* **Cheat Sheet: Recurrence Relations & Master Theorem** — *Coming soon.*
+
+---
+*Note: All materials are free to use and distribute for non-commercial educational purposes.*
