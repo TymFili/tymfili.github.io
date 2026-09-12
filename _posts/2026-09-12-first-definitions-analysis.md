@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "The real numbers, ε–N definition and quantifiers"
+title: "The ε–N Definition as a Two-Player Game"
 date: 2026-09-12
-description: "The least upper bound property of ℝ and viewing Cauchy convergence as a game."
+description: "The least upper bound property of ℝ and viewing Cauchy convergence as an interactive game."
 tags: [analysis, mathematics, teaching]
 categories: [mathematics]
 ---
@@ -17,7 +17,7 @@ $$
 
 consists entirely of rational numbers, but has no limit in $$\mathbb{Q}$$.
 
-> **Axiom (Completeness):** If $$\emptyset \neq A \subseteq \mathbb{R}$$, and $$A$$ is bounded from above, then:
+> **Axiom (Completeness):** If $$\emptyset \ne A \subseteq \mathbb{R}$$ is bounded from above, then:
 >
 > $$
 > \sup A \in \mathbb{R}
@@ -55,8 +55,11 @@ Since $$m + 1 \in \mathbb{N}$$, we have $$(m + 1)x \in S$$. This contradicts tha
 
 Hence, no such upper bound $$y$$ can exist:
 $$
-\exists n \in \mathbb{N} \ nx > y \tag*{$\boldsymbol{Q.E.D.}$}
+\exists n \in \mathbb{N} \ nx > y
 $$
+
+<div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
 </details>
 
 ---
@@ -77,7 +80,7 @@ Applying the Archimedean Property again to $$nx$$, the collection of natural num
 $$
 m - 1 \le nx < m
 $$
-From $$nx < m$$, we have our lower bound. From $$m - 1 \le nx$$, adding $$1$$ gives:
+From $$nx < m$$, we obtain the lower bound. From $$m - 1 \le nx$$, adding $$1$$ gives:
 $$
 m \le nx + 1
 $$
@@ -85,14 +88,17 @@ Because $$ny - nx > 1$$, we have $$nx + 1 < ny$$. Chaining these inequalities:
 $$
 nx < m \le nx + 1 < ny \implies nx < m < ny
 $$
-Dividing by $$n > 0$$:
+Dividing by $$n > 0$$ yields:
 $$
 x < \frac{m}{n} < y
 $$
 Setting $$q := \frac{m}{n} \in \mathbb{Q}$$, we conclude:
 $$
-x < q < y \tag*{$\boldsymbol{Q.E.D.}$}
+x < q < y
 $$
+
+<div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
 </details>
 
 ---
@@ -122,29 +128,111 @@ The sequence converges to $$L$$ if and only if you possess a winning strategy: a
 
 **Proposition:** $$\lim_{n \to \infty} \frac{3}{n} = 0$$.
 
-**Proof:** Let $$\varepsilon > 0$$. By the Archimedean property, there exists $$N \in \mathbb{N}$$ such that $$N > \frac{3}{\varepsilon}$$. For every $$n \ge N$$:
+**Proof:** Let $$\varepsilon > 0$$. By the Archimedean property, there exists $$N \in \mathbb{N}$$ such that $$N > \frac{3}{\varepsilon}$$. 
 
+For every $$n \ge N$$, since $$n \ge 1 > 0$$, we have:
 $$
-n \ge N > \frac{3}{\varepsilon} \rightarrow \frac{3}{n} \le \frac{3}{N} < \varepsilon
+0 < \frac{3}{n} \le \frac{3}{N} < \varepsilon
+$$
+Because $$\frac{3}{n} > 0$$, we have $$\left\vert \frac{3}{n} - 0 \right\vert = \frac{3}{n}$$. Thus:
+$$
+\left\vert \frac{3}{n} - 0 \right\vert < \varepsilon
 $$
 
-Hence:
-
-$$
-\left\vert \frac{3}{n} - 0 \right\vert < \varepsilon \tag*{$\boldsymbol{Q.E.D.}$}
-$$
+<div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
 ---
 
 ### 4. Exercises
 
-1. **Boundedness:** Prove that every convergent sequence is bounded.  
-   *Hint:* Set $$\varepsilon = 1$$. Then $$\exists N \in \mathbb{N} \ \forall n \ge N \ \vert a_n \vert < \vert L \vert + 1$$. Take:
+#### 1. Boundedness of Convergent Sequences
+Prove that every convergent sequence is bounded.
 
-   $$
-   M := \max\left(\{\vert a_n \vert \mid n < N\} \cup \{\vert L \vert + 1\}\right)
-   $$
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Solution</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
 
-2. **Triangle Inequality (Abbott):** Prove that $$\vert x + y \vert \le \vert x \vert + \vert y \vert$$ by expanding $$(\vert x \vert + \vert y \vert)^2$$ and using $$ab \le \vert ab \vert$$.
+Let $$(a_n)$$ converge to $$L$$. Setting $$\varepsilon = 1$$ in the definition of convergence, there exists $$N \in \mathbb{N}$$ such that for all $$n \ge N$$:
+$$
+\vert a_n - L \vert < 1
+$$
+By the triangle inequality:
+$$
+\vert a_n \vert = \vert (a_n - L) + L \vert \le \vert a_n - L \vert + \vert L \vert < \vert L \vert + 1
+$$
+Thus, every term beyond index $$N$$ is strictly bounded by $$\vert L \vert + 1$$.
 
-3. **Squeeze Theorem:** Let $$x_n \le y_n \le z_n$$ for all $$n \in \mathbb{N}$$. If $$\lim_{n \to \infty} x_n = \lim_{n \to \infty} z_n = L$$, prove that $$\lim_{n \to \infty} y_n = L$$.
+The initial segment $$\{a_1, \dots, a_{N-1}\}$$ is finite. Define:
+$$
+M := \max\left(\{\vert a_n \vert \mid n < N\} \cup \{\vert L \vert + 1\}\right)
+$$
+Then for every $$n \in \mathbb{N}$$, we have $$\vert a_n \vert \le M$$. Hence $$(a_n)$$ is bounded.
+
+<div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
+
+---
+
+#### 2. The Triangle Inequality (Abbott)
+Prove that $$\vert x + y \vert \le \vert x \vert + \vert y \vert$$ by expanding $$(\vert x \vert + \vert y \vert)^2$$ and using the inequality $$ab \le \vert ab \vert$$.
+
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Solution</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
+Since both sides are non-negative, the inequality is equivalent to comparing their squares:
+$$
+\vert x + y \vert \le \vert x \vert + \vert y \vert \iff \vert x + y \vert^2 \le (\vert x \vert + \vert y \vert)^2
+$$
+Expanding the right-hand side:
+$$
+(\vert x \vert + \vert y \vert)^2 = \vert x \vert^2 + 2\vert x \vert \vert y \vert + \vert y \vert^2 = x^2 + 2\vert xy \vert + y^2
+$$
+Expanding the left-hand side:
+$$
+\vert x + y \vert^2 = (x + y)^2 = x^2 + 2xy + y^2
+$$
+Because $$xy \le \vert xy \vert$$, we have $$2xy \le 2\vert xy \vert$$, and therefore:
+$$
+x^2 + 2xy + y^2 \le x^2 + 2\vert xy \vert + y^2 \implies \vert x + y \vert^2 \le (\vert x \vert + \vert y \vert)^2
+$$
+Taking positive square roots of both sides yields:
+$$
+\vert x + y \vert \le \vert x \vert + \vert y \vert
+$$
+
+<div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
+
+---
+
+#### 3. The Squeeze Theorem
+Suppose $$(x_n)$$ and $$(z_n)$$ both converge to $$L$$, and $$\forall n \in \mathbb{N} \ x_n \le y_n \le z_n$$. Prove that $$\lim_{n \to \infty} y_n = L$$.
+
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Solution</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
+Let $$\varepsilon > 0$$. 
+
+* Since $$\lim_{n \to \infty} x_n = L$$, there exists $$N_1 \in \mathbb{N}$$ such that for all $$n \ge N_1$$:
+  $$
+  \vert x_n - L \vert < \varepsilon \iff L - \varepsilon < x_n < L + \varepsilon
+  $$
+* Since $$\lim_{n \to \infty} z_n = L$$, there exists $$N_2 \in \mathbb{N}$$ such that for all $$n \ge N_2$$:
+  $$
+  \vert z_n - L \vert < \varepsilon \iff L - \varepsilon < z_n < L + \varepsilon
+  $$
+
+Define $$N := \max(N_1, N_2)$$. Then for every $$n \ge N$$:
+$$
+L - \varepsilon < x_n \le y_n \le z_n < L + \varepsilon
+$$
+In particular:
+$$
+L - \varepsilon < y_n < L + \varepsilon \iff -\varepsilon < y_n - L < \varepsilon \iff \vert y_n - L \vert < \varepsilon
+$$
+Hence $$\lim_{n \to \infty} y_n = L$$.
+
+<div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
