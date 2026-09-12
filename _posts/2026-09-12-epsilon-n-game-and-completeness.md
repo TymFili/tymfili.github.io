@@ -55,7 +55,7 @@ The sequence converges to $$L$$ if and only if you possess a winning strategy: a
 $$
 n \ge N > \frac{3}{\varepsilon} \rightarrow \frac{3}{n} \le \frac{3}{N} < \varepsilon
 $$
-Hence $$\vert \frac{3}{n} - 0 \vert < \varepsilon$$. $$\quad \blacksquare$$
+Hence $$\vert \frac{3}{n} - 0 \vert < \varepsilon$$. $$\quad \textbf{\textit{Q.E.D.}}$$
 
 ---
 

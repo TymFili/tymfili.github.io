@@ -32,7 +32,7 @@ Since $$f$$ is surjective, $$C = f(b)$$ for some $$b \in A$$. Then:
 $$
 b \in C \iff b \notin f(b) \iff b \notin C
 $$
-which is a contradiction. Hence no surjection exists, and $$A \not\sim \mathcal{P}(A)$$. $$\quad \blacksquare$$
+which is a contradiction. Hence no surjection exists, and $$A \not\sim \mathcal{P}(A)$$. $$\quad \textbf{\textit{Q.E.D.}}$$
 
 ---
 
