@@ -61,7 +61,11 @@ $$
 n \ge N > \frac{3}{\varepsilon} \rightarrow \frac{3}{n} \le \frac{3}{N} < \varepsilon
 $$
 
-Hence $$\vert \frac{3}{n} - 0 \vert < \varepsilon$$. <span style="float: right;"><b><i>Q.E.D.</i></b></span>
+Hence:
+
+$$
+\left\vert \frac{3}{n} - 0 \right\vert < \varepsilon \tag*{\boldsymbol{\mathit{Q.E.D.}}}
+$$
 
 ---
 

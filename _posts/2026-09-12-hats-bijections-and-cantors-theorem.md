@@ -24,15 +24,22 @@ Two sets $$A$$ and $$B$$ are equinumerous, denoted $$A \sim B$$, if there exists
 
 **Proof:**  
 Suppose for contradiction that such a surjection exists. Define the set:
+
 $$
-B := \{x \in A \mid x \notin f(x)\}
+C := \{x \in A \mid x \notin f(x)\}
 $$
 
-Since $$f$$ is surjective, $$B = f(a)$$ for some $$a \in A$$. Then:
+Since $$f$$ is surjective, $$C = f(b)$$ for some $$b \in A$$. Then:
+
 $$
-a \in B \iff a \notin f(a) \iff a \notin B
+b \in C \iff b \notin f(b) \iff b \notin C
 $$
-which is a contradiction. Hence no surjection exists, and $$A \not\sim \mathcal{P}(A)$$. <span style="float: right;"><b><i>Q.E.D.</i></b></span>
+
+which is a contradiction. Hence no surjection exists, and:
+
+$$
+A \not\sim \mathcal{P}(A) \tag*{\boldsymbol{\mathit{Q.E.D.}}}
+$$
 
 ---
 
@@ -40,10 +47,13 @@ which is a contradiction. Hence no surjection exists, and $$A \not\sim \mathcal{
 
 1. $$\mathbb{N}$$ is countable via the identity map $$\operatorname{id}_{\mathbb{N}}$$.
 2. $$\mathbb{Z}$$ is countable by interleaving:
+
    $$
    f(0) = 0, \quad f(1) = 1, \quad f(2) = -1, \quad f(3) = 2, \quad f(4) = -2, \quad \dots
    $$
+
    explicitly:
+
    $$
    f(n) = \begin{cases} \frac{n+1}{2} & \text{if } n \text{ is odd}, \\ -\frac{n}{2} & \text{if } n \text{ is even}. \end{cases}
    $$
