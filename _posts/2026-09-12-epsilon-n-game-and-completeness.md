@@ -9,13 +9,16 @@ categories: [mathematics]
 
 ### 1. The Completeness Axiom
 
-The set of rational numbers $$\mathbb{Q}$$ is countable, yet between any two rationals lies another. Despite this density, $$\mathbb{Q}$$ has gaps: the sequence of decimal approximations of $$\sqrt{2}$$
+The set of rational numbers $$\mathbb{Q}$$ is countable, yet between any two rationals lies another. Despite this density, $$\mathbb{Q}$$ has gaps: the sequence of decimal approximations of $$\sqrt{2}$$:
+
 $$
 1, \quad \frac{14}{10}, \quad \frac{141}{100}, \quad \frac{1414}{1000}, \quad \frac{14142}{10000}, \quad \dots
 $$
+
 consists entirely of rational numbers, but has no limit in $$\mathbb{Q}$$.
 
 > **Axiom (Completeness):** If $$A \subseteq \mathbb{R}$$, $$A \ne \emptyset$$, and $$A$$ is bounded from above, then:
+>
 > $$
 > \sup A \in \mathbb{R}
 > $$
@@ -32,6 +35,7 @@ This axiom distinguishes $$\mathbb{R}$$ from $$\mathbb{Q}$$. Two direct conseque
 A real sequence is a function $$a \colon \mathbb{N} \longrightarrow \mathbb{R}$$, denoted $$a_n := a(n)$$.
 
 > **Definition:** A sequence $$(a_n)$$ converges to $$L \in \mathbb{R}$$, written $$\lim_{n \to \infty} a_n = L$$, if:
+>
 > $$
 > \forall \varepsilon > 0 \ \exists N \in \mathbb{N} \ \forall n \ge N \ \vert a_n - L \vert < \varepsilon
 > $$
@@ -52,10 +56,12 @@ The sequence converges to $$L$$ if and only if you possess a winning strategy: a
 **Proposition:** $$\lim_{n \to \infty} \frac{3}{n} = 0$$.
 
 **Proof:** Let $$\varepsilon > 0$$. By the Archimedean property, there exists $$N \in \mathbb{N}$$ such that $$N > \frac{3}{\varepsilon}$$. For every $$n \ge N$$:
+
 $$
 n \ge N > \frac{3}{\varepsilon} \rightarrow \frac{3}{n} \le \frac{3}{N} < \varepsilon
 $$
-Hence $$\vert \frac{3}{n} - 0 \vert < \varepsilon$$. $$\quad \textbf{\textit{Q.E.D.}}$$
+
+Hence $$\vert \frac{3}{n} - 0 \vert < \varepsilon$$. <span style="float: right;"><b><i>Q.E.D.</i></b></span>
 
 ---
 
@@ -63,6 +69,7 @@ Hence $$\vert \frac{3}{n} - 0 \vert < \varepsilon$$. $$\quad \textbf{\textit{Q.E
 
 1. **Boundedness:** Prove that every convergent sequence is bounded.  
    *Hint:* Set $$\varepsilon = 1$$. Then $$\exists N \in \mathbb{N} \ \forall n \ge N \ \vert a_n \vert < \vert L \vert + 1$$. Take:
+
    $$
    M := \max\left(\{\vert a_n \vert \mid n < N\} \cup \{\vert L \vert + 1\}\right)
    $$
