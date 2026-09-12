@@ -1,0 +1,148 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Queues, Non-Commutativity, and Ordinal Numbers | Notes on mathematics, logic and computer science </title> <meta name="author" content="Tymoteusz Filipiak"> <meta name="description" content="Understanding well-orderings and transfinite arithmetic through the geometry of waiting in line."> <meta name="keywords" content="theoretical computer science, discrete math, algorithms, complexity theory, teaching, lecture notes"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%CE%BB&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://tymfili.github.io/blog/2026/queues-and-ordinal-numbers/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Notes on mathematics, logic and computer science </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">Blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Queues, Non-Commutativity, and Ordinal Numbers</h1> <p class="post-meta"> Created on September 12, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/set-theory"> <i class="fa-solid fa-hashtag fa-sm"></i> set-theory</a>   <a href="/blog/tag/logic"> <i class="fa-solid fa-hashtag fa-sm"></i> logic</a>   <a href="/blog/tag/ordinals"> <i class="fa-solid fa-hashtag fa-sm"></i> ordinals</a>   ·   <a href="/blog/category/mathematics"> <i class="fa-solid fa-tag fa-sm"></i> mathematics</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>Cardinal numbers answer the question: <em>“How many?”</em><br> Ordinal numbers answer the question: <em>“In what order?”</em></p> <p>While cardinal arithmetic is trivialised by the Axiom of Choice (\(\kappa + \lambda = \kappa \cdot \lambda = \max\{\kappa, \lambda\}\) for infinite cardinals), ordinal arithmetic is dynamic, geometric, and stubbornly <strong>non-commutative</strong>.</p> <p>To understand ordinals, one should forget about abstract sets and think about a <strong>queue</strong> at a service counter.</p> <hr> <h3 id="1-the-anatomy-of-a-fair-queue">1. The Anatomy of a Fair Queue</h3> <p>Not every ordered set can serve as a queue:</p> <ol> <li> <strong>\(\mathbb{Z}\) cannot be a queue:</strong> In an ordering of type \(\dots, -2, -1, 0, 1, 2, \dots\), nobody is at the counter. The line has no front; service can never begin.</li> <li> <strong>\(\mathbb{Q}\) or \([0, 1]\) cannot be a queue:</strong> Once the first customer at position \(0\) is served, who is next? In a dense order, there is no immediate successor. The counter clerk is paralyzed.</li> </ol> <p>To operate a functional queue, the ordering \(\le\) must be a <strong>well-ordering</strong>:</p> <blockquote> <p>Every non-empty collection of waiting customers must possess an unambiguous <strong>next person to be served</strong> (a least element).</p> </blockquote> <p>An <strong>ordinal number</strong> is simply the order type (the invariant “shape”) of a well-ordered queue.</p> <hr> <h3 id="2-the-finite-and-the-horizon-omega">2. The Finite and the Horizon (\(\omega\))</h3> <p>A queue of length \(n\) is finite: \(0, 1, 2, \dots, n-1\).</p> <p>The simplest infinite queue is: \(\omega = 0, 1, 2, 3, \dots\) In this standard line, every customer has only <strong>finitely many people ahead of them</strong>. Consequently, no matter how far back you stand, you are guaranteed to reach the counter in a finite number of steps.</p> <hr> <h3 id="3-non-commutative-addition-cutting-in-line-vs-the-latecomer">3. Non-Commutative Addition: Cutting in Line vs. The Latecomer</h3> <p>Addition \(\alpha + \beta\) represents sequential concatenation: the queue of type \(\alpha\) is served first, followed by the queue of type \(\beta\).</p> <h4 id="cutting-to-the-front-1--omega--omega">Cutting to the Front (\(1 + \omega = \omega\))</h4> <p>A customer cuts directly to the front of an infinite queue: \(\text{New Customer}, \quad 0, \quad 1, \quad 2, \quad 3, \quad \dots\) Relabelling the customers (\(\text{New} \mapsto 0, 0 \mapsto 1, 1 \mapsto 2, \dots\)) reveals that the queue is structurally isomorphic to the original line: \(1 + \omega = \omega\) Every person still has only finitely many people ahead of them.</p> <h4 id="the-latecomer-omega--1-ne-omega">The Latecomer (\(\omega + 1 \ne \omega\))</h4> <p>A customer arrives and takes their place behind the entire infinite queue: \(0, \quad 1, \quad 2, \quad 3, \quad \dots \quad \mid \quad \text{Latecomer}\) Now the structure of the queue has changed fundamentally:</p> <ul> <li>The latecomer has <strong>infinitely many people ahead of them</strong>.</li> <li>Unlike \(\omega\), this queue has a <em>terminal element</em> (a maximum).</li> </ul> <p>The shape of the line has changed, proving that addition is not commutative: \(1 + \omega = \omega \ne \omega + 1\)</p> <hr> <h3 id="4-non-commutative-multiplication-waiting-in-pairs-vs-queues-of-queues">4. Non-Commutative Multiplication: Waiting in Pairs vs. Queues of Queues</h3> <p>Multiplication \(\alpha \cdot \beta\) means placing \(\beta\) copies of the queue \(\alpha\) in sequential order.</p> <h4 id="waiting-in-pairs-2-cdot-omega--omega">Waiting in Pairs (\(2 \cdot \omega = \omega\))</h4> <p>Consider \(\omega\) copies of a 2-person queue. Customers wait in pairs: \((a_0, b_0), \quad (a_1, b_1), \quad (a_2, b_2), \quad (a_3, b_3), \quad \dots\) Flattening the line into individuals: \(a_0, \quad b_0, \quad a_1, \quad b_1, \quad a_2, \quad b_2, \quad \dots\) Every customer still has only a finite number of people in front of them. The order type is indistinguishable from the standard natural numbers: \(2 \cdot \omega = \omega\)</p> <h4 id="two-queues-back-to-back-omega-cdot-2-ne-omega">Two Queues Back-to-Back (\(\omega \cdot 2 \ne \omega\))</h4> <p>Now consider \(2\) copies of the infinite queue \(\omega\): \(\underbrace{0_A, 1_A, 2_A, 3_A, \dots}_{\text{Queue } A} \quad \mid \quad \underbrace{0_B, 1_B, 2_B, 3_B, \dots}_{\text{Queue } B}\) This is equivalent to \(\omega + \omega\).</p> <p>Customer \(0_B\) is at the front of Queue \(B\), yet they must wait for all of Queue \(A\) to clear before being served. The line contains two distinct limit points. Therefore: \(2 \cdot \omega = \omega \ne \omega \cdot 2\)</p> <hr> <h3 id="5-higher-horizons-omega2-omegaomega-varepsilon_0">5. Higher Horizons: \(\omega^2, \omega^\omega, \varepsilon_0\)</h3> <p>We can iterate this geometry:</p> <ul> <li> <strong>\(\omega \cdot \omega = \omega^2\):</strong> An infinite sequence of infinite queues waiting behind one another.</li> <li> <strong>\(\omega^3\):</strong> An infinite queue of rooms, each containing \(\omega\) infinite queues.</li> <li> <strong>\(\omega^\omega\):</strong> The limit of \(\omega, \omega^2, \omega^3, \dots\)</li> <li> <strong>\(\varepsilon_0\):</strong> The fixed-point horizon satisfying \(\omega^{\varepsilon_0} = \varepsilon_0\).</li> </ul> <h4 id="the-cardinal-illusion">The Cardinal Illusion</h4> <p>Every single one of the queues described above—from \(\omega\) to \(\omega+1\), \(\omega \cdot 2\), and \(\varepsilon_0\)—contains the exact same number of people: \(\vert \omega \vert = \vert \omega + 1 \vert = \vert \omega \cdot 2 \vert = \vert \omega^2 \vert = \vert \varepsilon_0 \vert = \aleph_0\) Cardinally, they are identical. Ordinally, their waiting dynamics are worlds apart.</p> <hr> <h3 id="6-the-von-neumann-formalism">6. The Von Neumann Formalism</h3> <p>How do logicians capture the geometry of a queue without referring to people or counters?</p> <p>John von Neumann formalised ordinals by identifying <strong>every position in the queue with the set of all positions preceding it</strong>: \(\alpha := \{\beta \in \mathbf{Ord} \mid \beta &lt; \alpha\}\)</p> <p>Under this definition:</p> <ul> <li>\(0 = \emptyset\) (nobody is ahead of you).</li> <li>\(1 = \{0\} = \{\emptyset\}\).</li> <li>\(2 = \{0, 1\} = \{\emptyset, \{\emptyset\}\}\).</li> <li>\(\omega = \{0, 1, 2, \dots\}\).</li> <li>\(\omega + 1 = \omega \cup \{\omega\} = \{0, 1, 2, \dots, \omega\}\).</li> </ul> <p>The strict queue order \(&lt;\) becomes nothing other than set membership: \(\alpha &lt; \beta \iff \alpha \in \beta\) A well-ordered line is simply a set whose elements are ordered by membership \(\in\), constructed so that no customer can ever step into an infinite backward loop.</p> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/zfc-axioms/">Axioms of mathematics: trivialities, hygiene and insanity</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/first-definitions-analysis/">The real numbers, ε–N definition and quantifiers</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/counting/">What Does it Mean to Count?</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/blog/2026/relations/">A Visual Taxonomy of Binary Relations</a> </li> </ul> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tymoteusz Filipiak. <style>
+  :root {
+    --global-theme-color: #205c3b !important;
+    --global-hover-color: #164029 !important;
+  }
+  html[data-theme="dark"] {
+    --global-theme-color: #57b87b !important;
+    --global-hover-color: #6ec890 !important;
+  }
+  #back-to-top {
+    bottom: 55px !important;
+    z-index: 1050 !important;
+</style> Last updated: September 12, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-teaching",
+          title: "Teaching",
+          description: "Lecture notes and resources for logic and computation.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "post-axioms-of-mathematics-trivialities-hygiene-and-insanity",
+        
+          title: "Axioms of mathematics: trivialities, hygiene and insanity",
+        
+        description: "A survey of the Zermelo-Fraenkel axioms, the necessity of parameters in schemata, and the strange nature of Foundation and Choice.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/zfc-axioms/";
+          
+        },
+      },{id: "post-queues-non-commutativity-and-ordinal-numbers",
+        
+          title: "Queues, Non-Commutativity, and Ordinal Numbers",
+        
+        description: "Understanding well-orderings and transfinite arithmetic through the geometry of waiting in line.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/queues-and-ordinal-numbers/";
+          
+        },
+      },{id: "post-the-real-numbers-ε-n-definition-and-quantifiers",
+        
+          title: "The real numbers, ε–N definition and quantifiers",
+        
+        description: "The least upper bound property of ℝ and viewing Cauchy convergence as an interactive game.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/first-definitions-analysis/";
+          
+        },
+      },{id: "post-what-does-it-mean-to-count",
+        
+          title: "What Does it Mean to Count?",
+        
+        description: "Equinumerosity, bijections, and Cantor&#39;s theorem on the power set.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/counting/";
+          
+        },
+      },{id: "post-a-visual-taxonomy-of-binary-relations",
+        
+          title: "A Visual Taxonomy of Binary Relations",
+        
+        description: "Visualising the 16 distinct classes of binary relations between two sets.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/relations/";
+          
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%74%79%6D%6F%74%65%75%73%7A%66%33%33%33@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/tymfili", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
