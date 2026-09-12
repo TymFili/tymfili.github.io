@@ -25,28 +25,27 @@ Each term is rational, and the terms cluster ever closer together. Yet, within $
 
 To fix this, we introduce the **Completeness Axiom** (the Least Upper Bound Property):
 
-> **Completeness Axiom:** Every non-empty subset $$A \subseteq \mathbb{R}$$ that is bounded from above has a supremum in $$\mathbb{R}$$:
+> **Completeness Axiom:** If $$A \subseteq \mathbb{R}$$, $$A \ne \emptyset$$, and $$A$$ is bounded from above, then:
 > $$
-> \sup(A) \in \mathbb{R}
+> \sup A \in \mathbb{R}
 > $$
 
-This single axiom is the structural distinction separating $$\mathbb{R}$$ from $$\mathbb{Q}$$. It guarantees that the real line has no gaps. A consequence is the **Archimedean Property**:
-
+This single axiom is the essential information separating $$\mathbb{R}$$ from $$\mathbb{Q}$$. It guarantees that the real continuum has no gaps. A direct consequence is the **Archimedean Property**:
 $$
-\forall x, y \in \mathbb{R} : x > 0 \implies \exists n \in \mathbb{N} \text{ such that } nx > y
+\forall x, y \in \mathbb{R} \ (x > 0 \rightarrow \exists n \in \mathbb{N} \ nx > y)
 $$
 
-*(Note the crucial condition that $$x > 0$$, which ensures that multiplying by positive integers $$n$$ scales the quantity upward).*
+*(Notice the necessary condition $$x > 0$$, which ensures that scaling by natural numbers strictly increases the value).*
 
 ---
 
 ### 2. The Formal Definition of Convergence
 
-A real sequence is a function $$a \colon \mathbb{N} \longrightarrow \mathbb{R}$$, denoted $$a_n$$.
+A real sequence is a function $$a \colon \mathbb{N} \longrightarrow \mathbb{R}$$, conventionally written as $$a_n := a(n)$$.
 
-> **Definition:** A sequence $$(a_n)$$ converges to a limit $$L \in \mathbb{R}$$ if:
+> **Definition:** A sequence $$(a_n)$$ converges to a limit $$L \in \mathbb{R}$$, written $$\lim_{n \to \infty} a_n = L$$, if:
 > $$
-> \forall \varepsilon > 0 \ \exists N \in \mathbb{N} \ \forall n \ge N : |a_n - L| < \varepsilon
+> \forall \varepsilon > 0 \ \exists N \in \mathbb{N} \ \forall n \ge N \ |a_n - L| < \varepsilon
 > $$
 
 ---
@@ -55,12 +54,12 @@ A real sequence is a function $$a \colon \mathbb{N} \longrightarrow \mathbb{R}$$
 
 Instead of wrestling with the string of quantifiers $$\forall \exists \forall$$, think of convergence as a game between **you** (the prover) and an **adversary**:
 
-1. **The Challenge:** The adversary provides an error tolerance $$\varepsilon > 0$$. They want to catch your sequence straying outside the margin $$(L - \varepsilon, L + \varepsilon)$$.
-2. **Your Response:** You inspect their $$\varepsilon$$ and hand back an index threshold $$N \in \mathbb{N}$$.
-3. **The Test:** The adversary picks *any* index $$n \ge N$$ that they like.
+1. **The Challenge:** The adversary provides an error margin $$\varepsilon > 0$$. They want to catch your sequence straying outside the interval $$(L - \varepsilon, L + \varepsilon)$$.
+2. **Your Response:** You inspect their $$\varepsilon$$ and choose an index threshold $$N \in \mathbb{N}$$.
+3. **The Test:** The adversary picks any index $$n \ge N$$ that they like.
 4. **The Outcome:** You win if $$|a_n - L| < \varepsilon$$. You lose if the term falls outside the boundary.
 
-A sequence is convergent if and only if **you possess a guaranteed winning strategy**. Writing a proof of convergence simply means providing an algorithm that takes any arbitrary $$\varepsilon > 0$$ as input and computes an explicit $$N$$ that guarantees your victory.
+A sequence is convergent if and only if **you possess a guaranteed winning strategy**. Writing a proof of convergence simply means providing an algorithm that takes any arbitrary $$\varepsilon > 0$$ as input and returns a suitable $$N$$.
 
 ---
 
@@ -71,8 +70,8 @@ $$
 \lim_{n \to \infty} \frac{3}{n} = 0
 $$
 
-**Proof (The Strategy):**  
-Let $$\varepsilon > 0$$ be arbitrarily given by our adversary. We require:
+**Proof:**  
+Let $$\varepsilon > 0$$ be given. We require:
 $$
 \left| \frac{3}{n} - 0 \right| = \frac{3}{n} < \varepsilon \iff n > \frac{3}{\varepsilon}
 $$
@@ -82,17 +81,26 @@ $$
 N > \frac{3}{\varepsilon}
 $$
 
-Now, for any $$n \ge N$$ chosen by the adversary, we have:
+Then for any $$n \ge N$$, we have:
 $$
-n \ge N > \frac{3}{\varepsilon} \implies \frac{3}{n} \le \frac{3}{N} < \varepsilon
+n \ge N > \frac{3}{\varepsilon} \rightarrow \frac{3}{n} \le \frac{3}{N} < \varepsilon
 $$
-Hence $$|a_n - 0| < \varepsilon$$. The adversary cannot win; the limit is $$0$$.
+Hence $$|a_n - 0| < \varepsilon$$. The adversary cannot win; the limit is $$0$$. $$\quad \blacksquare$$
 
 ---
 
 ### 5. Exercises for Students
 
-1. **Boundedness of Convergent Sequences:** Prove that every convergent sequence is bounded.  
-   *(Hint: Fix $$\varepsilon = 1$$. Beyond index $$N$$, terms satisfy $$|a_n| < |L| + 1$$. The finite collection of earlier terms is bounded by $$\max_{n < N} |a_n|$$, so choose $$M := \max(\{|a_n| \mid n < N\} \cup \{|L| + 1\})$$)*.
-2. **The Triangle Inequality (Abbott):** Prove that $$|x + y| \le |x| + |y|$$ by considering the expansion of $$(|x| + |y|)^2$$ and using the fact that $$ab \le |ab|$$.
-3. **The Squeeze Theorem:** Suppose $$x_n \le y_n \le z_n$$ for all $$n$$, and $$\lim x_n = \lim z_n = L$$. Prove that $$\lim y_n = L$$.
+1. **Boundedness of Convergent Sequences:**  
+   Prove that every convergent sequence is bounded.  
+   
+   *Hint:* Choose $$\varepsilon = 1$$. Then there exists $$N \in \mathbb{N}$$ such that for all $$n \ge N$$, we have $$|a_n| < |L| + 1$$. Bound the finite initial segment by defining:
+   $$
+   M := \max\left(\{|a_n| \mid n < N\} \cup \{|L| + 1\}\right)
+   $$
+
+2. **The Triangle Inequality (Abbott):**  
+   Prove that $$|x + y| \le |x| + |y|$$ by expanding $$(|x| + |y|)^2$$ and using the inequality $$ab \le |ab|$$.
+
+3. **The Squeeze Theorem:**  
+   Suppose $$(x_n)$$ and $$(z_n)$$ both converge to $$L$$, and $$\forall n \in \mathbb{N} \ x_n \le y_n \le z_n$$. Prove that $$\lim_{n \to \infty} y_n = L$$.
