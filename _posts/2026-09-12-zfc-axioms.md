@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Architecture of ZFC: Parameters, Hygiene, and Choice"
+title: "Axioms of mathematics: trivialities, hygiene and insanity"
 date: 2026-09-12
 description: "A survey of the Zermelo-Fraenkel axioms, the necessity of parameters in schemata, and the strange nature of Foundation and Choice."
 tags: [set-theory, logic, foundations]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The ε–N Definition as a Two-Player Game"
+title: "The real numbers, ε–N definition and quantifiers"
 date: 2026-09-12
 description: "The least upper bound property of ℝ and viewing Cauchy convergence as an interactive game."
 tags: [analysis, mathematics, teaching]
