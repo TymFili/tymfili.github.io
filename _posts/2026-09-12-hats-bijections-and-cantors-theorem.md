@@ -38,7 +38,7 @@ $$
 which is a contradiction. Hence no surjection exists, and:
 
 $$
-A \not\sim \mathcal{P}(A) \tag*{\boldsymbol{\mathit{Q.E.D.}}}
+A \nsim \mathcal{P}(A) \tag*{$\boldsymbol{Q.E.D.}$}
 $$
 
 ---

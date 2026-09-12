@@ -64,7 +64,7 @@ $$
 Hence:
 
 $$
-\left\vert \frac{3}{n} - 0 \right\vert < \varepsilon \tag*{\boldsymbol{\mathit{Q.E.D.}}}
+\left\vert \frac{3}{n} - 0 \right\vert < \varepsilon \tag*{$\boldsymbol{Q.E.D.}$}
 $$
 
 ---
