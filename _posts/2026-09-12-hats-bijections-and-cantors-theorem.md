@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hats, Bijections, and Cantor's Theorem: What Does it Mean to Count?"
-date: 2026-09-13
+date: 2026-09-12
 description: "How Georg Cantor revolutionized our concept of infinity through bijective correspondences."
 tags: [set-theory, discrete-mathematics, logic]
 categories: [mathematics]
