@@ -15,10 +15,10 @@ nav_order: 2
 
 ---
 
-### Course Notes & Manuscripts
+### Lecture Notes & Manuscripts
 
 * **[Introduction to Mathematical Logic (Draft PDF)](/assets/pdf/logic.pdf)**  
-  *Lecture script — Autumn Term 2026*  
+  *Lecture notes — Summer Term 2026*  (Yes, summer)
   
   Current contents:
   * **Chapter 1: An Introduction to Mathematics** — Naive set theory, relations, equivalence quotients, basic order theory, and complete lattices (Knaster–Tarski fixed points).
