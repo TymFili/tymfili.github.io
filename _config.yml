@@ -22,6 +22,9 @@ footer_text: >
       --global-theme-color: #57b87b !important;
       --global-hover-color: #6ec890 !important;
     }
+    #back-to-top {
+      bottom: 55px !important;
+      z-index: 1050 !important;
   </style>
 
 keywords: theoretical computer science, discrete math, algorithms, complexity theory, teaching, lecture notes
