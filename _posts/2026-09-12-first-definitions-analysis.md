@@ -2,7 +2,7 @@
 layout: post
 title: "The real numbers, ε–N definition and quantifiers"
 date: 2026-09-12
-description: "The least upper bound property of ℝ and viewing Cauchy convergence as an interactive game."
+description: "The least upper bound property of ℝ and viewing Cauchy convergence as a game."
 tags: [analysis, mathematics, teaching]
 categories: [mathematics]
 ---
@@ -17,16 +17,83 @@ $$
 
 consists entirely of rational numbers, but has no limit in $$\mathbb{Q}$$.
 
-> **Axiom (Completeness):** If $$A \subseteq \mathbb{R}$$, $$A \ne \emptyset$$, and $$A$$ is bounded from above, then:
+> **Axiom (Completeness):** If $$\emptyset \neq A \subseteq \mathbb{R}$$, and $$A$$ is bounded from above, then:
 >
 > $$
 > \sup A \in \mathbb{R}
 > $$
 
-This axiom distinguishes $$\mathbb{R}$$ from $$\mathbb{Q}$$. Two direct consequences are:
+This axiom distinguishes $$\mathbb{R}$$ from $$\mathbb{Q}$$. Two foundational consequences follow:
 
-* **Archimedean Property:** $$\forall x, y \in \mathbb{R} \ (x > 0 \rightarrow \exists n \in \mathbb{N} \ nx > y)$$.
-* **Density of $$\mathbb{Q}$$ in $$\mathbb{R}$$:** $$\forall x, y \in \mathbb{R} \ (x < y \rightarrow \exists q \in \mathbb{Q} \ x < q < y)$$.
+#### Theorem (Archimedean Property)
+$$\forall x, y \in \mathbb{R} \ (x > 0 \rightarrow \exists n \in \mathbb{N} \ nx > y)$$
+
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
+Assume for contradiction that there exist $$x, y \in \mathbb{R}$$ with $$x > 0$$ such that for all $$n \in \mathbb{N}$$, $$nx \le y$$.
+
+Define the collection of all natural multiples:
+$$
+S := \{nx \mid n \in \mathbb{N}\}
+$$
+Since $$x \in S$$, $$S \ne \emptyset$$, and by hypothesis, $$S$$ is bounded from above by $$y$$. 
+
+By the Completeness Axiom, $$S$$ has a supremum in $$\mathbb{R}$$:
+$$
+\alpha := \sup S
+$$
+Since $$x > 0$$, we have $$\alpha - x < \alpha$$. Because $$\alpha$$ is the least upper bound, $$\alpha - x$$ cannot be an upper bound of $$S$$. Therefore, there exists some element $$mx \in S$$ such that:
+$$
+mx > \alpha - x
+$$
+Adding $$x$$ to both sides yields:
+$$
+(m + 1)x > \alpha
+$$
+Since $$m + 1 \in \mathbb{N}$$, we have $$(m + 1)x \in S$$. This contradicts that $$\alpha$$ is an upper bound of $$S$$. 
+
+Hence, no such upper bound $$y$$ can exist:
+$$
+\exists n \in \mathbb{N} \ nx > y \tag*{$\boldsymbol{Q.E.D.}$}
+$$
+</details>
+
+---
+
+#### Theorem (Density of $$\mathbb{Q}$$ in $$\mathbb{R}$$)
+$$\forall x, y \in \mathbb{R} \ (x < y \rightarrow \exists q \in \mathbb{Q} \ x < q < y)$$
+
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
+Assume without loss of generality that $$0 \le x < y$$. 
+
+Since $$y - x > 0$$, by the Archimedean Property there exists $$n \in \mathbb{N}$$ such that:
+$$
+n(y - x) > 1 \iff ny - nx > 1
+$$
+Applying the Archimedean Property again to $$nx$$, the collection of natural numbers strictly greater than $$nx$$ is non-empty. By the well-ordering of $$\mathbb{N}$$, there exists a least integer $$m \in \mathbb{Z}$$ such that:
+$$
+m - 1 \le nx < m
+$$
+From $$nx < m$$, we have our lower bound. From $$m - 1 \le nx$$, adding $$1$$ gives:
+$$
+m \le nx + 1
+$$
+Because $$ny - nx > 1$$, we have $$nx + 1 < ny$$. Chaining these inequalities:
+$$
+nx < m \le nx + 1 < ny \implies nx < m < ny
+$$
+Dividing by $$n > 0$$:
+$$
+x < \frac{m}{n} < y
+$$
+Setting $$q := \frac{m}{n} \in \mathbb{Q}$$, we conclude:
+$$
+x < q < y \tag*{$\boldsymbol{Q.E.D.}$}
+$$
+</details>
 
 ---
 
