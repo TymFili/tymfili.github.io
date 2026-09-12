@@ -25,14 +25,14 @@ Two sets $$A$$ and $$B$$ are equinumerous, denoted $$A \sim B$$, if there exists
 **Proof:**  
 Suppose for contradiction that such a surjection exists. Define the set:
 $$
-C := \{x \in A \mid x \notin f(x)\}
+B := \{x \in A \mid x \notin f(x)\}
 $$
 
-Since $$f$$ is surjective, $$C = f(b)$$ for some $$b \in A$$. Then:
+Since $$f$$ is surjective, $$B = f(a)$$ for some $$a \in A$$. Then:
 $$
-b \in C \iff b \notin f(b) \iff b \notin C
+a \in B \iff a \notin f(a) \iff a \notin B
 $$
-which is a contradiction. Hence no surjection exists, and $$A \not\sim \mathcal{P}(A)$$. $$\quad \textbf{\textit{Q.E.D.}}$$
+which is a contradiction. Hence no surjection exists, and $$A \not\sim \mathcal{P}(A)$$. <span style="float: right;"><b><i>Q.E.D.</i></b></span>
 
 ---
 
