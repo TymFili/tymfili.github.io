@@ -113,6 +113,17 @@ We can iterate this geometry:
 * **$$\omega^\omega$$:** The limit of $$\omega, \omega^2, \omega^3, \dots$$
 * **$$\varepsilon_0$$:** The fixed-point horizon satisfying $$\omega^{\varepsilon_0} = \varepsilon_0$$.
 
+<div class="text-center my-4">
+  <img src="{{ '/assets/img/ordinals_madore.svg' | relative_url }}" class="img-fluid rounded border shadow-sm" style="max-width: 100%; height: auto;" alt="Visualization of Ordinals up to omega^omega">
+  <p class="text-muted mt-2 small"><em>Figure: Recursive geometric compression of ordinals up to \(\omega^\omega\). Each vertical bar is an ordinal; taller bars denote limit ordinals. Adapted from <a href="http://www.madore.org/~david/math/drawordinals.html" target="_blank">David Madore's ordinal visualizer</a>.</em></p>
+</div>
+
+#### Reading the Fractal
+In the diagram above, each limit ordinal is compressed into a bounded horizontal interval:
+1. The first section ($$\omega$$) displays the sequence of natural numbers converging to the first limit point.
+2. The second section ($$\omega^2$$) contains an infinite sequence of such sequences ($\omega, \omega \cdot 2, \omega \cdot 3, \dots$).
+3. By iterating this self-similar compression, the entire hierarchy up to $$\omega^\omega$$ can be captured on a single line.
+
 #### The Cardinal Illusion
 Every single one of the queues described above—from $$\omega$$ to $$\omega+1$$, $$\omega \cdot 2$$, and $$\varepsilon_0$$—contains the exact same number of people:
 $$
