@@ -30,6 +30,17 @@ Welcome to the central reference library of proofs. This section maintains the c
   * [Lindenbaum's Maximal Extension Lemma](#lindenbaum-lemma)
   * [The Fundamental Truth Lemma for Term Structures](#term-model-truth)
   * [Gödel's Completeness Theorem](#godel-completeness)
+* **Axiomatic Set Theory & Ordinals:**
+  * [Inconsistency of Naive Set Theory (Russell's Paradox)](#russell-paradox)
+  * [Principle of Induction on ω](#induction-omega)
+  * [Principle of Well-Ordered Induction](#well-ordered-induction)
+  * [Uniqueness of Order Automorphisms on Wosets](#woset-automorphism)
+  * [Wosets and Initial Segments](#woset-initial-segment)
+  * [Comparability of Well-Ordered Sets](#woset-comparability)
+  * [Strict Inclusion and Membership of Ordinals](#ordinal-subset-in)
+  * [Extended Burali-Forti Theorem](#burali-forti)
+  * [Isomorphism of Well-Orderings to Unique Ordinals](#woset-to-ordinal)
+  * [Equivalences of the Axiom of Choice](#choice-equivalences)
 * **Set Theory & Cardinality:**
   * [The Schröder–Bernstein Theorem](#schroder-bernstein)
   * [Cantor's Theorem on the Power Set](#cantors-theorem)
@@ -263,6 +274,146 @@ Welcome to the central reference library of proofs. This section maintains the c
 <summary style="cursor: pointer;"><b>Proof</b></summary>
 
 {% include proofs/godel_completeness.md %}
+
+</details>
+
+---
+
+
+### Axiomatic Set Theory & Ordinals
+
+<h4 id="russell-paradox">Inconsistency of Naive Set Theory (Russell's Paradox)</h4>
+
+> **Theorem:** Naive Set Theory is inconsistent and has no model.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/naive_set_theory_inconsistent.md %}
+
+</details>
+
+---
+
+<h4 id="induction-omega">Principle of Induction on ω</h4>
+
+> **Theorem:** Let $$S \subseteq \omega$$. If $$0 \in S$$ and $$\forall n \ (n \in S \rightarrow n + 1 \in S)$$, then $$S = \omega$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/induction_on_omega.md %}
+
+</details>
+
+---
+
+<h4 id="well-ordered-induction">Principle of Well-Ordered Induction</h4>
+
+> **Theorem:** Let $$(X, \le)$$ be a well-ordered set and let $$\Pi$$ be a property. If $$\Pi(a)$$ holds whenever $$\Pi(y)$$ holds for all $$y < a$$, then $$\Pi(x)$$ holds for all $$x \in X$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/well_ordered_induction.md %}
+
+</details>
+
+---
+
+<h4 id="woset-automorphism">Uniqueness of Order Automorphisms on Wosets</h4>
+
+> **Theorem:** Let $$(X, \le)$$ be a well-ordered set and $$f \colon X \longrightarrow X$$ an order automorphism. Then $$\forall x \in X \ x \le f(x)$$. Consequently, the only order automorphism of $$(X, \le)$$ is $$\operatorname{id}_X$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/order_automorphism_identity.md %}
+
+</details>
+
+---
+
+<h4 id="woset-initial-segment">Wosets and Initial Segments</h4>
+
+> **Theorem:** A well-ordered set $$(X, \le)$$ is never order-isomorphic to any of its proper initial segments $$X_a$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/woset_initial_segment.md %}
+
+</details>
+
+---
+
+<h4 id="woset-comparability">Comparability of Well-Ordered Sets</h4>
+
+> **Theorem:** Let $$\mathrm{X} := (X, \le)$$ and $$\mathrm{Y} := (Y, \hat{\le})$$ be well-ordered sets. Then exactly one of the following holds:
+> 1. $$\mathrm{X} \sqsubset \mathrm{Y}$$,
+> 2. $$\mathrm{X} \cong_{\operatorname{Ord}} \mathrm{Y}$$,
+> 3. $$\mathrm{Y} \sqsubset \mathrm{X}$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/woset_comparability.md %}
+
+</details>
+
+---
+
+<h4 id="ordinal-subset-in">Strict Inclusion and Membership of Ordinals</h4>
+
+> **Theorem:** Let $$\alpha, \beta$$ be ordinals. Then $$\alpha \subset \beta \implies \alpha \in \beta$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/ordinal_subset_in.md %}
+
+</details>
+
+---
+
+<h4 id="burali-forti">Extended Burali-Forti Theorem</h4>
+
+> **Theorem:** Let $$A$$ be a subclass of $$\mathbf{Ord}$$ that is unbounded in $$\mathbf{Ord}$$. Then $$A$$ is a proper class (not a set).
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/extended_burali_forti.md %}
+
+</details>
+
+---
+
+<h4 id="woset-to-ordinal">Isomorphism of Well-Orderings to Unique Ordinals</h4>
+
+> **Theorem:** Let $$(X, \le)$$ be a well-ordered set. Then there exists a unique ordinal number $$\alpha$$ such that $$(X, \le) \cong_{\operatorname{Ord}} (\alpha, \in)$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/woset_isomorphic_to_ordinal.md %}
+
+</details>
+
+---
+
+<h4 id="choice-equivalences">Equivalences of the Axiom of Choice</h4>
+
+> **Theorem:** In $$\mathrm{ZF}^-$$, the following statements are pairwise equivalent:
+> 1. The Axiom of Choice ($$\mathbf{AC}$$)
+> 2. Hausdorff's Maximal Principle ($$\mathbf{HP}$$)
+> 3. Zorn's Lemma ($$\mathbf{ZL}$$)
+> 4. Zermelo's Well-Ordering Theorem ($$\mathbf{WO}$$)
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/choice_equivalences.md %}
 
 </details>
 
