@@ -24,6 +24,12 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
   * [Strict & Weak Relations](#def-strict-weak-relations) &bull; [Poset & Total Order](#def-poset) &bull; [Initial Segment](#def-initial-segment) &bull; [Extremal Bounds & Min/Max](#def-bounds-min-max) &bull; [Chain](#def-chain) &bull; [Well-Ordering](#def-well-ordering) &bull; [Well-Founded Relation](#def-well-founded)
 * **Lattice Theory & Fixed Points:**
   * [Lattice](#def-lattice) &bull; [Complete Lattice](#def-complete-lattice) &bull; [Monotone Function](#def-monotone-function) &bull; [Fixed Point & Least Fixed Point (μf)](#def-fixed-point)
+* **Proof Theory & Deductive Systems:**
+  * [Proof System](#def-proof-system) &bull; [Formal Proof & Consequence (⊢)](#def-formal-proof) &bull; [Modus Ponens](#def-modus-ponens) &bull; [Tautology System](#def-tautology-system) &bull; [Hilbert System](#def-hilbert-system) &bull; [Consistency & Inconsistency](#def-consistency) &bull; [Soundness & Completeness](#def-soundness-completeness) &bull; [Proof Trees & Natural Deduction](#def-proof-tree)
+* **First-Order Syntax & Prefix Weighting:**
+  * [Signature](#def-signature) &bull; [Alphabet of FOL](#def-fol-alphabet) &bull; [Terms (Trm)](#def-terms) &bull; [Formulae (Frm)](#def-fol-formulae) &bull; [Symbol Weight & Unique Readability](#def-symbol-weight) &bull; [Abbreviation Conventions](#def-abbreviations) &bull; [Functional Formulae](#def-functional-formula)
+* **Tarskian Semantics & Canonical Models:**
+  * [Structure & Universe](#def-structure) &bull; [Variable Assignment](#def-variable-assignment) &bull; [Term Valuation](#def-term-valuation) &bull; [Modified Assignment](#def-modified-assignment) &bull; [Tarskian Satisfaction (⊨)](#def-satisfaction) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Canonical Term Structure (Verifier)](#def-term-verifier) &bull; [Quotient Model](#def-quotient-model)
 * **Formal Languages:**
   * [Alphabet](#def-alphabet) &bull; [Strings (Σ*)](#def-strings) &bull; [Concatenation](#def-concatenation) &bull; [Language](#def-language)
 * **Propositional Calculus:**
@@ -397,6 +403,215 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > **Definition:** An element $$x \in L$$ is a *fixed point* of $$f \colon L \longrightarrow L$$ if $$f(x) = x$$.
 > 
 > The least fixed point is denoted $$\mu f$$, and the greatest fixed point is denoted $$\nu f$$.
+
+---
+
+---
+
+### Proof Theory & Deductive Systems
+
+<h4 id="def-proof-system">Proof System</h4>
+
+> **Definition:** A *proof system* is a triple $$(\mathscr{L}, \mathscr{R}, \mathscr{A})$$, where:
+> 1. $$\mathscr{L}$$ is a formal language.
+> 2. $$\mathscr{R}$$ is a set of rules of inference.
+> 3. $$\mathscr{A}$$ is a set of axioms.
+
+---
+
+<h4 id="def-formal-proof">Formal Proof, Derivability (⊢), and Theorems</h4>
+
+> **Definition:** A *proof* in a proof system $$(\mathscr{L}, \mathscr{R}, \mathscr{A})$$ is a finite sequence of formulae in $$\mathscr{L}$$, where each formula is an axiom, an assumption, or follows from preceding formulae via an inference rule.
+> 
+> We write $$\Sigma \vdash \phi$$ (*"$$\Sigma$$ proves $$\phi$$"*) if there exists a formal proof of $$\phi$$ with active assumptions in $$\Sigma$$. A formula $$\varphi$$ is a *theorem* if $$\emptyset \vdash \varphi$$, written simply as $$\vdash \varphi$$.
+
+---
+
+<h4 id="def-modus-ponens">Modus Ponens</h4>
+
+> **Definition:** *Modus Ponens* is the rule of inference: from $$\phi$$ and $$\phi \rightarrow \psi$$, we may infer $$\psi$$.
+
+---
+
+<h4 id="def-tautology-system">Tautology System</h4>
+
+> **Definition:** The *tautology system* is a propositional proof system where $$\mathscr{R}$$ contains only Modus Ponens, and $$\mathscr{A}$$ consists of all semantic tautologies.
+
+---
+
+<h4 id="def-hilbert-system">Hilbert System</h4>
+
+> **Definition:** The *Hilbert system* is a propositional proof system where $$\mathscr{R}$$ contains only Modus Ponens, and the axioms $$\mathscr{A}$$ are all formulae of the following forms:
+> * **A1:** $$\phi \rightarrow (\psi \rightarrow \phi)$$
+> * **A2:** $$(\phi \rightarrow (\psi \rightarrow \chi)) \rightarrow ((\phi \rightarrow \psi) \rightarrow (\phi \rightarrow \chi))$$
+> * **A3:** $$(\neg \phi \rightarrow \neg \psi) \rightarrow (\psi \rightarrow \phi)$$
+
+---
+
+<h4 id="def-consistency">Consistency & Inconsistency</h4>
+
+> **Definition:** A set of formulae $$\Gamma$$ is *inconsistent* if $$\Gamma \vdash \bot$$. A set $$\Gamma$$ is *consistent* if it is not inconsistent ($$\Gamma \nvdash \bot$$).
+
+---
+
+<h4 id="def-soundness-completeness">Soundness & Completeness of Proof Systems</h4>
+
+> **Definition:** A proof system is:
+> * **Sound:** if $$\Sigma \vdash \phi \implies \Sigma \models \phi$$ (every provable formula is semantically true).
+> * **Complete:** if $$\Sigma \models \phi \implies \Sigma \vdash \phi$$ (every semantic consequence is formally provable).
+
+---
+
+<h4 id="def-proof-tree">Proof Trees & Natural Deduction</h4>
+
+> **Definition:** The set of *proof trees* over language $$\mathscr{L}$$ and rules $$\mathscr{R}$$ is defined inductively:
+> 1. For any $$\phi \in \mathscr{L}$$, the single-node tree $$\phi$$ is a proof tree with *open assumption* $$\phi$$.
+> 2. If subtrees $$\Pi_1, \dots, \Pi_k$$ have conclusions $$\phi_1, \dots, \phi_k$$, and $$\frac{\phi_1 \dots \phi_k}{\psi}$$ is an inference rule, placing $$\psi$$ as the new root yields a proof tree of $$\psi$$.
+> 
+> When an inference rule *discharges* an assumption, all leaves labeled with that formula are enclosed in brackets and indexed: $$[\phi]^n$$. A formula $$\phi$$ is provable in Natural Deduction ($$\Sigma \vdash \phi$$) if there exists a finite proof tree with root $$\phi$$ whose undischarged assumptions belong to $$\Sigma$$.
+
+---
+
+### First-Order Syntax & Prefix Weighting
+
+<h4 id="def-signature">Signature</h4>
+
+> **Definition:** A *signature* $$\sigma$$ is a quadruple $$(\mathbf{F}, \mathbf{R}, \mathbf{C}, \operatorname{ar})$$, where $$\mathbf{F}$$ (function symbols), $$\mathbf{R}$$ (relation symbols), and $$\mathbf{C}$$ (constant symbols) are pairwise disjoint sets, no element of which is an initial segment of another. The arity function $$\operatorname{ar}$$ assigns a non-negative integer to each symbol in $$\mathbf{F} \cup \mathbf{R}$$.
+
+---
+
+<h4 id="def-fol-alphabet">Alphabet of First-Order Logic</h4>
+
+> **Definition:** The alphabet of First-Order Logic over signature $$\sigma$$ consists of:
+> 1. **Logical symbols:** Connectives ($$\neg, \land, \lor, \rightarrow, \leftrightarrow$$) and Quantifiers ($$\forall, \exists$$).
+> 2. **Variables:** $$x_0, x_1, x_2, \dots$$
+> 3. **Non-logical symbols:** Functions $$\mathbf{F}$$, Relations $$\mathbf{R}$$, and Constants $$\mathbf{C}$$.
+> 4. **Equality:** The symbol $$=$$.
+
+---
+
+<h4 id="def-terms">Terms (Trm)</h4>
+
+> **Definition:** The set of *terms* $$\mathbf{Trm}(\sigma)$$ over $$\sigma$$ is the smallest set satisfying:
+> 1. All constant symbols in $$\mathbf{C}$$ and all variables are in $$\mathbf{Trm}(\sigma)$$.
+> 2. If $$t_1, \dots, t_n \in \mathbf{Trm}(\sigma)$$ and $$f \in \mathbf{F}$$ is an $$n$$-ary function symbol, the string $$f t_1 \dots t_n$$ is in $$\mathbf{Trm}(\sigma)$$.
+
+---
+
+<h4 id="def-fol-formulae">Formulae (AtFrm and Frm)</h4>
+
+> **Definition:** The sets of *atomic formulae* $$\mathbf{AtFrm}(\sigma)$$ and *formulae* $$\mathbf{Frm}(\sigma)$$ are defined inductively:
+> 1. **Atomic:** If $$t_1, \dots, t_n \in \mathbf{Trm}(\sigma)$$ and $$R \in \mathbf{R}$$ is an $$n$$-ary relation symbol, then $$R t_1 \dots t_n \in \mathbf{AtFrm}(\sigma)$$. If $$t_1, t_2 \in \mathbf{Trm}(\sigma)$$, then $$= t_1 t_2 \in \mathbf{AtFrm}(\sigma)$$.
+> 2. **Inclusion:** $$\mathbf{AtFrm}(\sigma) \subseteq \mathbf{Frm}(\sigma)$$.
+> 3. **Compound:** If $$\varphi, \psi \in \mathbf{Frm}(\sigma)$$, then $$\neg \varphi$$, $$\land \varphi \psi$$, $$\lor \varphi \psi$$, $$\rightarrow \varphi \psi$$, $$\leftrightarrow \varphi \psi$$, $$\forall x \varphi$$, and $$\exists x \varphi$$ are in $$\mathbf{Frm}(\sigma)$$.
+
+---
+
+<h4 id="def-symbol-weight">Symbol Weight & Unique Readability</h4>
+
+> **Definition:** The *weight assignment* $$w$$ on first-order symbols is defined by:
+> * $$w(f) := \operatorname{ar}(f) - 1$$ for $$f \in \mathbf{F}$$
+> * $$w(R) := \operatorname{ar}(R) - 1$$ for $$R \in \mathbf{R}$$
+> * $$w(c) := -1$$ for $$c \in \mathbf{C}$$, and $$w(x_i) := -1$$ for variables
+> * $$w(=) := 1$$
+> * $$w(\neg) := 0$$, and $$w(\land) = w(\lor) = w(\rightarrow) = w(\leftrightarrow) := 1$$
+> * $$w(\forall) = w(\exists) := 1$$
+> 
+> The cumulative weight of a string is $$\hat{w}(\varepsilon) := 0$$ and $$\hat{w}(\sigma s) := \hat{w}(\sigma) + w(s)$$. A string $$t$$ is a term if and only if $$\hat{w}(t) = -1$$ and every proper initial segment has weight $$\ge 0$$. This guarantees that prefix notation is uniquely readable without parentheses.
+
+---
+
+<h4 id="def-abbreviations">Abbreviation Conventions</h4>
+
+> **Definition:** For ease of reading, standard infix abbreviations are adopted:
+> 1. $$\varphi(\bar{x})$$ abbreviates $$\varphi(x_1, \dots, x_n)$$.
+> 2. Bounded universal quantification: $$\forall R(\bar{x}) \ \varphi := \forall \bar{x} (R(\bar{x}) \rightarrow \varphi)$$.
+> 3. Bounded existential quantification: $$\exists R(\bar{x}) \ \varphi := \exists \bar{x} (R(\bar{x}) \land \varphi)$$.
+> 4. Unique existence: $$\exists! x \ \varphi(x) := \exists x (\varphi(x) \land \forall y (\varphi(y) \rightarrow x = y))$$.
+
+---
+
+<h4 id="def-functional-formula">Functional Formula</h4>
+
+> **Definition:** A first-order formula $$\varphi(\bar{x}, y)$$ is *functional* in $$y$$ if:
+> $$
+> \forall \bar{x} \exists! y \ \varphi(\bar{x}, y)
+> $$
+
+---
+
+### Tarskian Semantics & Canonical Models
+
+<h4 id="def-structure">Structure & Universe</h4>
+
+> **Definition:** A *structure* $$\mathfrak{A}$$ over signature $$\sigma = (\mathbf{F}, \mathbf{R}, \mathbf{C}, \operatorname{ar})$$ is a pair $$(A, \cdot^\mathfrak{A})$$, where $$A \ne \emptyset$$ is a set called the *universe* (denoted $$\vert \mathfrak{A} \vert$$), and $$\cdot^\mathfrak{A}$$ is an interpretation function mapping:
+> 1. Each $$n$$-ary $$f \in \mathbf{F}$$ to a function $$f^\mathfrak{A} \colon A^n \longrightarrow A$$.
+> 2. Each $$n$$-ary $$R \in \mathbf{R}$$ to a relation $$R^\mathfrak{A} \subseteq A^n$$.
+> 3. Each constant $$c \in \mathbf{C}$$ to an element $$c^\mathfrak{A} \in A$$.
+
+---
+
+<h4 id="def-variable-assignment">Variable Assignment</h4>
+
+> **Definition:** A *variable assignment* in a structure $$\mathfrak{A}$$ is a function $$s \colon \mathbf{Var} \longrightarrow \vert \mathfrak{A} \vert$$.
+
+---
+
+<h4 id="def-term-valuation">Term Valuation Function (s̄)</h4>
+
+> **Definition:** The *valuation function* $$\bar{s} \colon \mathbf{Trm}(\sigma) \longrightarrow \vert \mathfrak{A} \vert$$ corresponding to assignment $$s$$ is defined recursively:
+> 1. $$\bar{s}(x_i) := s(x_i)$$ for variables.
+> 2. $$\bar{s}(c) := c^\mathfrak{A}$$ for constants.
+> 3. $$\bar{s}(f t_1 \dots t_n) := f^\mathfrak{A}(\bar{s}(t_1), \dots, \bar{s}(t_n))$$.
+
+---
+
+<h4 id="def-modified-assignment">Modified Assignment</h4>
+
+> **Definition:** For an assignment $$s$$, variable $$x$$, and element $$t \in \vert \mathfrak{A} \vert$$, the *modified assignment* $$s_{x \mapsto t}$$ is defined by:
+> $$
+> s_{x \mapsto t}(y) := \begin{cases} s(y) & \text{if } y \ne x, \\ t & \text{if } y = x. \end{cases}
+> $$
+
+---
+
+<h4 id="def-satisfaction">Tarskian Satisfaction Relation (⊨)</h4>
+
+> **Definition:** The *satisfaction relation* $$\mathfrak{A} \models \varphi[s]$$, stating that assignment $$s$$ satisfies formula $$\varphi$$ in structure $$\mathfrak{A}$$, is defined recursively:
+> 1. $$\mathfrak{A} \models R t_1 \dots t_n[s] \iff (\bar{s}(t_1), \dots, \bar{s}(t_n)) \in R^\mathfrak{A}$$
+> 2. $$\mathfrak{A} \models {= t_1 t_2}[s] \iff \bar{s}(t_1) = \bar{s}(t_2)$$
+> 3. $$\mathfrak{A} \models \neg \psi[s] \iff \mathfrak{A} \not\models \psi[s]$$
+> 4. $$\mathfrak{A} \models (\psi \land \xi)[s] \iff \mathfrak{A} \models \psi[s] \land \mathfrak{A} \models \xi[s]$$
+> 5. $$\mathfrak{A} \models (\psi \lor \xi)[s] \iff \mathfrak{A} \models \psi[s] \lor \mathfrak{A} \models \xi[s]$$
+> 6. $$\mathfrak{A} \models (\psi \rightarrow \xi)[s] \iff \mathfrak{A} \not\models \psi[s] \lor \mathfrak{A} \models \xi[s]$$
+> 7. $$\mathfrak{A} \models (\psi \leftrightarrow \xi)[s] \iff (\mathfrak{A} \models \psi[s] \iff \mathfrak{A} \models \xi[s])$$
+> 8. $$\mathfrak{A} \models \forall x \psi[s] \iff \forall t \in \vert \mathfrak{A} \vert \ \mathfrak{A} \models \psi[s_{x \mapsto t}]$$
+> 9. $$\mathfrak{A} \models \exists x \psi[s] \iff \exists t \in \vert \mathfrak{A} \vert \ \mathfrak{A} \models \psi[s_{x \mapsto t}]$$
+
+---
+
+<h4 id="def-fol-entailment">First-Order Entailment</h4>
+
+> **Definition:** A set of first-order formulae $$\Sigma$$ *entails* $$\varphi$$, written $$\Sigma \models \varphi$$, if for every structure $$\mathfrak{A}$$ and assignment $$s$$, whenever $$\mathfrak{A} \models \psi[s]$$ for all $$\psi \in \Sigma$$, we have $$\mathfrak{A} \models \varphi[s]$$.
+
+---
+
+<h4 id="def-term-verifier">Canonical Term Structure (Γ-Verifier)</h4>
+
+> **Definition:** Let $$\Delta$$ be a maximal consistent set of formulae containing Henkin witness constants. The *canonical term structure* (or $$\Gamma$$-verifier) $$\mathfrak{A}$$ has universe $$\vert \mathfrak{A} \vert := \mathbf{Trm}(\mathscr{L} \cup \{c_n\})$$, with functions and relations defined purely syntactically:
+> 1. $$f^\mathfrak{A}(t_1, \dots, t_n) := f t_1 \dots t_n$$
+> 2. $$R^\mathfrak{A}(t_1, \dots, t_n) \iff R t_1 \dots t_n \in \Delta$$
+> 3. $$E^\mathfrak{A}(t_1, t_2) \iff {= t_1 t_2} \in \Delta$$
+
+---
+
+<h4 id="def-quotient-model">Quotient Model (Γ-Model)</h4>
+
+> **Definition:** The *canonical quotient model* $$\mathfrak{A}' := \mathfrak{A} / E^\mathfrak{A}$$ is obtained by collapsing syntactically provable equalities into equivalence classes $$[t]$$:
+> 1. $$f^{\mathfrak{A}'}([t_1], \dots, [t_n]) := [f t_1 \dots t_n]$$
+> 2. $$R^{\mathfrak{A}'}([t_1], \dots, [t_n]) \iff R t_1 \dots t_n \in \Delta$$
+> 
+> Under this construction, $$\mathfrak{A}' \models \phi \iff \phi \in \Delta$$.
 
 ---
 

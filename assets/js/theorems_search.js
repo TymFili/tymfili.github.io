@@ -500,6 +500,144 @@
     "url": "/definitions/#def-fixed-point"
   },
   {
+    "id": "def-def-proof-system",
+    "title": "Proof System",
+    "section": "Definitions",
+    "url": "/definitions/#def-proof-system"
+  },
+  {
+    "id": "def-def-formal-proof",
+    "title": "Formal Proof, Derivability (\u22a2), and Theorems",
+    "section": "Definitions",
+    "url": "/definitions/#def-formal-proof"
+  },
+  {
+    "id": "def-def-modus-ponens",
+    "title": "Modus Ponens",
+    "section": "Definitions",
+    "url": "/definitions/#def-modus-ponens"
+  },
+  {
+    "id": "def-def-tautology-system",
+    "title": "Tautology System",
+    "section": "Definitions",
+    "url": "/definitions/#def-tautology-system"
+  },
+  {
+    "id": "def-def-hilbert-system",
+    "title": "Hilbert System",
+    "section": "Definitions",
+    "url": "/definitions/#def-hilbert-system"
+  },
+  {
+    "id": "def-def-consistency",
+    "title": "Consistency & Inconsistency",
+    "section": "Definitions",
+    "url": "/definitions/#def-consistency"
+  },
+  {
+    "id": "def-def-soundness-completeness",
+    "title": "Soundness & Completeness of Proof Systems",
+    "section": "Definitions",
+    "url": "/definitions/#def-soundness-completeness"
+  },
+  {
+    "id": "def-def-proof-tree",
+    "title": "Proof Trees & Natural Deduction",
+    "section": "Definitions",
+    "url": "/definitions/#def-proof-tree"
+  },
+  {
+    "id": "def-def-signature",
+    "title": "Signature",
+    "section": "Definitions",
+    "url": "/definitions/#def-signature"
+  },
+  {
+    "id": "def-def-fol-alphabet",
+    "title": "Alphabet of First-Order Logic",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-alphabet"
+  },
+  {
+    "id": "def-def-terms",
+    "title": "Terms (Trm)",
+    "section": "Definitions",
+    "url": "/definitions/#def-terms"
+  },
+  {
+    "id": "def-def-fol-formulae",
+    "title": "Formulae (AtFrm and Frm)",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-formulae"
+  },
+  {
+    "id": "def-def-symbol-weight",
+    "title": "Symbol Weight & Unique Readability",
+    "section": "Definitions",
+    "url": "/definitions/#def-symbol-weight"
+  },
+  {
+    "id": "def-def-abbreviations",
+    "title": "Abbreviation Conventions",
+    "section": "Definitions",
+    "url": "/definitions/#def-abbreviations"
+  },
+  {
+    "id": "def-def-functional-formula",
+    "title": "Functional Formula",
+    "section": "Definitions",
+    "url": "/definitions/#def-functional-formula"
+  },
+  {
+    "id": "def-def-structure",
+    "title": "Structure & Universe",
+    "section": "Definitions",
+    "url": "/definitions/#def-structure"
+  },
+  {
+    "id": "def-def-variable-assignment",
+    "title": "Variable Assignment",
+    "section": "Definitions",
+    "url": "/definitions/#def-variable-assignment"
+  },
+  {
+    "id": "def-def-term-valuation",
+    "title": "Term Valuation Function (s\u0304)",
+    "section": "Definitions",
+    "url": "/definitions/#def-term-valuation"
+  },
+  {
+    "id": "def-def-modified-assignment",
+    "title": "Modified Assignment",
+    "section": "Definitions",
+    "url": "/definitions/#def-modified-assignment"
+  },
+  {
+    "id": "def-def-satisfaction",
+    "title": "Tarskian Satisfaction Relation (\u22a8)",
+    "section": "Definitions",
+    "url": "/definitions/#def-satisfaction"
+  },
+  {
+    "id": "def-def-fol-entailment",
+    "title": "First-Order Entailment",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-entailment"
+  },
+  {
+    "id": "def-def-term-verifier",
+    "title": "Canonical Term Structure (\u0393-Verifier)",
+    "section": "Definitions",
+    "url": "/definitions/#def-term-verifier"
+  },
+  {
+    "id": "def-def-quotient-model",
+    "title": "Quotient Model (\u0393-Model)",
+    "section": "Definitions",
+    "url": "/definitions/#def-quotient-model"
+  },
+  {
     "id": "def-def-alphabet",
     "title": "Alphabet",
     "section": "Definitions",
@@ -566,7 +704,6 @@
     if (!ninja) return;
 
     if (Array.isArray(ninja.data)) {
-      // Prevent duplicate injection
       if (!ninja.data.some(item => item.id && item.id.startsWith('thm-'))) {
         const formatted = customItems.map(item => ({
           id: item.id,
@@ -579,7 +716,6 @@
         ninja.data = [...ninja.data, ...formatted];
       }
     } else {
-      // Poll until ninja-keys has finished initializing its default array
       setTimeout(injectSearchItems, 100);
     }
   }
