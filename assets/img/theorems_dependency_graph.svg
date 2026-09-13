@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 480" width="100%" height="100%" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#4a5568" />
+    </marker>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="1050" height="480" fill="#f8faf9" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Legend -->
+  <g transform="translate(30, 20)" font-size="12" font-weight="600">
+    <rect x="0" y="0" width="14" height="14" rx="3" fill="#ebfbee" stroke="#2b8a3e"/>
+    <text x="20" y="12" fill="#2b8a3e">Lattices &amp; Fixed Points</text>
+
+    <rect x="180" y="0" width="14" height="14" rx="3" fill="#e7f5ff" stroke="#1971c2"/>
+    <text x="200" y="12" fill="#1971c2">Logic &amp; Metatheory</text>
+
+    <rect x="340" y="0" width="14" height="14" rx="3" fill="#f3e8ff" stroke="#7e22ce"/>
+    <text x="360" y="12" fill="#7e22ce">Set Theory &amp; Cardinality</text>
+
+    <rect x="520" y="0" width="14" height="14" rx="3" fill="#fce7f3" stroke="#be185d"/>
+    <text x="540" y="12" fill="#be185d">The Choice Cycle</text>
+
+    <rect x="670" y="0" width="14" height="14" rx="3" fill="#fff9db" stroke="#f08c00"/>
+    <text x="690" y="12" fill="#d9480f">Analysis &amp; Computation</text>
+  </g>
+
+  <!-- NODES -->
+  <!-- Knaster-Tarski -->
+  <g transform="translate(30, 70)" filter="url(#card-shadow)">
+    <rect width="160" height="44" rx="6" fill="#ebfbee" stroke="#2b8a3e" stroke-width="1.5"/>
+    <text x="80" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#2b8a3e">Knaster–Tarski Thm</text>
+  </g>
+
+  <!-- General Induction -->
+  <g transform="translate(30, 160)" filter="url(#card-shadow)">
+    <rect width="160" height="44" rx="6" fill="#ebfbee" stroke="#2b8a3e" stroke-width="1.5"/>
+    <text x="80" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#2b8a3e">General Induction</text>
+  </g>
+
+  <!-- Schroder-Bernstein -->
+  <g transform="translate(240, 70)" filter="url(#card-shadow)">
+    <rect width="180" height="44" rx="6" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="90" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#7e22ce">Schröder–Bernstein Thm</text>
+  </g>
+
+  <!-- Cantor's Theorem -->
+  <g transform="translate(240, 160)" filter="url(#card-shadow)">
+    <rect width="180" height="44" rx="6" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="90" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#7e22ce">Cantor’s Theorem</text>
+  </g>
+
+  <!-- R ~ P(N) -->
+  <g transform="translate(470, 115)" filter="url(#card-shadow)">
+    <rect width="140" height="44" rx="6" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="70" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#7e22ce">ℝ ~ 𝒫(ℕ) = 𝔠</text>
+  </g>
+
+  <!-- Continuum Hypothesis -->
+  <g transform="translate(470, 200)" filter="url(#card-shadow)">
+    <rect width="140" height="44" rx="6" fill="#f3e8ff" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="70" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#7e22ce">Continuum Hyp. (CH)</text>
+  </g>
+
+  <!-- Deduction Theorem -->
+  <g transform="translate(660, 70)" filter="url(#card-shadow)">
+    <rect width="160" height="44" rx="6" fill="#e7f5ff" stroke="#1971c2" stroke-width="1.5"/>
+    <text x="80" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#1971c2">Deduction Theorem</text>
+  </g>
+
+  <!-- Compactness -->
+  <g transform="translate(860, 70)" filter="url(#card-shadow)">
+    <rect width="160" height="44" rx="6" fill="#e7f5ff" stroke="#1971c2" stroke-width="1.5"/>
+    <text x="80" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#1971c2">Compactness Thm</text>
+  </g>
+
+  <!-- Henkin & Lindenbaum -->
+  <g transform="translate(660, 160)" filter="url(#card-shadow)">
+    <rect width="160" height="44" rx="6" fill="#e7f5ff" stroke="#1971c2" stroke-width="1.5"/>
+    <text x="80" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#1971c2">Henkin Constants</text>
+  </g>
+
+  <g transform="translate(860, 160)" filter="url(#card-shadow)">
+    <rect width="160" height="44" rx="6" fill="#e7f5ff" stroke="#1971c2" stroke-width="1.5"/>
+    <text x="80" y="27" text-anchor="middle" font-size="13" font-weight="700" fill="#1971c2">Lindenbaum Lemma</text>
+  </g>
+
+  <!-- Godel Completeness -->
+  <g transform="translate(760, 245)" filter="url(#card-shadow)">
+    <rect width="160" height="44" rx="6" fill="#e7f5ff" stroke="#1971c2" stroke-width="2"/>
+    <text x="80" y="27" text-anchor="middle" font-size="13" font-weight="800" fill="#0d47a1">Gödel Completeness</text>
+  </g>
+
+  <!-- Choice Cycle -->
+  <g transform="translate(30, 310)" filter="url(#card-shadow)">
+    <rect width="140" height="40" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+    <text x="70" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#be185d">Axiom of Choice</text>
+  </g>
+
+  <g transform="translate(210, 310)" filter="url(#card-shadow)">
+    <rect width="150" height="40" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#be185d">Hausdorff Maximal (HP)</text>
+  </g>
+
+  <g transform="translate(400, 310)" filter="url(#card-shadow)">
+    <rect width="130" height="40" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+    <text x="65" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#be185d">Zorn’s Lemma (ZL)</text>
+  </g>
+
+  <g transform="translate(570, 310)" filter="url(#card-shadow)">
+    <rect width="150" height="40" rx="6" fill="#fce7f3" stroke="#be185d" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#be185d">Well-Ordering (WO)</text>
+  </g>
+
+  <!-- Analysis & Computation -->
+  <g transform="translate(30, 400)" filter="url(#card-shadow)">
+    <rect width="150" height="40" rx="6" fill="#fff9db" stroke="#f08c00" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#d9480f">Archimedean Prop.</text>
+  </g>
+
+  <g transform="translate(220, 400)" filter="url(#card-shadow)">
+    <rect width="150" height="40" rx="6" fill="#fff9db" stroke="#f08c00" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#d9480f">Density of ℚ in ℝ</text>
+  </g>
+
+  <g transform="translate(410, 400)" filter="url(#card-shadow)">
+    <rect width="150" height="40" rx="6" fill="#fff9db" stroke="#f08c00" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#d9480f">Dovetailing Enum.</text>
+  </g>
+
+  <g transform="translate(600, 400)" filter="url(#card-shadow)">
+    <rect width="150" height="40" rx="6" fill="#fff9db" stroke="#f08c00" stroke-width="1.5"/>
+    <text x="75" y="25" text-anchor="middle" font-size="12" font-weight="700" fill="#d9480f">Kleene’s Post Thm</text>
+  </g>
+
+  <!-- EDGES / ARROWS -->
+  <!-- KT -> GI & SB -->
+  <line x1="110" y1="114" x2="110" y2="152" stroke="#2b8a3e" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="190" y1="92" x2="232" y2="92" stroke="#2b8a3e" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- SB & Cantor -> R ~ P(N) -->
+  <line x1="420" y1="92" x2="462" y2="125" stroke="#7e22ce" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="420" y1="182" x2="462" y2="148" stroke="#7e22ce" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="540" y1="159" x2="540" y2="192" stroke="#7e22ce" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Logic chain -->
+  <line x1="740" y1="204" x2="810" y2="238" stroke="#1971c2" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="940" y1="204" x2="870" y2="238" stroke="#1971c2" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Choice cycle arrows -->
+  <line x1="170" y1="330" x2="202" y2="330" stroke="#be185d" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="360" y1="330" x2="392" y2="330" stroke="#be185d" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="530" y1="330" x2="562" y2="330" stroke="#be185d" stroke-width="1.5" marker-end="url(#arr)"/>
+  <path d="M 645 350 C 645 385, 100 385, 100 358" fill="none" stroke="#be185d" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+  <!-- Analysis & Comp arrows -->
+  <line x1="180" y1="420" x2="212" y2="420" stroke="#f08c00" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="560" y1="420" x2="592" y2="420" stroke="#f08c00" stroke-width="1.5" marker-end="url(#arr)"/>
+</svg>
