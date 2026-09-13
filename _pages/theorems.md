@@ -10,16 +10,145 @@ nav_order: 3
 Welcome to the central reference library of proofs. This section maintains the complete, modular proofs for theorems cited across the blog and lecture notes.
 
 ### Table of Contents
+* **Lattices & Fixed Points:**
+  * [The Knaster–Tarski Fixed-Point Theorem](#knaster-tarski)
+  * [The General Induction Principle](#general-induction)
+* **Formal Languages & Propositional Logic:**
+  * [Principle of Induction on Strings](#induction-strings)
+  * [Principle of Induction on Formulae](#induction-formulas)
+  * [Finiteness of Variable Occurrences](#finiteness-variables)
+* **Proof Theory:**
+  * [The Propositional Deduction Theorem](#deduction-theorem)
+  * [Ex Falso Quodlibet](#ex-falso)
+  * [Deduction in the Tautology System](#tautology-system)
 * **Set Theory & Cardinality:**
   * [The Schröder–Bernstein Theorem](#schroder-bernstein)
   * [Cantor's Theorem on the Power Set](#cantors-theorem)
   * [Hessenberg's Theorem on Cardinal Arithmetic](#hessenbergs-theorem)
-  * [Equinumerosity of the Reals and the Power Set of Naturals](#reals-and-power-set)
+  * [Equinumerosity of ℝ and 𝒫(ℕ)](#reals-and-power-set)
   * [The Dimension Paradox: ℝ ~ ℝ²](#real-plane-dimension)
   * [Scale Invariance: (0, 1) ~ ℝ](#real-interval-bijection)
 * **Real Analysis:**
   * [The Archimedean Property of ℝ](#archimedean-property)
   * [The Density of ℚ in ℝ](#density-of-rationals)
+
+---
+
+### Lattices & Fixed Points
+
+<h4 id="knaster-tarski">The Knaster–Tarski Fixed-Point Theorem</h4>
+
+> **Theorem:** Let $$(L, \land, \lor)$$ be a complete lattice and $$f \colon L \longrightarrow L$$ be monotone. Then $$f$$ has a least fixed point $$\mu f$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/knaster_tarski.md %}
+
+</details>
+
+---
+
+<h4 id="general-induction">The General Induction Principle</h4>
+
+> **Theorem:** Let $$X$$ be a set and $$F \colon \mathcal{P}(X) \longrightarrow \mathcal{P}(X)$$ be monotone. Let $$S^* := \mu F$$ be its least fixed point. Then for any $$T \subseteq X$$, $$F(T) \subseteq T \implies S^* \subseteq T$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/general_induction.md %}
+
+</details>
+
+---
+
+### Formal Languages & Propositional Logic
+
+<h4 id="induction-strings">Principle of Induction on Strings</h4>
+
+> **Theorem:** Let $$\Pi$$ be a property of strings over $$\Sigma$$ such that:
+> 1. $$\Pi$$ holds for $$\varepsilon$$.
+> 2. If $$\Pi$$ holds for $$\sigma$$, then for any $$s \in \Sigma$$, $$\Pi$$ holds for $$\sigma s$$.
+> 
+> Then $$\Pi$$ holds for all strings over $$\Sigma^*$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/induction_on_strings.md %}
+
+</details>
+
+---
+
+<h4 id="induction-formulas">Principle of Induction on Propositional Formulae</h4>
+
+> **Theorem:** Let $$\Pi$$ be a property of propositional formulae such that:
+> 1. $$\Pi$$ holds for all variables.
+> 2. If $$\Pi$$ holds for $$\varphi_1, \dots, \varphi_n$$, then $$\Pi$$ holds for $$c_k^n(\varphi_1, \dots, \varphi_n)$$ for any connective $$c_k^n$$.
+> 
+> Then $$\Pi$$ holds for all propositional formulae in $$\textbf{Frm}$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/induction_on_formulas.md %}
+
+</details>
+
+---
+
+<h4 id="finiteness-variables">Finiteness of Variable Occurrences</h4>
+
+> **Theorem:** For every formula $$\varphi \in \textbf{Frm}$$, the set of variables $$V(\varphi)$$ occurring in $$\varphi$$ is finite.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/finiteness_variable_occurrences.md %}
+
+</details>
+
+---
+
+### Proof Theory
+
+<h4 id="deduction-theorem">The Propositional Deduction Theorem</h4>
+
+> **Theorem:** $$\Gamma \cup \{\phi\} \vdash \psi \iff \Gamma \vdash \phi \rightarrow \psi$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/deduction_theorem.md %}
+
+</details>
+
+---
+
+<h4 id="ex-falso">Ex Falso Quodlibet</h4>
+
+> **Theorem:** $$\{\phi, \neg \phi\} \vdash \psi$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/ex_falso_quodlibet.md %}
+
+</details>
+
+---
+
+<h4 id="tautology-system">Deduction in the Tautology System</h4>
+
+> **Theorem:** $$\{\phi, \psi, (\phi \land \psi) \rightarrow \xi\} \vdash \xi$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/tautology_system_example.md %}
+
+</details>
 
 ---
 
@@ -40,7 +169,7 @@ Welcome to the central reference library of proofs. This section maintains the c
 
 <h4 id="cantors-theorem">Cantor's Theorem</h4>
 
-> **Theorem:** For any set $$A$$, there exists no surjection $$f \colon A \longrightarrow \mathcal{P}(A)$$.
+> **Theorem:** For any set $$A$$, $$\vert A \vert < \vert \mathcal{P}(A) \vert$$.
 
 <details class="border rounded p-3 my-3" markdown="1" open>
 <summary style="cursor: pointer;"><b>Proof</b></summary>
