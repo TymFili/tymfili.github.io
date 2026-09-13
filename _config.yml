@@ -26,6 +26,7 @@ footer_text: >
       bottom: 55px !important;
       z-index: 1050 !important;
   </style>
+  <script src="/assets/js/theorems_search.js" defer></script>
 
 keywords: theoretical computer science, discrete math, algorithms, complexity theory, teaching, lecture notes
 
