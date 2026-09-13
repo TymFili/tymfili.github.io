@@ -2,23 +2,12 @@
 layout: page
 title: Theorems & Proofs
 permalink: /theorems/
-description: A curated reference library and dependency graph of formal mathematical proofs.
+description: A curated reference library of formal mathematical proofs.
 nav: true
 nav_order: 3
 ---
 
-Welcome to the central reference library of proofs. This archive maintains the complete, rigorous proofs for theorems cited across the blog and lecture notes, complete with cross-references and an architectural dependency graph.
-
----
-
-### Theorem Dependency Graph
-
-The vector diagram below visualises the deductive structure across logic, lattices, set theory, and analysis:
-
-<div class="text-center my-4">
-  <img src="{{ '/assets/img/theorems_dependency_graph.svg' | relative_url }}" class="img-fluid rounded border shadow-sm" style="max-width: 100%; height: auto;" alt="Theorem Dependency Graph">
-  <p class="text-muted mt-2 small"><em>Figure: Deductive dependency graph across the foundational branches.</em></p>
-</div>
+Welcome to the central reference library of proofs. This archive maintains complete, modular proofs for theorems cited across the blog and lecture notes.
 
 ---
 
@@ -60,8 +49,7 @@ The vector diagram below visualises the deductive structure across logic, lattic
   * [Zermelo's Well-Ordering Theorem](#well-ordering-theorem)
   * [Equivalence: WO implies AC](#wo-implies-ac)
 * **Cardinality & The Continuum:**
-  * [The Schröder–Bernstein Theorem (Proof 1: König 1906)](#schroder-bernstein)
-  * [The Schröder–Bernstein Theorem (Proof 2: Knaster–Tarski)](#schroder-bernstein-tarski)
+  * [The Schröder–Bernstein Theorem](#schroder-bernstein)
   * [Cantor's Theorem on the Power Set](#cantors-theorem)
   * [Hessenberg's Theorem on Cardinal Arithmetic](#hessenbergs-theorem)
   * [Existence of Cardinal Numbers](#cardinal-existence)
@@ -84,12 +72,16 @@ The vector diagram below visualises the deductive structure across logic, lattic
 
 > **Theorem:** Let $$(L, \land, \lor)$$ be a complete lattice and $$f \colon L \longrightarrow L$$ be monotone. Then $$f$$ has a least fixed point $$\mu f$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$A := \{x \in L \mid f(x) \le x\}$$ and $$a := \inf A$$. Pick any $$x \in A$$, then $$a \le x$$, so $$f(a) \le f(x) \le x$$ and thus $$f(a) \le \inf A = a$$, showing that $$a \in A$$ and $$f(a) \in A$$. 
 
 Since $$f(a) \in A$$, we get that $$a \le f(a)$$, so $$f(a) = a$$. Let $$b$$ be a fixed point of $$f$$, then $$f(b) \le b$$, so $$b \in A$$ and thus $$a \le b$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
 
 ---
 
@@ -97,12 +89,16 @@ Since $$f(a) \in A$$, we get that $$a \le f(a)$$, so $$f(a) = a$$. Let $$b$$ be 
 
 > **Theorem:** Let $$X$$ be a set and $$F \colon \mathcal{P}(X) \longrightarrow \mathcal{P}(X)$$ be monotone. Let $$S^* := \mu F$$ be its least fixed point. Then for any $$T \subseteq X$$, $$F(T) \subseteq T \implies S^* \subseteq T$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 By the [Knaster–Tarski Theorem](#knaster-tarski), $$S^* = \inf \{S \subseteq X \mid F(S) \subseteq S\} = \bigcap \{S \subseteq X \mid F(S) \subseteq S\}$$. 
 
 If $$F(T) \subseteq T$$, then $$T$$ is one of the sets in this intersection, so $$S^* \subseteq T$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
 
 ---
 
@@ -116,12 +112,16 @@ If $$F(T) \subseteq T$$, then $$T$$ is one of the sets in this intersection, so 
 > 
 > Then $$\Pi$$ holds for all strings over $$\Sigma^*$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$S$$ be the set of strings over $$\Sigma$$ for which $$\Pi$$ holds. Then $$S$$ satisfies the inductive conditions defining $$\Sigma^*$$. 
 
 Since $$\Sigma^*$$ is the smallest set satisfying these conditions, we must have $$\Sigma^* \subseteq S$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
 
 ---
 
@@ -133,7 +133,9 @@ Since $$\Sigma^*$$ is the smallest set satisfying these conditions, we must have
 > 
 > Then $$\Pi$$ holds for all propositional formulae in $$\textbf{Frm}$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$\mathscr{C} \subseteq \textbf{Frm}$$ be the set of formulae for which $$\Pi$$ holds. 
 
 Condition 1 gives $$\mathbf{Var} \subseteq \mathscr{C}$$. If $$\varphi_1, \dots, \varphi_n \in \mathscr{C}$$ and $$c_k^n$$ is an $$n$$-ary connective, condition 2 gives $$c_k^n(\varphi_1, \dots, \varphi_n) \in \mathscr{C}$$. 
@@ -142,13 +144,17 @@ Thus $$\mathscr{C}$$ satisfies the conditions defining $$\textbf{Frm}$$, and bec
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="finiteness-variables">Finiteness of Variable Occurrences</h4>
 
 > **Theorem:** For every formula $$\varphi \in \textbf{Frm}$$, the set of variables $$V(\varphi)$$ occurring in $$\varphi$$ is finite.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 We proceed by induction on the structure of propositional formulae.
 
 * **Base Case:** Let $$\varphi$$ be a variable $$p$$. Then $$V(p) = \{p\}$$. Since a singleton set is finite, the property holds.
@@ -160,6 +166,8 @@ We proceed by induction on the structure of propositional formulae.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 ### Proof Theory
@@ -168,12 +176,16 @@ We proceed by induction on the structure of propositional formulae.
 
 > **Theorem:** $$\Gamma \cup \{\phi\} \vdash \psi \iff \Gamma \vdash \phi \rightarrow \psi$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 ($$\implies$$) Let $$\Pi$$ be a proof tree of $$\psi$$ from $$\Gamma \cup \{\phi\}$$. By applying the $$\rightarrow I$$ rule, we obtain a proof tree of $$\phi \rightarrow \psi$$ where the assumption $$\phi$$ is discharged. The remaining open assumptions are in $$\Gamma$$.
 
 ($$\impliedby$$) Let $$\Pi$$ be a proof tree of $$\phi \rightarrow \psi$$ from $$\Gamma$$. By extending this tree with an open assumption $$\phi$$ and applying $$\rightarrow E$$, we obtain a proof tree of $$\psi$$ with open assumptions in $$\Gamma \cup \{\phi\}$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
 
 ---
 
@@ -181,7 +193,9 @@ We proceed by induction on the structure of propositional formulae.
 
 > **Theorem:** $$\{\phi, \neg \phi\} \vdash \psi$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 We show that $$\{\phi, \neg \phi\} \vdash \psi$$:
 
 1. $$\phi \rightarrow \neg \phi \rightarrow \psi$$ (Axiom: Tautology)
@@ -192,13 +206,17 @@ We show that $$\{\phi, \neg \phi\} \vdash \psi$$:
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="tautology-system">Deduction in the Tautology System</h4>
 
 > **Theorem:** $$\{\phi, \psi, (\phi \land \psi) \rightarrow \xi\} \vdash \xi$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 We show that $$\{\phi, \psi, (\phi \land \psi) \rightarrow \xi\} \vdash \xi$$ via Modus Ponens:
 
 1. $$\phi \rightarrow \psi \rightarrow (\phi \land \psi)$$ (Axiom: Tautology)
@@ -211,6 +229,8 @@ We show that $$\{\phi, \psi, (\phi \land \psi) \rightarrow \xi\} \vdash \xi$$ vi
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 ### First-Order Semantics & Metatheory
@@ -219,7 +239,9 @@ We show that $$\{\phi, \psi, (\phi \land \psi) \rightarrow \xi\} \vdash \xi$$ vi
 
 > **Theorem:** Let $$\varphi$$ be a formula. If two variable assignments $$s$$ and $$r$$ agree on all free variables of $$\varphi$$, then $$\mathfrak{A} \models \varphi[s] \iff \mathfrak{A} \models \varphi[r]$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 We proceed by structural induction on the formula $$\varphi$$.
 
 * **Atomic Case ($$\varphi = R t_1 \dots t_n$$):**  
@@ -235,13 +257,17 @@ We proceed by structural induction on the formula $$\varphi$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="tautology-soundness">Soundness of the Tautology System</h4>
 
 > **Theorem:** In the tautology system, $$\Sigma \vdash \phi \implies \Sigma \models \phi$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$\varphi(n)$$ be the statement: *"The thesis holds for all proofs of length $$k \le n$$"*. We proceed by induction on $$n$$.
 
 * **Base Case:** $$\varphi(0)$$ holds vacuously.
@@ -249,13 +275,17 @@ Let $$\varphi(n)$$ be the statement: *"The thesis holds for all proofs of length
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="compactness-theorem">The Propositional Compactness Theorem</h4>
 
 > **Theorem:** A set of formulae $$\Sigma$$ is satisfiable if and only if it is finitely satisfiable.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 ($$\implies$$) Trivial, since any valuation satisfying $$\Sigma$$ satisfies all its finite subsets.
 
 ($$\impliedby$$) Let $$\phi_0, \phi_1, \dots$$ be an enumeration of all propositional formulae. Define:
@@ -268,13 +298,17 @@ For any propositional variable $$p$$, define $$\mathcal{I}(p) = \True \iff p \in
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="tautology-completeness">Completeness of the Tautology System</h4>
 
 > **Theorem:** In the tautology system, $$\Sigma \models \phi \implies \Sigma \vdash \phi$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 By the [Propositional Compactness Theorem](#compactness-theorem), $$\Sigma \models \phi$$ implies there exists a finite subset $$\Sigma_0 = \{\psi_0, \dots, \psi_n\} \subseteq \Sigma$$ such that:
 $$
 \Sigma_0 \models \phi
@@ -287,13 +321,17 @@ Because this formula is a semantic tautology, it is an axiom of the tautology sy
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="constant-extension">Consistency under Constant Extension</h4>
 
 > **Theorem:** Let $$\Gamma$$ be consistent over $$\mathscr{L}$$. If $$c_0, c_1, \dots \notin \mathscr{L}$$, then $$\Gamma$$ is consistent over $$\mathscr{L} \cup \{c_0, c_1, \dots\}$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Suppose for contradiction that $$\Gamma$$ is inconsistent over $$\mathscr{L} \cup \{c_0, c_1, \dots\}$$. 
 
 Then there exists a formal derivation of $$\bot$$. Because formal proofs are finite sequences, this derivation uses only a finite subset of the new constants $$\{c_{i_1}, \dots, c_{i_k}\}$$.
@@ -302,13 +340,17 @@ Replacing each constant $$c_{i_j}$$ throughout the proof with a distinct variabl
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="henkin-constants">The Henkin Witness Construction</h4>
 
 > **Theorem:** Any consistent set $$\Gamma$$ can be extended to a consistent set $$\Gamma \cup \{\neg \forall x \phi_n(x) \rightarrow \neg \phi_n(c_{k_n}) \mid n \in \mathbb{N}\}$$, where $$c_{k_n}$$ does not occur in any $$\phi_m$$ for $$m < n$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$\Gamma'_0 := \Gamma$$, and inductively define:
 $$
 \Gamma'_{n+1} := \Gamma'_n \cup \{\neg \forall x \phi_n(x) \rightarrow \neg \phi_n(c_{k_n})\}
@@ -325,13 +367,17 @@ By contraposition, each $$\Gamma'_n$$ is consistent. Let $$\Gamma' := \bigcup_{n
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="lindenbaum-lemma">Lindenbaum's Maximal Extension Lemma</h4>
 
 > **Theorem:** Every consistent set $$\Gamma$$ can be extended to a consistent set $$\Delta$$ such that for every formula $$\phi$$, either $$\phi \in \Delta$$ or $$\neg \phi \in \Delta$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$\phi_0, \phi_1, \dots$$ be an enumeration of all first-order formulae in the language. Define:
 $$
 \Delta_0 := \Gamma, \qquad \Delta_{n+1} := \begin{cases} \Delta_n \cup \{\phi_n\} & \text{if consistent}, \\ \Delta_n \cup \{\neg \phi_n\} & \text{otherwise}. \end{cases}
@@ -342,13 +388,17 @@ Let $$\Delta := \bigcup_{n \in \mathbb{N}} \Delta_n$$. Since any formal contradi
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="term-model-truth">The Fundamental Truth Lemma for Term Structures</h4>
 
 > **Theorem:** Let $$\mathfrak{A}$$ be a canonical term structure over maximal consistent Henkin set $$\Delta$$. Then $$\mathfrak{A} \models \phi^* \iff \phi \in \Delta$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 We proceed by structural induction on formulae. 
 
 For the quantifier step, let $$\phi = \forall x \psi(x)$$:
@@ -363,13 +413,17 @@ Since $$c_k \in \vert \mathfrak{A} \vert$$, this directly contradicts that $$\ps
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="godel-completeness">Gödel's Completeness Theorem</h4>
 
 > **Theorem:** If $$\Gamma$$ is consistent, then $$\Gamma$$ has a model. Consequently, $$\Gamma \models \phi \implies \Gamma \vdash \phi$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$\Gamma$$ be consistent. 
 
 By the [Henkin Witness Construction](#henkin-constants) and [Lindenbaum's Lemma](#lindenbaum-lemma), we extend $$\Gamma$$ to a complete consistent theory $$\Delta$$ containing witness constants. 
@@ -387,6 +441,8 @@ $$
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 ### Axiomatic Set Theory & Ordinals
@@ -395,7 +451,9 @@ $$
 
 > **Theorem:** Naive Set Theory is inconsistent and has no model.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Assume a model of Naive Set Theory exists. 
 
 By unrestricted comprehension, define the set:
@@ -410,18 +468,24 @@ which is a direct logical contradiction. Thus, $$\mathrm{NST} \models \bot$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="induction-omega">Principle of Induction on ω</h4>
 
 > **Theorem:** Let $$S \subseteq \omega$$. If $$0 \in S$$ and $$\forall n \ (n \in S \rightarrow n + 1 \in S)$$, then $$S = \omega$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 By hypothesis, $$0 \in S$$ and $$\forall n \ (n \in S \rightarrow n + 1 \in S)$$, so $$S$$ is an inductive set. 
 
 By the definition of $$\omega := \bigcap \{x \in \mathcal{P}(\mathcal{I}) \mid x \text{ is inductive}\}$$, we have $$\omega \subseteq S$$. Since $$S \subseteq \omega$$ by assumption, we conclude $$S = \omega$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
 
 ---
 
@@ -429,7 +493,9 @@ By the definition of $$\omega := \bigcap \{x \in \mathcal{P}(\mathcal{I}) \mid x
 
 > **Theorem:** Let $$(X, \le)$$ be a well-ordered set and let $$\Pi$$ be a property. If $$\Pi(a)$$ holds whenever $$\Pi(y)$$ holds for all $$y < a$$, then $$\Pi(x)$$ holds for all $$x \in X$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$S := \{x \in X \mid \neg \Pi(x)\}$$. 
 
 If $$S \neq \emptyset$$, let $$a := \min_\le S$$. Then for all $$y < a$$, we have $$y \notin S$$, so $$\Pi(y)$$ holds. 
@@ -438,13 +504,17 @@ By the inductive hypothesis, this implies that $$\Pi(a)$$ must hold, contradicti
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="woset-automorphism">Uniqueness of Order Automorphisms on Wosets</h4>
 
 > **Theorem:** Let $$(X, \le)$$ be a well-ordered set and $$f \colon X \longrightarrow X$$ an order automorphism. Then $$\forall x \in X \ x \le f(x)$$. Consequently, the only order automorphism of $$(X, \le)$$ is $$\operatorname{id}_X$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$S := \{x \in X \mid f(x) < x\}$$. If $$S \neq \emptyset$$, let $$s := \min_\le S$$. 
 
 Since $$f(s) < s$$, applying the order-preserving bijection $$f$$ yields $$f(f(s)) < f(s)$$, which contradicts the minimality of $$s$$ in $$S$$. Hence $$S = \emptyset$$, so $$\forall x \in X \ x \le f(x)$$.
@@ -453,13 +523,17 @@ If $$f$$ is an automorphism, its inverse $$f^{-1}$$ is also an automorphism. Thu
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="woset-initial-segment">Wosets and Initial Segments</h4>
 
 > **Theorem:** A well-ordered set $$(X, \le)$$ is never order-isomorphic to any of its proper initial segments $$X_a$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Suppose for contradiction that $$f \colon X \longrightarrow X_a$$ is an order isomorphism onto the proper initial segment $$X_a := \{x \in X \mid x < a\}$$.
 
 Then $$f(a) \in X_a$$, which means $$f(a) < a$$. 
@@ -467,6 +541,8 @@ Then $$f(a) \in X_a$$, which means $$f(a) < a$$.
 However, by the [Uniqueness of Order Automorphisms Theorem](#woset-automorphism), we have $$x \le f(x)$$ for all $$x \in X$$. In particular, $$a \le f(a)$$, a contradiction.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
 
 ---
 
@@ -477,7 +553,9 @@ However, by the [Uniqueness of Order Automorphisms Theorem](#woset-automorphism)
 > 2. $$\mathrm{X} \cong_{\operatorname{Ord}} \mathrm{Y}$$,
 > 3. $$\mathrm{Y} \sqsubset \mathrm{X}$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Define the relation:
 $$
 f := \{(x, y) \in X \times Y \mid \mathrm{X}_x \cong_{\operatorname{Ord}} \mathrm{Y}_y\}
@@ -495,13 +573,17 @@ contradicting $$x_0 \notin \operatorname{dom} f$$. Thus $$\operatorname{dom} f =
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="ordinal-subset-in">Strict Inclusion and Membership of Ordinals</h4>
 
 > **Theorem:** Let $$\alpha, \beta$$ be ordinals. Then $$\alpha \subset \beta \implies \alpha \in \beta$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$\gamma := \min(\beta \setminus \alpha)$$. Then $$\gamma \subseteq \alpha$$. 
 
 Pick any $$\delta \in \alpha$$. By totality of ordinals, either $$\gamma \le \delta$$ or $$\delta < \gamma$$. If $$\gamma \le \delta$$, then $$\gamma \in \delta \lor \gamma = \delta$$. Since $$\alpha$$ is transitive, both imply $$\gamma \in \alpha$$, contradicting that $$\gamma \in \beta \setminus \alpha$$.
@@ -510,13 +592,17 @@ Therefore $$\delta \in \gamma$$ for all $$\delta \in \alpha$$, which gives $$\al
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="burali-forti">Extended Burali-Forti Theorem</h4>
 
 > **Theorem:** Let $$A$$ be a subclass of $$\mathbf{Ord}$$ that is unbounded in $$\mathbf{Ord}$$. Then $$A$$ is a proper class (not a set).
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Suppose for contradiction that $$A$$ is a set. 
 
 Then by the properties of ordinals, $$\sup A$$ exists and is an ordinal, so $$\sup A + 1 \in \mathbf{Ord}$$. 
@@ -525,13 +611,17 @@ Since $$A$$ is unbounded in $$\mathbf{Ord}$$, there exists some $$a \in A$$ such
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="woset-to-ordinal">Isomorphism of Well-Orderings to Unique Ordinals</h4>
 
 > **Theorem:** Let $$(X, \le)$$ be a well-ordered set. Then there exists a unique ordinal number $$\alpha$$ such that $$(X, \le) \cong_{\operatorname{Ord}} (\alpha, \in)$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Uniqueness follows from [Uniqueness of Order Automorphisms](#woset-automorphism).
 
 Given a well-ordered set $$X$$, define the class function:
@@ -546,6 +636,8 @@ Let $$\gamma := \min(\mathbf{Ord} \setminus F(X))$$, which exists by the well-fo
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 ### The Axiom of Choice Cycle
@@ -554,7 +646,9 @@ Let $$\gamma := \min(\mathbf{Ord} \setminus F(X))$$, which exists by the well-fo
 
 > **Theorem (Hausdorff):** Let $$(X, \le)$$ be a partially ordered set. Then there exists a maximal chain in $$X$$.
 
-**Proof (Zermelo-Kneser Tower Construction):**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof (Zermelo-Kneser Tower Construction)</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 From the Axiom of Choice ($$\mathbf{AC}$$), let $$g \colon \mathcal{P}(X) \setminus \{\emptyset\} \longrightarrow X$$ be a choice function. 
 
 For any chain $$A \subseteq X$$, define the set of candidate extensions:
@@ -586,13 +680,17 @@ Hence, every element of $$\mathcal{I}_0$$ is comparable, so $$\mathcal{I}_0$$ is
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="zorns-lemma">Zorn's Lemma</h4>
 
 > **Theorem (Zorn):** If every chain in a non-empty partially ordered set $$X$$ has an upper bound, then $$X$$ has a maximal element.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$X$$ be a non-empty partially ordered set in which every chain has an upper bound. 
 
 By the [Hausdorff Maximal Principle](#hausdorff-maximal-principle), there exists a maximal chain $$\mathcal{C} \subseteq X$$. By hypothesis, let $$m \in X$$ be an upper bound of $$\mathcal{C}$$. 
@@ -601,13 +699,17 @@ If there existed $$x \in X$$ with $$m < x$$, then $$\mathcal{C} \cup \{x\}$$ wou
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="well-ordering-theorem">Zermelo's Well-Ordering Theorem</h4>
 
 > **Theorem (Zermelo):** Every set $$X$$ can be well-ordered.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$X$$ be any set. Define:
 $$
 \mathcal{A} := \{R \subseteq X \times X \mid R \text{ is a well-ordering of } \operatorname{dom} R\}
@@ -620,13 +722,17 @@ By [Zorn's Lemma](#zorns-lemma), let $$R$$ be a maximal element of $$\mathcal{A}
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="wo-implies-ac">Equivalence: WO implies AC</h4>
 
 > **Theorem:** In $$\mathrm{ZF}^-$$, the Well-Ordering Theorem implies the Axiom of Choice ($$\mathbf{WO} \implies \mathbf{AC}$$).
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$\mathcal{A}$$ be a set of non-empty sets. 
 
 By the [Well-Ordering Theorem](#well-ordering-theorem), there exists a well-ordering $$\le$$ of the union $$\bigcup \mathcal{A}$$. 
@@ -639,15 +745,19 @@ Because every $$A \in \mathcal{A}$$ is a non-empty subset of a well-ordered set,
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 ### Cardinality & The Continuum
 
-<h4 id="schroder-bernstein">The Schröder–Bernstein Theorem (Proof 1: König 1906)</h4>
+<h4 id="schroder-bernstein">The Schröder–Bernstein Theorem</h4>
 
 > **Theorem:** Let $$A$$ and $$B$$ be sets. If there exist injections $$f \colon A \longrightarrow B$$ and $$g \colon B \longrightarrow A$$, then there exists a bijection $$h \colon A \longrightarrow B$$.
 
-**Proof 1: Set Cascade and Diagram Chase (König 1906):**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof 1: Set Cascade and Diagram Chase (König 1906)</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 We first consider the case when $$B \subseteq A$$. Define:
 $$
 \begin{cases} A_0 := A \setminus B, \\ A_{n + 1} := f(A_n) \end{cases}, \qquad C := \bigcup_{n \in \mathbb{N}} A_n \qquad \text{and} \qquad h(x) := \begin{cases} f(x) & \text{if } x \in C, \\ x & \text{if } x \notin C. \end{cases}
@@ -666,38 +776,38 @@ Since $$g$$ is injective, it is bijective onto its range $$g(B) \subseteq A$$. A
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
----
+</details>
 
-<h4 id="schroder-bernstein-tarski">The Schröder–Bernstein Theorem (Proof 2: Knaster–Tarski)</h4>
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof 2: Structural Fixed-Point on 𝒫(A) (via Knaster–Tarski)</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
 
-> **Theorem:** Let $$A$$ and $$B$$ be sets. If there exist injections $$f \colon A \longrightarrow B$$ and $$g \colon B \longrightarrow A$$, then there exists a bijection $$h \colon A \longrightarrow B$$.
-
-**Proof 2: Structural Fixed-Point on 𝒫(A) (via Knaster–Tarski):**  
 Consider the power set lattice $$(\mathcal{P}(A), \subseteq)$$, which is complete. Define the mapping $$F \colon \mathcal{P}(A) \longrightarrow \mathcal{P}(A)$$ by:
 $$
-F(X) := A \setminus g[B \setminus f[X]]
+F(X) := A \setminus g(B \setminus f(X))
 $$
 Let $$X \subseteq Y \subseteq A$$. Since direct images preserve inclusion and complements reverse inclusion:
 $$
-f[X] \subseteq f[Y] \implies B \setminus f[Y] \subseteq B \setminus f[X] \implies g[B \setminus f[Y]] \subseteq g[B \setminus f[X]]
+f(X) \subseteq f(Y) \implies B \setminus f(Y) \subseteq B \setminus f(X) \implies g(B \setminus f(Y)) \subseteq g(B \setminus f(X))
 $$
 Taking the complement in $$A$$ reverses inclusion once more:
 $$
-A \setminus g[B \setminus f[X]] \subseteq A \setminus g[B \setminus f[Y]] \iff F(X) \subseteq F(Y)
+A \setminus g(B \setminus f(X)) \subseteq A \setminus g(B \setminus f(Y)) \iff F(X) \subseteq F(Y)
 $$
 Thus $$F$$ is monotone. By the [Knaster–Tarski Theorem](#knaster-tarski), $$F$$ has a fixed point $$S \subseteq A$$:
 $$
-S = A \setminus g[B \setminus f[S]] \iff A \setminus S = g[B \setminus f[S]]
+S = A \setminus g(B \setminus f(S)) \iff A \setminus S = g(B \setminus f(S))
 $$
-Since $$f$$ is injective, $$f \vert_S \colon S \longrightarrow f[S]$$ is a bijection. Since $$g$$ is injective, it maps $$B \setminus f[S]$$ bijectively onto $$A \setminus S$$, so $$g^{-1} \colon A \setminus S \longrightarrow B \setminus f[S]$$ is a bijection.
+Since $$f$$ is injective, $$f \vert_S \colon S \longrightarrow f(S)$$ is a bijection. Since $$g$$ is injective, it maps $$B \setminus f(S)$$ bijectively onto $$A \setminus S$$, so $$g^{-1} \colon A \setminus S \longrightarrow B \setminus f(S)$$ is a bijection.
 
 Define $$h \colon A \longrightarrow B$$ by:
 $$
 h(x) := \begin{cases} f(x) & \text{if } x \in S, \\ g^{-1}(x) & \text{if } x \in A \setminus S. \end{cases}
 $$
-Because $$S$$ and $$A \setminus S$$ partition $$A$$, and $$f[S]$$ and $$B \setminus f[S]$$ partition $$B$$, $$h$$ is a bijection.
+Because $$S$$ and $$A \setminus S$$ partition $$A$$, and $$f(S)$$ and $$B \setminus f(S)$$ partition $$B$$, $$h$$ is a bijection.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
 
 ---
 
@@ -705,7 +815,9 @@ Because $$S$$ and $$A \setminus S$$ partition $$A$$, and $$f[S]$$ and $$B \setmi
 
 > **Theorem:** For any set $$A$$, $$\vert A \vert < \vert \mathcal{P}(A) \vert$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 It suffices to show that there exists no surjection $$f \colon A \longrightarrow \mathcal{P}(A)$$. 
 
 Suppose for contradiction that such a surjection exists and define a set:
@@ -720,6 +832,8 @@ which is a contradiction.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="hessenbergs-theorem">Hessenberg's Theorem on Cardinal Arithmetic</h4>
@@ -729,7 +843,9 @@ which is a contradiction.
 > \kappa + \lambda = \kappa \cdot \lambda = \max\{\kappa, \lambda\}
 > $$
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 It suffices to prove that $$\kappa \cdot \kappa = \kappa$$.
 
 Assume by transfinite induction that $$\alpha \cdot \alpha = \alpha$$ holds for all infinite cardinals $$\alpha < \kappa$$. Define the max-lexicographic well-ordering $$\prec$$ on $$\kappa \times \kappa$$:
@@ -742,13 +858,17 @@ Thus every proper initial segment of $$(\kappa \times \kappa, \prec)$$ has cardi
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="cardinal-existence">Existence of Cardinal Numbers</h4>
 
 > **Theorem:** In $$\mathrm{ZFC}^-$$, for every set $$A$$, the cardinal number $$\vert A \vert$$ exists.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$A$$ be any set. 
 
 By the [Well-Ordering Theorem](#well-ordering-theorem), which holds in $$\mathrm{ZFC}^-$$, there exists a well-ordering $$\le$$ of the set $$A$$.
@@ -771,13 +891,17 @@ Hence, every set has a well-defined cardinal number.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="reals-and-power-set">Equinumerosity of ℝ and 𝒫(ℕ)</h4>
 
 > **Theorem:** $$\mathbb{R} \sim \mathcal{P}(\mathbb{N})$$, and consequently $$\mathbb{R}$$ is uncountable ($$\vert\mathbb{R}\vert = \mathfrak{c}$$).
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 We construct injections in both directions:
 
 1. Define $$f \colon \mathcal{P}(\mathbb{N}) \longrightarrow \mathbb{R}$$ by $$f(S) := \sum_{n \in S} \frac{2}{3^{n+1}}$$. Ternary expansions with digits in $$\{0, 2\}$$ avoid dual representations, so $$f$$ is injective.
@@ -787,13 +911,17 @@ By the [Schröder–Bernstein Theorem](#schroder-bernstein), $$\mathbb{R} \sim \
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="real-plane-dimension">The Dimension Paradox: ℝ ~ ℝ²</h4>
 
 > **Theorem:** $$\mathbb{R} \sim \mathbb{R}^2$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 By cardinal arithmetic:
 $$
 \vert \mathbb{R}^2 \vert = \vert \mathbb{R} \times \mathbb{R} \vert = \mathfrak{c} \cdot \mathfrak{c} = 2^{\aleph_0} \cdot 2^{\aleph_0} = 2^{\aleph_0 + \aleph_0} = 2^{\aleph_0} = \mathfrak{c} = \vert \mathbb{R} \vert
@@ -802,13 +930,17 @@ where $$2^\kappa \cdot 2^\lambda = 2^{\kappa + \lambda}$$ and $$\aleph_0 + \alep
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="real-interval-bijection">Scale Invariance: (0, 1) ~ ℝ</h4>
 
 > **Theorem:** $$(0, 1) \sim \mathbb{R}$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Define $$f \colon (0, 1) \longrightarrow \mathbb{R}$$ by:
 $$
 f(x) := \tan\left(\pi\left(x - \frac{1}{2}\right)\right)
@@ -816,6 +948,8 @@ $$
 Because the tangent function is continuous and strictly increasing on $$(-\frac{\pi}{2}, \frac{\pi}{2})$$ with range $$(-\infty, \infty)$$, $$f$$ is a bijection.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
 
 ---
 
@@ -825,7 +959,9 @@ Because the tangent function is continuous and strictly increasing on $$(-\frac{
 
 > **Theorem:** $$\forall x, y \in \mathbb{R} \ (x > 0 \rightarrow \exists n \in \mathbb{N} \ nx > y)$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Suppose for contradiction that there exist $$x, y \in \mathbb{R}$$ with $$x > 0$$ such that for all $$n \in \mathbb{N}$$, $$nx \le y$$. 
 
 Define $$S := \{nx \mid n \in \mathbb{N}\}$$. Since $$x \in S$$, $$S \ne \emptyset$$, and $$S$$ is bounded from above by $$y$$. 
@@ -834,13 +970,17 @@ By the Completeness Axiom, let $$\alpha := \sup S \in \mathbb{R}$$. Since $$x > 
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="density-of-rationals">Density of ℚ in ℝ</h4>
 
 > **Theorem:** $$\forall x, y \in \mathbb{R} \ (x < y \rightarrow \exists q \in \mathbb{Q} \ x < q < y)$$.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Assume without loss of generality that $$0 \le x < y$$. 
 
 Since $$y - x > 0$$, by the [Archimedean Property](#archimedean-property) pick $$n \in \mathbb{N}$$ such that $$n(y - x) > 1$$, so $$ny - nx > 1$$. By well-ordering of $$\mathbb{N}$$, let $$m := \min \{k \in \mathbb{N} \mid k > nx\}$$. Then $$m - 1 \le nx < m$$, so $$m \le nx + 1 < ny$$. 
@@ -848,6 +988,8 @@ Since $$y - x > 0$$, by the [Archimedean Property](#archimedean-property) pick $
 Thus $$nx < m < ny$$, and dividing by $$n > 0$$ yields $$x < \frac{m}{n} < y$$. Take $$q := \frac{m}{n} \in \mathbb{Q}$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
 
 ---
 
@@ -857,7 +999,9 @@ Thus $$nx < m < ny$$, and dividing by $$n > 0$$ yields $$x < \frac{m}{n} < y$$. 
 
 > **Theorem:** A set $$A \subseteq \mathbb{N}$$ is semidecidable if and only if it can be enumerated by an algorithm.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 ($$\implies$$) Let $$X$$ be an algorithm that semidecides $$A$$. We construct an enumerator $$E$$ that searches the space $$\mathbb{N} \times \mathbb{N}$$ via dovetailing (step-bounding) to prevent divergence on non-halting inputs:
 
 ```text
@@ -876,13 +1020,17 @@ If $$a \in A$$, the semidecision algorithm $$X(a)$$ halts in some finite number 
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="kleene-theorem">Kleene's Post Theorem on Decidability</h4>
 
 > **Theorem (Kleene):** A set $$A \subseteq \mathbb{N}$$ is decidable if and only if both $$A$$ and $$A^c$$ are semidecidable.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 ($$\implies$$) If $$A$$ is decidable, there exists a decider $$M$$ that halts on every input $$n \in \mathbb{N}$$, answering Yes or No.
 * A semidecider for $$A$$ runs $$M(n)$$; if $$M$$ outputs Yes, it halts with Yes; if $$M$$ outputs No, it loops indefinitely.
 * A semidecider for $$A^c$$ runs $$M(n)$$; if $$M$$ outputs No, it halts with Yes; if $$M$$ outputs Yes, it loops indefinitely.
@@ -899,13 +1047,17 @@ Because one branch is guaranteed to halt in finite time, $$M$$ is a total decisi
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
+</details>
+
 ---
 
 <h4 id="semidecidable-closure">Closure Properties of Semidecidable Sets</h4>
 
 > **Theorem:** If $$A, B \subseteq \mathbb{N}$$ are semidecidable, then $$A \cup B$$ and $$A \cap B$$ are semidecidable.
 
-**Proof:**  
+<details class="border rounded p-3 my-3" markdown="1">
+<summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
+
 Let $$A, B \subseteq \mathbb{N}$$ be semidecidable, with semideciders $$M_A$$ and $$M_B$$.
 
 1. **Closure under Union ($$A \cup B$$):**  
@@ -914,3 +1066,5 @@ Let $$A, B \subseteq \mathbb{N}$$ be semidecidable, with semideciders $$M_A$$ an
    On input $$n$$, sequentially execute $$M_A(n)$$. If it halts and outputs Yes, execute $$M_B(n)$$. If both halt with Yes, output **Yes**. If either input fails to belong to the respective set, the sequential execution never completes.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
+
+</details>
