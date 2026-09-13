@@ -1,0 +1,166 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Theorems &amp; Proofs | Notes on mathematics, logic and computer science </title> <meta name="author" content="Tymoteusz Filipiak"> <meta name="description" content="A curated reference library of formal mathematical proofs."> <meta name="keywords" content="theoretical computer science, discrete math, algorithms, complexity theory, teaching, lecture notes"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%CE%BB&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://tymfili.github.io/theorems/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Notes on mathematics, logic and computer science </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">Blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item active"> <a class="nav-link" href="/theorems/">Theorems &amp; Proofs <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Theorems &amp; Proofs</h1> <p class="post-description">A curated reference library of formal mathematical proofs.</p> </header> <article> <p>Welcome to the central reference library of proofs. This section maintains the complete, modular proofs for theorems cited across the blog and lecture notes.</p> <h3 id="table-of-contents">Table of Contents</h3> <ul> <li> <strong>Set Theory &amp; Cardinality:</strong> <ul> <li><a href="#schroder-bernstein">The Schröder–Bernstein Theorem</a></li> <li><a href="#cantors-theorem">Cantor’s Theorem on the Power Set</a></li> <li><a href="#hessenbergs-theorem">Hessenberg’s Theorem on Cardinal Arithmetic</a></li> <li><a href="#reals-and-power-set">Equinumerosity of the Reals and the Power Set of Naturals</a></li> <li><a href="#real-plane-dimension">The Dimension Paradox: ℝ ~ ℝ²</a></li> <li><a href="#real-interval-bijection">Scale Invariance: (0, 1) ~ ℝ</a></li> </ul> </li> <li> <strong>Real Analysis:</strong> <ul> <li><a href="#archimedean-property">The Archimedean Property of ℝ</a></li> <li><a href="#density-of-rationals">The Density of ℚ in ℝ</a></li> </ul> </li> </ul> <hr> <h3 id="set-theory--cardinality">Set Theory &amp; Cardinality</h3> <h4 id="schroder-bernstein">The Schröder–Bernstein Theorem</h4> <blockquote> <p><strong>Theorem:</strong> Let \(A\) and \(B\) be sets. If there exist injections \(f \colon A \longrightarrow B\) and \(g \colon B \longrightarrow A\), then there exists a bijection \(h \colon A \longrightarrow B\).</p> </blockquote> <details class="border rounded p-3 my-3" open=""> <summary style="cursor: pointer;"><b>Proof (König, 1906)</b></summary> <p><strong>Case 1: Assume \(B \subseteq A\).</strong></p> <p>Let \(\iota \colon B \hookrightarrow A\) be the inclusion map. We construct a bijection using the injection \(f \colon A \longrightarrow B\).</p> <p>Define the cascade of displaced subsets: \(A_0 := A \setminus B, \quad A_{n+1} := f(A_n), \quad C := \bigcup_{n \in \mathbb{N}} A_n\) Define \(h \colon A \longrightarrow B\) by: \(h(x) := \begin{cases} f(x) &amp; \text{if } x \in C, \\ x &amp; \text{if } x \notin C. \end{cases}\)</p> <ol> <li> <strong>Well-defined codomain (\(h(A) \subseteq B\)):</strong><br> If \(x \in C\), then \(h(x) = f(x) \in B\). If \(x \notin C\), then \(x \notin A_0 = A \setminus B\), so \(x \in B\). Thus \(h(x) = x \in B\).</li> <li> <strong>Injectivity:</strong> Let \(h(x) = h(y)\). <ul> <li>If \(x, y \in C\), injectivity of \(f\) gives \(f(x) = f(y) \implies x = y\).</li> <li>If \(x, y \notin C\), then \(x = y\).</li> <li>If \(x \in C\) and \(y \notin C\), then \(x \in A_k\), so \(h(x) = f(x) \in A_{k+1} \subseteq C\). But \(h(y) = y \notin C\), so \(h(x) \ne h(y)\).</li> </ul> </li> <li> <strong>Surjectivity:</strong> Let \(y \in B\). <ul> <li>If \(y \in C\), then \(y \notin A_0\) (since \(y \in B\)). Thus \(y \in A_{k+1} = f(A_k)\) for some \(k \ge 0\), meaning \(y = f(x) = h(x)\) for \(x \in A_k \subseteq C\).</li> <li>If \(y \notin C\), then \(h(y) = y\).</li> </ul> </li> </ol> <p>Hence, \(h \colon A \longrightarrow B\) is a bijection.</p> <hr> <p><strong>Case 2: General Case (\(B \not\subseteq A\)).</strong></p> <p>We have injections \(f \colon A \longrightarrow B\) and \(g \colon B \longrightarrow A\).</p> <p>The image \(g(B) \subseteq A\) is in bijection with \(B\) via \(g^{-1} \colon g(B) \longrightarrow B\). The composite map: \(g \circ f \colon A \longrightarrow g(B)\) is an injection from \(A\) into its subset \(g(B)\). Applying <strong>Case 1</strong> to the pair \((A, g(B))\) with the injection \(g \circ f\) yields a bijection: \(h \colon A \longrightarrow g(B)\) Composing this with \(g^{-1}\) yields the bijection: \(g^{-1} \circ h \colon A \longrightarrow B\)</p> <p>Notice that this proof is <strong>entirely constructive</strong>: \(h(x)\) is determined strictly by iteration on \(\mathbb{N}\) without invoking the Axiom of Choice.</p> <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div> </details> <hr> <h4 id="cantors-theorem">Cantor's Theorem</h4> <blockquote> <p><strong>Theorem:</strong> For any set \(A\), there exists no surjection \(f \colon A \longrightarrow \mathcal{P}(A)\).</p> </blockquote> <details class="border rounded p-3 my-3" open=""> <summary style="cursor: pointer;"><b>Proof</b></summary> <p>Suppose for contradiction that such a surjection exists. Define: \(B := \{x \in A \mid x \notin f(x)\}\) Since \(f\) is surjective, the subset \(B \in \mathcal{P}(A)\) must have a pre-image: \(B = f(a)\) for some \(a \in A\). Then: \(a \in B \iff a \notin f(a) \iff a \notin B\) which is an immediate contradiction. Hence no surjection exists, and: \(A \nsim \mathcal{P}(A)\)</p> <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div> </details> <hr> <h4 id="hessenbergs-theorem">Hessenberg's Theorem</h4> <blockquote> <p><strong>Theorem:</strong> For any infinite cardinals \(\kappa\) and \(\lambda\): \(\kappa + \lambda = \kappa \cdot \lambda = \max\{\kappa, \lambda\}\)</p> </blockquote> <details class="border rounded p-3 my-3" open=""> <summary style="cursor: pointer;"><b>Proof</b></summary> <p>It suffices to prove \(\kappa \cdot \kappa = \kappa\).</p> <p>Assume by transfinite induction that \(\alpha \cdot \alpha = \alpha\) holds for all infinite cardinals \(\alpha &lt; \kappa\). Define the max-lexicographic well-ordering \(\prec\) on \(\kappa \times \kappa\): \((\alpha, \beta) \prec (\gamma, \delta) \iff \begin{cases} \max\{\alpha, \beta\} &lt; \max\{\gamma, \delta\}, \text{ or} \\ \max\{\alpha, \beta\} = \max\{\gamma, \delta\} \land \alpha &lt; \gamma, \text{ or} \\ \max\{\alpha, \beta\} = \max\{\gamma, \delta\} \land \alpha = \gamma \land \beta &lt; \delta. \end{cases}\) For any \((\alpha, \beta) \in \kappa \times \kappa\), let \(\gamma = \max\{\alpha, \beta\} &lt; \kappa\). The initial segment preceding \((\alpha, \beta)\) is contained in \((\gamma + 1) \times (\gamma + 1)\).</p> <p>By induction, \(\vert (\gamma + 1) \times (\gamma + 1) \vert = \vert \gamma + 1 \vert &lt; \kappa\). Thus every proper initial segment of \((\kappa \times \kappa, \prec)\) has cardinality strictly less than \(\kappa\). The order type cannot reach \(\kappa^+\), so \(\vert \kappa \times \kappa \vert \le \kappa\). Combining with the diagonal injection \(\kappa \hookrightarrow \kappa \times \kappa\) yields: \(\kappa \cdot \kappa = \kappa\) For \(\kappa \le \lambda\): \(\lambda \le \kappa + \lambda \le \kappa \cdot \lambda \le \lambda \cdot \lambda = \lambda \implies \kappa + \lambda = \kappa \cdot \lambda = \lambda = \max\{\kappa, \lambda\}\)</p> <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div> </details> <hr> <h4 id="reals-and-power-set">Equinumerosity of ℝ and 𝒫(ℕ)</h4> <blockquote> <p><strong>Theorem:</strong> \(\mathbb{R} \sim \mathcal{P}(\mathbb{N})\), and consequently \(\mathbb{R}\) is uncountable (\(\vert\mathbb{R}\vert = \mathfrak{c}\)).</p> </blockquote> <details class="border rounded p-3 my-3" open=""> <summary style="cursor: pointer;"><b>Proof</b></summary> <p>By the Schröder–Bernstein Theorem, it suffices to construct mutual injections between \(\mathcal{P}(\mathbb{N})\) and \(\mathbb{R}\).</p> <p><strong>1. Injection \(f \colon \mathcal{P}(\mathbb{N}) \longrightarrow \mathbb{R}\):</strong><br> Define \(f(S) := \sum_{n \in S} \frac{2}{3^{n+1}}\). Ternary expansions using only digits \(0\) and \(2\) avoid dual representations (\(0.0111\dots = 0.1000\dots\)), so \(f\) is injective.</p> <p><strong>2. Injection \(g \colon \mathbb{R} \longrightarrow \mathcal{P}(\mathbb{N})\):</strong><br> Every real \(x\) is uniquely determined by its Dedekind cut \(D(x) := \{q \in \mathbb{Q} \mid q &lt; x\}\). Density of \(\mathbb{Q}\) ensures \(D \colon \mathbb{R} \longrightarrow \mathcal{P}(\mathbb{Q})\) is injective. Since \(\mathbb{Q} \sim \mathbb{N}\), this induces an injection \(g \colon \mathbb{R} \longrightarrow \mathcal{P}(\mathbb{N})\).</p> <p>By the Schröder–Bernstein Theorem, mutual injections establish: \(\mathbb{R} \sim \mathcal{P}(\mathbb{N})\) Since \(\mathbb{N} \nsim \mathcal{P}(\mathbb{N})\) by Cantor’s Theorem, it follows that \(\mathbb{R} \nsim \mathbb{N}\).</p> <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div> </details> <hr> <h4 id="real-plane-dimension">The Dimension Paradox: ℝ ~ ℝ²</h4> <blockquote> <p><strong>Theorem:</strong> \(\mathbb{R} \sim \mathbb{R}^2\).</p> </blockquote> <details class="border rounded p-3 my-3" open=""> <summary style="cursor: pointer;"><b>Proof</b></summary> <p>By cardinal arithmetic: \(\vert \mathbb{R}^2 \vert = \vert \mathbb{R} \times \mathbb{R} \vert = \mathfrak{c} \cdot \mathfrak{c} = 2^{\aleph_0} \cdot 2^{\aleph_0} = 2^{\aleph_0 + \aleph_0} = 2^{\aleph_0} = \mathfrak{c} = \vert \mathbb{R} \vert\) where \(2^\kappa \cdot 2^\lambda = 2^{\kappa + \lambda}\) and \(\aleph_0 + \aleph_0 = \aleph_0\).</p> <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div> </details> <hr> <h4 id="real-interval-bijection">Scale Invariance: (0, 1) ~ ℝ</h4> <blockquote> <p><strong>Theorem:</strong> \((0, 1) \sim \mathbb{R}\).</p> </blockquote> <details class="border rounded p-3 my-3" open=""> <summary style="cursor: pointer;"><b>Proof</b></summary> <p>Define \(f \colon (0, 1) \longrightarrow \mathbb{R}\) by: \(f(x) := \tan\left(\pi\left(x - \frac{1}{2}\right)\right)\) Because the tangent function is continuous and strictly increasing on \((-\frac{\pi}{2}, \frac{\pi}{2})\) with range \((-\infty, \infty)\), \(f\) is a bijection.</p> <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div> </details> <hr> <h3 id="real-analysis">Real Analysis</h3> <h4 id="archimedean-property">The Archimedean Property</h4> <blockquote> <p><strong>Theorem:</strong> \(\forall x, y \in \mathbb{R} \ (x &gt; 0 \rightarrow \exists n \in \mathbb{N} \ nx &gt; y)\).</p> </blockquote> <details class="border rounded p-3 my-3" open=""> <summary style="cursor: pointer;"><b>Proof</b></summary> <p>Assume for contradiction that there exist \(x, y \in \mathbb{R}\) with \(x &gt; 0\) such that for all \(n \in \mathbb{N}\), \(nx \le y\).</p> <p>Define the collection of all natural multiples: \(S := \{nx \mid n \in \mathbb{N}\}\) Since \(x \in S\), \(S \ne \emptyset\), and by hypothesis, \(S\) is bounded from above by \(y\).</p> <p>By the Completeness Axiom, \(S\) has a supremum in \(\mathbb{R}\): \(\alpha := \sup S\) Since \(x &gt; 0\), we have \(\alpha - x &lt; \alpha\). Because \(\alpha\) is the least upper bound, \(\alpha - x\) cannot be an upper bound of \(S\). Therefore, there exists some element \(mx \in S\) such that: \(mx &gt; \alpha - x\) Adding \(x\) to both sides yields: \((m + 1)x &gt; \alpha\) Since \(m + 1 \in \mathbb{N}\), we have \((m + 1)x \in S\). This contradicts that \(\alpha\) is an upper bound of \(S\).</p> <p>Hence, no such upper bound \(y\) can exist: \(\exists n \in \mathbb{N} \ nx &gt; y\)</p> <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div> </details> <hr> <h4 id="density-of-rationals">Density of ℚ in ℝ</h4> <blockquote> <p><strong>Theorem:</strong> \(\forall x, y \in \mathbb{R} \ (x &lt; y \rightarrow \exists q \in \mathbb{Q} \ x &lt; q &lt; y)\).</p> </blockquote> <details class="border rounded p-3 my-3" open=""> <summary style="cursor: pointer;"><b>Proof</b></summary> <p>Assume without loss of generality that \(0 \le x &lt; y\).</p> <p>Since \(y - x &gt; 0\), by the Archimedean Property there exists \(n \in \mathbb{N}\) such that: \(n(y - x) &gt; 1 \iff ny - nx &gt; 1\) Applying the Archimedean Property again to \(nx\), the collection of natural numbers strictly greater than \(nx\) is non-empty. By the well-ordering of \(\mathbb{N}\), there exists a least integer \(m \in \mathbb{Z}\) such that: \(m - 1 \le nx &lt; m\) From \(nx &lt; m\), we obtain the lower bound. From \(m - 1 \le nx\), adding \(1\) gives: \(m \le nx + 1\) Because \(ny - nx &gt; 1\), we have \(nx + 1 &lt; ny\). Chaining these inequalities: \(nx &lt; m \le nx + 1 &lt; ny \implies nx &lt; m &lt; ny\) Dividing by \(n &gt; 0\) yields: \(x &lt; \frac{m}{n} &lt; y\) Setting \(q := \frac{m}{n} \in \mathbb{Q}\), we conclude: \(x &lt; q &lt; y\)</p> <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div> </details> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Tymoteusz Filipiak. <style>
+  :root {
+    --global-theme-color: #205c3b !important;
+    --global-hover-color: #164029 !important;
+  }
+  html[data-theme="dark"] {
+    --global-theme-color: #57b87b !important;
+    --global-hover-color: #6ec890 !important;
+  }
+  #back-to-top {
+    bottom: 55px !important;
+    z-index: 1050 !important;
+</style> Last updated: September 13, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-teaching",
+          title: "Teaching",
+          description: "Lecture notes and resources for logic and computation.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "nav-theorems-amp-proofs",
+          title: "Theorems &amp; Proofs",
+          description: "A curated reference library of formal mathematical proofs.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/theorems/";
+          },
+        },{id: "post-axioms-of-mathematics-trivialities-hygiene-and-insanity",
+        
+          title: "Axioms of mathematics: trivialities, hygiene and insanity",
+        
+        description: "A survey of the Zermelo-Fraenkel axioms, the necessity of parameters in schemata, and the strange nature of Foundation and Choice.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/zfc-axioms/";
+          
+        },
+      },{id: "post-queues-non-commutativity-and-ordinal-numbers",
+        
+          title: "Queues, Non-Commutativity, and Ordinal Numbers",
+        
+        description: "Understanding well-orderings and transfinite arithmetic through the geometry of waiting in line.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/queues-and-ordinal-numbers/";
+          
+        },
+      },{id: "post-the-ε-n-definition-as-a-two-player-game",
+        
+          title: "The ε–N Definition as a Two-Player Game",
+        
+        description: "The least upper bound property of ℝ and viewing Cauchy convergence as an interactive game.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/first-definitions-analysis/";
+          
+        },
+      },{id: "post-what-does-it-mean-to-count",
+        
+          title: "What Does it Mean to Count?",
+        
+        description: "Equinumerosity, the Schröder-Bernstein Theorem, and the exact cardinality of the continuum.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/counting/";
+          
+        },
+      },{id: "post-what-does-it-mean-to-count",
+        
+          title: "What Does it Mean to Count?",
+        
+        description: "Equinumerosity, Hume&#39;s Principle, the Schröder-Bernstein Theorem, and the naming of the infinite.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/counting/";
+          
+        },
+      },{id: "post-a-visual-taxonomy-of-binary-relations",
+        
+          title: "A Visual Taxonomy of Binary Relations",
+        
+        description: "Visualising the 16 distinct classes of binary relations between two sets.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/relations/";
+          
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%74%79%6D%6F%74%65%75%73%7A%66%33%33%33@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/tymfili", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
