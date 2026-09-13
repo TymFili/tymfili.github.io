@@ -21,6 +21,15 @@ Welcome to the central reference library of proofs. This section maintains the c
   * [The Propositional Deduction Theorem](#deduction-theorem)
   * [Ex Falso Quodlibet](#ex-falso)
   * [Deduction in the Tautology System](#tautology-system)
+* **Metatheory of Classical Logic:**
+  * [Soundness of the Tautology System](#tautology-soundness)
+  * [The Propositional Compactness Theorem](#compactness-theorem)
+  * [Completeness of the Tautology System](#tautology-completeness)
+  * [Consistency under Constant Extension](#constant-extension)
+  * [The Henkin Witness Construction](#henkin-constants)
+  * [Lindenbaum's Maximal Extension Lemma](#lindenbaum-lemma)
+  * [The Fundamental Truth Lemma for Term Structures](#term-model-truth)
+  * [Gödel's Completeness Theorem](#godel-completeness)
 * **Set Theory & Cardinality:**
   * [The Schröder–Bernstein Theorem](#schroder-bernstein)
   * [Cantor's Theorem on the Power Set](#cantors-theorem)
@@ -147,6 +156,113 @@ Welcome to the central reference library of proofs. This section maintains the c
 <summary style="cursor: pointer;"><b>Proof</b></summary>
 
 {% include proofs/tautology_system_example.md %}
+
+</details>
+
+---
+
+
+### Metatheory of Classical Logic
+
+<h4 id="tautology-soundness">Soundness of the Tautology System</h4>
+
+> **Theorem:** In the tautology system, $$\Sigma \vdash \phi \implies \Sigma \models \phi$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/tautology_soundness.md %}
+
+</details>
+
+---
+
+<h4 id="compactness-theorem">The Propositional Compactness Theorem</h4>
+
+> **Theorem:** A set of formulae $$\Sigma$$ is satisfiable if and only if it is finitely satisfiable.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/compactness_theorem.md %}
+
+</details>
+
+---
+
+<h4 id="tautology-completeness">Completeness of the Tautology System</h4>
+
+> **Theorem:** In the tautology system, $$\Sigma \models \phi \implies \Sigma \vdash \phi$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/tautology_completeness.md %}
+
+</details>
+
+---
+
+<h4 id="constant-extension">Consistency under Constant Extension</h4>
+
+> **Theorem:** Let $$\Gamma$$ be consistent over $$\mathscr{L}$$. If $$c_0, c_1, \dots \notin \mathscr{L}$$, then $$\Gamma$$ is consistent over $$\mathscr{L} \cup \{c_0, c_1, \dots\}$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/constant_extension_consistency.md %}
+
+</details>
+
+---
+
+<h4 id="henkin-constants">The Henkin Witness Construction</h4>
+
+> **Theorem:** Any consistent set $$\Gamma$$ can be extended to a consistent set $$\Gamma \cup \{\neg \forall x \phi_n(x) \rightarrow \neg \phi_n(c_{k_n}) \mid n \in \mathbb{N}\}$$, where $$c_{k_n}$$ does not occur in any $$\phi_m$$ for $$m < n$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/henkin_constants_consistency.md %}
+
+</details>
+
+---
+
+<h4 id="lindenbaum-lemma">Lindenbaum's Maximal Extension Lemma</h4>
+
+> **Theorem:** Every consistent set $$\Gamma$$ can be extended to a consistent set $$\Delta$$ such that for every formula $$\phi$$, either $$\phi \in \Delta$$ or $$\neg \phi \in \Delta$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/lindenbaum_lemma.md %}
+
+</details>
+
+---
+
+<h4 id="term-model-truth">The Fundamental Truth Lemma for Term Structures</h4>
+
+> **Theorem:** Let $$\mathfrak{A}$$ be a canonical term structure over maximal consistent Henkin set $$\Delta$$. Then $$\mathfrak{A} \models \phi^* \iff \phi \in \Delta$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/term_model_truth.md %}
+
+</details>
+
+---
+
+<h4 id="godel-completeness">Gödel's Completeness Theorem</h4>
+
+> **Theorem:** If $$\Gamma$$ is consistent, then $$\Gamma$$ has a model. Consequently, $$\Gamma \models \phi \implies \Gamma \vdash \phi$$.
+
+<details class="border rounded p-3 my-3" markdown="1" open>
+<summary style="cursor: pointer;"><b>Proof</b></summary>
+
+{% include proofs/godel_completeness.md %}
 
 </details>
 
