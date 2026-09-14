@@ -515,6 +515,73 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
+
+<h4 id="def-free-variables">Free Variables of Terms and Formulae</h4>
+
+> **Definition:** For a term $$t \in \mathbf{Trm}(\sigma)$$, $$\mathbf{Var}(t)$$ denotes the set of variables occurring in $$t$$.
+> 
+> The set of *free variables* of a formula $$\varphi$$, denoted $$\mathbf{FV}(\varphi)$$, is defined recursively:
+> * $$\mathbf{FV}(R t_1 \dots t_n) := \bigcup_{k=1}^n \mathbf{Var}(t_k)$$
+> * $$\mathbf{FV}(= t_1 t_2) := \mathbf{Var}(t_1) \cup \mathbf{Var}(t_2)$$
+> * $$\mathbf{FV}(\neg \varphi) := \mathbf{FV}(\varphi)$$
+> * $$\mathbf{FV}(\ast \varphi \psi) := \mathbf{FV}(\varphi) \cup \mathbf{FV}(\psi)$$ for $$\ast \in \{\land, \lor, \rightarrow, \leftrightarrow\}$$
+> * $$\mathbf{FV}(\ast x \ \varphi) := \mathbf{FV}(\varphi) \setminus \{x\}$$ for $$\ast \in \{\forall, \exists\}$$
+
+---
+
+<h4 id="def-model-theory">Model of a Set of Formulae</h4>
+
+> **Definition:** A structure $$\mathfrak{A}$$ is a *model* of a set of formulae $$\Gamma$$, written $$\mathfrak{A} \models \Gamma$$, if:
+> $$
+> \mathfrak{A} \models \varphi \quad \text{for every } \varphi \in \Gamma
+> $$
+
+---
+
+<h4 id="def-finitely-satisfiable">Finitely Satisfiable Set of Formulae</h4>
+
+> **Definition:** A set of formulae $$\Sigma$$ is *finitely satisfiable* if every finite subset $$\Sigma_0 \subseteq \Sigma$$ is satisfiable.
+
+---
+
+<h4 id="def-henkin-property">The Henkin Property (Witness Property)</h4>
+
+> **Definition:** A set of formulae $$T$$ has the *Henkin property* (or *witness property*) if whenever $$T \vdash \exists x \ \varphi(x)$$, then:
+> $$
+> T \vdash \varphi(c) \quad \text{for some constant symbol } c
+> $$
+
+---
+
+<h4 id="def-maximal-consistency">Maximally Consistent Theory</h4>
+
+> **Definition:** A set of formulae $$\Gamma$$ is *maximally consistent* if it is consistent and:
+> $$
+> \forall \phi \ (\phi \in \Gamma \lor \neg \phi \in \Gamma)
+> $$
+
+---
+
+<h4 id="def-order-boundedness">Bounded, Cofinal, and Dense Subsets of a Poset</h4>
+
+> **Definition:** Let $$(X, \le)$$ be a partially ordered set and $$A \subseteq X$$. We say $$A$$ is (in $$X$$):
+> * **bounded below:** if $$\exists x \in X \ \forall a \in A \ x \le a$$
+> * **bounded above:** if $$\exists x \in X \ \forall a \in A \ a \le x$$
+> * **bounded:** if it is bounded both below and above in $$X$$
+> * **unbounded:** if it is not bounded in $$X$$
+> * **cofinal:** if $$\forall x \in X \ \exists a \in A \ x \le a$$
+> * **dense:** if $$\forall x, y \in X \ (x < y \rightarrow \exists a \in A \ x < a < y)$$
+
+---
+
+<h4 id="def-cardinal-arithmetic-ops">Cardinal Arithmetic Operations</h4>
+
+> **Definition:** Let $$\kappa$$ and $$\lambda$$ be cardinal numbers, and let $$A, B$$ be sets such that $$\vert A \vert = \kappa$$ and $$\vert B \vert = \lambda$$. We define:
+> * **Addition:** $$\kappa + \lambda := \vert A \sqcup B \vert$$
+> * **Multiplication:** $$\kappa \cdot \lambda := \vert A \times B \vert$$
+> * **Exponentiation:** $$\kappa^\lambda := \vert A^B \vert$$
+
+---
 <h4 id="def-symbol-weight">Symbol Weight & Unique Readability</h4>
 
 > **Definition:** The *weight assignment* $$w$$ on first-order symbols is defined by:

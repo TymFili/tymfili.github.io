@@ -70,7 +70,7 @@ Welcome to the central reference library of proofs. This archive maintains compl
 
 <h4 id="knaster-tarski">The Knaster–Tarski Fixed-Point Theorem</h4>
 
-> **Theorem:** Let $$(L, \land, \lor)$$ be a complete lattice and $$f \colon L \longrightarrow L$$ be monotone. Then $$f$$ has a least fixed point $$\mu f$$.
+> **Theorem:** Let $$(L, \land, \lor)$$ be a [complete lattice](/definitions/#def-complete-lattice) and $$f \colon L \longrightarrow L$$ be [monotone](/definitions/#def-monotone-function). Then $$f$$ has a [least fixed point](/definitions/#def-fixed-point) $$\mu f$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -87,7 +87,7 @@ Since $$f(a) \in A$$, we get that $$a \le f(a)$$, so $$f(a) = a$$. Let $$b$$ be 
 
 <h4 id="general-induction">The General Induction Principle</h4>
 
-> **Theorem:** Let $$X$$ be a set and $$F \colon \mathcal{P}(X) \longrightarrow \mathcal{P}(X)$$ be monotone. Let $$S^* := \mu F$$ be its least fixed point. Then for any $$T \subseteq X$$, $$F(T) \subseteq T \implies S^* \subseteq T$$.
+> **Theorem:** Let $$X$$ be a set and $$F \colon \mathcal{P}(X) \longrightarrow \mathcal{P}(X)$$ be [monotone](/definitions/#def-monotone-function). Let $$S^* := \mu F$$ be its [least fixed point](/definitions/#def-fixed-point). Then for any $$T \subseteq X$$, $$F(T) \subseteq T \implies S^* \subseteq T$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -106,7 +106,7 @@ If $$F(T) \subseteq T$$, then $$T$$ is one of the sets in this intersection, so 
 
 <h4 id="induction-strings">Principle of Induction on Strings</h4>
 
-> **Theorem:** Let $$\Pi$$ be a property of strings over $$\Sigma$$ such that:
+> **Theorem:** Let $$\Pi$$ be a property of [strings](/definitions/#def-strings) over [alphabet](/definitions/#def-alphabet) $$\Sigma$$ such that:
 > 1. $$\Pi$$ holds for $$\varepsilon$$.
 > 2. If $$\Pi$$ holds for $$\sigma$$, then for any $$s \in \Sigma$$, $$\Pi$$ holds for $$\sigma s$$.
 > 
@@ -127,7 +127,7 @@ Since $$\Sigma^*$$ is the smallest set satisfying these conditions, we must have
 
 <h4 id="induction-formulas">Principle of Induction on Propositional Formulae</h4>
 
-> **Theorem:** Let $$\Pi$$ be a property of propositional formulae such that:
+> **Theorem:** Let $$\Pi$$ be a property of propositional [formulae](/definitions/#def-propositional-syntax) such that:
 > 1. $$\Pi$$ holds for all variables.
 > 2. If $$\Pi$$ holds for $$\varphi_1, \dots, \varphi_n$$, then $$\Pi$$ holds for $$c_k^n(\varphi_1, \dots, \varphi_n)$$ for any connective $$c_k^n$$.
 > 
@@ -150,7 +150,7 @@ Thus $$\mathscr{C}$$ satisfies the conditions defining $$\textbf{Frm}$$, and bec
 
 <h4 id="finiteness-variables">Finiteness of Variable Occurrences</h4>
 
-> **Theorem:** For every formula $$\varphi \in \textbf{Frm}$$, the set of variables $$V(\varphi)$$ occurring in $$\varphi$$ is finite.
+> **Theorem:** For every [formula](/definitions/#def-propositional-syntax) $$\varphi \in \textbf{Frm}$$, the set of [variables](/definitions/#def-propositional-syntax) $$V(\varphi)$$ occurring in $$\varphi$$ is finite.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -174,7 +174,7 @@ We proceed by induction on the structure of propositional formulae.
 
 <h4 id="deduction-theorem">The Propositional Deduction Theorem</h4>
 
-> **Theorem:** $$\Gamma \cup \{\phi\} \vdash \psi \iff \Gamma \vdash \phi \rightarrow \psi$$.
+> **Theorem:** In a propositional [proof system](/definitions/#def-proof-system), $$\Gamma \cup \{\phi\} \vdash \psi \iff \Gamma \vdash \phi \rightarrow \psi$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -237,7 +237,7 @@ We show that $$\{\phi, \psi, (\phi \land \psi) \rightarrow \xi\} \vdash \xi$$ vi
 
 <h4 id="free-variables">Free Variable Agreement Theorem</h4>
 
-> **Theorem:** Let $$\varphi$$ be a formula. If two variable assignments $$s$$ and $$r$$ agree on all free variables of $$\varphi$$, then $$\mathfrak{A} \models \varphi[s] \iff \mathfrak{A} \models \varphi[r]$$.
+> **Theorem:** Let $$\varphi$$ be a formula. If two [variable assignments](/definitions/#def-variable-assignment) $$s$$ and $$r$$ agree on all [free variables](/definitions/#def-free-variables) of $$\varphi$$, then $$\mathfrak{A} \models \varphi[s] \iff \mathfrak{A} \models \varphi[r]$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -263,7 +263,7 @@ We proceed by structural induction on the formula $$\varphi$$.
 
 <h4 id="tautology-soundness">Soundness of the Tautology System</h4>
 
-> **Theorem:** In the tautology system, $$\Sigma \vdash \phi \implies \Sigma \models \phi$$.
+> **Theorem:** In the [tautology system](/definitions/#def-tautology-system), $$\Sigma \vdash \phi \implies \Sigma \models \phi$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -281,7 +281,7 @@ Let $$\varphi(n)$$ be the statement: *"The thesis holds for all proofs of length
 
 <h4 id="compactness-theorem">The Propositional Compactness Theorem</h4>
 
-> **Theorem:** A set of formulae $$\Sigma$$ is satisfiable if and only if it is finitely satisfiable.
+> **Theorem:** A set of formulae $$\Sigma$$ is [satisfiable](/definitions/#def-tautology) if and only if it is [finitely satisfiable](/definitions/#def-finitely-satisfiable).
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -327,7 +327,7 @@ Because this formula is a semantic tautology, it is an axiom of the tautology sy
 
 <h4 id="constant-extension">Consistency under Constant Extension</h4>
 
-> **Theorem:** Let $$\Gamma$$ be consistent over $$\mathscr{L}$$. If $$c_0, c_1, \dots \notin \mathscr{L}$$, then $$\Gamma$$ is consistent over $$\mathscr{L} \cup \{c_0, c_1, \dots\}$$.
+> **Theorem:** Let $$\Gamma$$ be [consistent](/definitions/#def-consistency) over language $$\mathscr{L}$$. If $$c_0, c_1, \dots \notin \mathscr{L}$$, then $$\Gamma$$ is consistent over $$\mathscr{L} \cup \{c_0, c_1, \dots\}$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -373,7 +373,7 @@ By contraposition, each $$\Gamma'_n$$ is consistent. Let $$\Gamma' := \bigcup_{n
 
 <h4 id="lindenbaum-lemma">Lindenbaum's Maximal Extension Lemma</h4>
 
-> **Theorem:** Every consistent set $$\Gamma$$ can be extended to a consistent set $$\Delta$$ such that for every formula $$\phi$$, either $$\phi \in \Delta$$ or $$\neg \phi \in \Delta$$.
+> **Theorem:** Every [consistent](/definitions/#def-consistency) set $$\Gamma$$ can be extended to a [maximally consistent](/definitions/#def-maximal-consistency) set $$\Delta$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -394,7 +394,7 @@ Let $$\Delta := \bigcup_{n \in \mathbb{N}} \Delta_n$$. Since any formal contradi
 
 <h4 id="term-model-truth">The Fundamental Truth Lemma for Term Structures</h4>
 
-> **Theorem:** Let $$\mathfrak{A}$$ be a canonical term structure over maximal consistent Henkin set $$\Delta$$. Then $$\mathfrak{A} \models \phi^* \iff \phi \in \Delta$$.
+> **Theorem:** Let $$\mathfrak{A}$$ be a [canonical term structure](/definitions/#def-term-verifier) over maximal consistent Henkin set $$\Delta$$. Then $$\mathfrak{A} \models \phi^* \iff \phi \in \Delta$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -419,7 +419,7 @@ Since $$c_k \in \vert \mathfrak{A} \vert$$, this directly contradicts that $$\ps
 
 <h4 id="godel-completeness">Gödel's Completeness Theorem</h4>
 
-> **Theorem:** If $$\Gamma$$ is consistent, then $$\Gamma$$ has a model. Consequently, $$\Gamma \models \phi \implies \Gamma \vdash \phi$$.
+> **Theorem:** If $$\Gamma$$ is [consistent](/definitions/#def-consistency), then $$\Gamma$$ has a [model](/definitions/#def-model-theory). Consequently, $$\Gamma \models \phi \implies \Gamma \vdash \phi$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -491,7 +491,7 @@ By the definition of $$\omega := \bigcap \{x \in \mathcal{P}(\mathcal{I}) \mid x
 
 <h4 id="well-ordered-induction">Principle of Well-Ordered Induction</h4>
 
-> **Theorem:** Let $$(X, \le)$$ be a well-ordered set and let $$\Pi$$ be a property. If $$\Pi(a)$$ holds whenever $$\Pi(y)$$ holds for all $$y < a$$, then $$\Pi(x)$$ holds for all $$x \in X$$.
+> **Theorem:** Let $$(X, \le)$$ be a [well-ordered set](/definitions/#def-well-ordering) and let $$\Pi$$ be a property. If $$\Pi(a)$$ holds whenever $$\Pi(y)$$ holds for all $$y < a$$, then $$\Pi(x)$$ holds for all $$x \in X$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -510,7 +510,7 @@ By the inductive hypothesis, this implies that $$\Pi(a)$$ must hold, contradicti
 
 <h4 id="woset-automorphism">Uniqueness of Order Automorphisms on Wosets</h4>
 
-> **Theorem:** Let $$(X, \le)$$ be a well-ordered set and $$f \colon X \longrightarrow X$$ an order automorphism. Then $$\forall x \in X \ x \le f(x)$$. Consequently, the only order automorphism of $$(X, \le)$$ is $$\operatorname{id}_X$$.
+> **Theorem:** Let $$(X, \le)$$ be a [well-ordered set](/definitions/#def-well-ordering) and $$f \colon X \longrightarrow X$$ an [order automorphism](/definitions/#def-order-isomorphism). Then $$\forall x \in X \ x \le f(x)$$. Consequently, the only order automorphism of $$(X, \le)$$ is $$\operatorname{id}_X$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -529,7 +529,7 @@ If $$f$$ is an automorphism, its inverse $$f^{-1}$$ is also an automorphism. Thu
 
 <h4 id="woset-initial-segment">Wosets and Initial Segments</h4>
 
-> **Theorem:** A well-ordered set $$(X, \le)$$ is never order-isomorphic to any of its proper initial segments $$X_a$$.
+> **Theorem:** A [well-ordered set](/definitions/#def-well-ordering) $$(X, \le)$$ is never order-isomorphic to any of its proper [initial segments](/definitions/#def-initial-segment) $$X_a$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -548,7 +548,7 @@ However, by the [Uniqueness of Order Automorphisms Theorem](#woset-automorphism)
 
 <h4 id="woset-comparability">Comparability of Well-Ordered Sets</h4>
 
-> **Theorem:** Let $$\mathrm{X} := (X, \le)$$ and $$\mathrm{Y} := (Y, \hat{\le})$$ be well-ordered sets. Then exactly one of the following holds:
+> **Theorem:** Let $$\mathrm{X} := (X, \le)$$ and $$\mathrm{Y} := (Y, \hat{\le})$$ be [well-ordered sets](/definitions/#def-well-ordering). Then exactly one of the following holds:
 > 1. $$\mathrm{X} \sqsubset \mathrm{Y}$$,
 > 2. $$\mathrm{X} \cong_{\operatorname{Ord}} \mathrm{Y}$$,
 > 3. $$\mathrm{Y} \sqsubset \mathrm{X}$$.
@@ -579,7 +579,7 @@ contradicting $$x_0 \notin \operatorname{dom} f$$. Thus $$\operatorname{dom} f =
 
 <h4 id="ordinal-subset-in">Strict Inclusion and Membership of Ordinals</h4>
 
-> **Theorem:** Let $$\alpha, \beta$$ be ordinals. Then $$\alpha \subset \beta \implies \alpha \in \beta$$.
+> **Theorem:** Let $$\alpha, \beta$$ be [ordinals](/definitions/#def-ordinals). Then $$\alpha \subset \beta \implies \alpha \in \beta$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -598,7 +598,7 @@ Therefore $$\delta \in \gamma$$ for all $$\delta \in \alpha$$, which gives $$\al
 
 <h4 id="burali-forti">Extended Burali-Forti Theorem</h4>
 
-> **Theorem:** Let $$A$$ be a subclass of $$\mathbf{Ord}$$ that is unbounded in $$\mathbf{Ord}$$. Then $$A$$ is a proper class (not a set).
+> **Theorem:** Let $$A$$ be a subclass of $$\mathbf{Ord}$$ that is [not bounded above](/definitions/#def-order-boundedness) in $$\mathbf{Ord}$$. Then $$A$$ is a [proper class](/definitions/#def-classes-universe).
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -617,7 +617,7 @@ Since $$A$$ is unbounded in $$\mathbf{Ord}$$, there exists some $$a \in A$$ such
 
 <h4 id="woset-to-ordinal">Isomorphism of Well-Orderings to Unique Ordinals</h4>
 
-> **Theorem:** Let $$(X, \le)$$ be a well-ordered set. Then there exists a unique ordinal number $$\alpha$$ such that $$(X, \le) \cong_{\operatorname{Ord}} (\alpha, \in)$$.
+> **Theorem:** Let $$(X, \le)$$ be a [well-ordered set](/definitions/#def-well-ordering). Then there exists a unique [ordinal number](/definitions/#def-ordinals) $$\alpha$$ such that $$(X, \le) \cong_{\operatorname{Ord}} (\alpha, \in)$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -644,7 +644,7 @@ Let $$\gamma := \min(\mathbf{Ord} \setminus F(X))$$, which exists by the well-fo
 
 <h4 id="hausdorff-maximal-principle">Hausdorff's Maximal Principle (The Tower Construction)</h4>
 
-> **Theorem (Hausdorff):** Let $$(X, \le)$$ be a partially ordered set. Then there exists a maximal chain in $$X$$.
+> **Theorem (Hausdorff):** Let $$(X, \le)$$ be a [partially ordered set](/definitions/#def-poset). Then there exists a [maximal chain](/definitions/#def-chain) in $$X$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof (Zermelo-Kneser Tower Construction)</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -686,7 +686,7 @@ Hence, every element of $$\mathcal{I}_0$$ is comparable, so $$\mathcal{I}_0$$ is
 
 <h4 id="zorns-lemma">Zorn's Lemma</h4>
 
-> **Theorem (Zorn):** If every chain in a non-empty partially ordered set $$X$$ has an upper bound, then $$X$$ has a maximal element.
+> **Theorem (Zorn):** If every [chain](/definitions/#def-chain) in a non-empty [partially ordered set](/definitions/#def-poset) $$X$$ has an [upper bound](/definitions/#def-bounds-min-max), then $$X$$ has a [maximal element](/definitions/#def-bounds-min-max).
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -705,7 +705,7 @@ If there existed $$x \in X$$ with $$m < x$$, then $$\mathcal{C} \cup \{x\}$$ wou
 
 <h4 id="well-ordering-theorem">Zermelo's Well-Ordering Theorem</h4>
 
-> **Theorem (Zermelo):** Every set $$X$$ can be well-ordered.
+> **Theorem (Zermelo):** Every set $$X$$ can be [well-ordered](/definitions/#def-well-ordering).
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -728,7 +728,7 @@ By [Zorn's Lemma](#zorns-lemma), let $$R$$ be a maximal element of $$\mathcal{A}
 
 <h4 id="wo-implies-ac">Equivalence: WO implies AC</h4>
 
-> **Theorem:** In $$\mathrm{ZF}^-$$, the Well-Ordering Theorem implies the Axiom of Choice ($$\mathbf{WO} \implies \mathbf{AC}$$).
+> **Theorem:** In $$\mathrm{ZF}^-$$, the [Well-Ordering Theorem](#well-ordering-theorem) implies the [Axiom of Choice](/definitions/#def-choice-zfc) ($$\mathbf{WO} \implies \mathbf{AC}$$).
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -753,7 +753,7 @@ Because every $$A \in \mathcal{A}$$ is a non-empty subset of a well-ordered set,
 
 <h4 id="schroder-bernstein">The Schröder–Bernstein Theorem</h4>
 
-> **Theorem:** Let $$A$$ and $$B$$ be sets. If there exist injections $$f \colon A \longrightarrow B$$ and $$g \colon B \longrightarrow A$$, then there exists a bijection $$h \colon A \longrightarrow B$$.
+> **Theorem:** Let $$A$$ and $$B$$ be sets. If there exist [injections](/definitions/#def-injection) $$f \colon A \longrightarrow B$$ and $$g \colon B \longrightarrow A$$, then there exists a [bijection](/definitions/#def-bijection) $$h \colon A \longrightarrow B$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof 1: Set Cascade and Diagram Chase (König 1906)</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -838,7 +838,7 @@ which is a contradiction.
 
 <h4 id="hessenbergs-theorem">Hessenberg's Theorem on Cardinal Arithmetic</h4>
 
-> **Theorem:** For any infinite cardinals $$\kappa$$ and $$\lambda$$:
+> **Theorem:** For any [infinite cardinals](/definitions/#def-cardinal-numbers) $$\kappa$$ and $$\lambda$$:
 > $$
 > \kappa + \lambda = \kappa \cdot \lambda = \max\{\kappa, \lambda\}
 > $$
@@ -864,7 +864,7 @@ Thus every proper initial segment of $$(\kappa \times \kappa, \prec)$$ has cardi
 
 <h4 id="cardinal-existence">Existence of Cardinal Numbers</h4>
 
-> **Theorem:** In $$\mathrm{ZFC}^-$$, for every set $$A$$, the cardinal number $$\vert A \vert$$ exists.
+> **Theorem:** In $$\mathrm{ZFC}^-$$, for every set $$A$$, the [cardinal number](/definitions/#def-cardinal-numbers) $$\vert A \vert$$ exists.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -997,7 +997,7 @@ Thus $$nx < m < ny$$, and dividing by $$n > 0$$ yields $$x < \frac{m}{n} < y$$. 
 
 <h4 id="semidecidability-enumeration">Semidecidability and Dovetailing Enumeration</h4>
 
-> **Theorem:** A set $$A \subseteq \mathbb{N}$$ is semidecidable if and only if it can be enumerated by an algorithm.
+> **Theorem:** A set $$A \subseteq \mathbb{N}$$ is [semidecidable](/definitions/#def-semidecidability) if and only if it can be [enumerated](/definitions/#def-enumeration) by an algorithm.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -1026,7 +1026,7 @@ If $$a \in A$$, the semidecision algorithm $$X(a)$$ halts in some finite number 
 
 <h4 id="kleene-theorem">Kleene's Post Theorem on Decidability</h4>
 
-> **Theorem (Kleene):** A set $$A \subseteq \mathbb{N}$$ is decidable if and only if both $$A$$ and $$A^c$$ are semidecidable.
+> **Theorem (Kleene):** A set $$A \subseteq \mathbb{N}$$ is [decidable](/definitions/#def-decidability) if and only if both $$A$$ and $$A^c$$ are [semidecidable](/definitions/#def-semidecidability).
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>

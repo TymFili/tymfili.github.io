@@ -572,6 +572,48 @@
     "url": "/definitions/#def-fol-formulae"
   },
   {
+    "id": "def-def-free-variables",
+    "title": "Free Variables of Terms and Formulae",
+    "section": "Definitions",
+    "url": "/definitions/#def-free-variables"
+  },
+  {
+    "id": "def-def-model-theory",
+    "title": "Model of a Set of Formulae",
+    "section": "Definitions",
+    "url": "/definitions/#def-model-theory"
+  },
+  {
+    "id": "def-def-finitely-satisfiable",
+    "title": "Finitely Satisfiable Set of Formulae",
+    "section": "Definitions",
+    "url": "/definitions/#def-finitely-satisfiable"
+  },
+  {
+    "id": "def-def-henkin-property",
+    "title": "The Henkin Property (Witness Property)",
+    "section": "Definitions",
+    "url": "/definitions/#def-henkin-property"
+  },
+  {
+    "id": "def-def-maximal-consistency",
+    "title": "Maximally Consistent Theory",
+    "section": "Definitions",
+    "url": "/definitions/#def-maximal-consistency"
+  },
+  {
+    "id": "def-def-order-boundedness",
+    "title": "Bounded, Cofinal, and Dense Subsets of a Poset",
+    "section": "Definitions",
+    "url": "/definitions/#def-order-boundedness"
+  },
+  {
+    "id": "def-def-cardinal-arithmetic-ops",
+    "title": "Cardinal Arithmetic Operations",
+    "section": "Definitions",
+    "url": "/definitions/#def-cardinal-arithmetic-ops"
+  },
+  {
     "id": "def-def-symbol-weight",
     "title": "Symbol Weight & Unique Readability",
     "section": "Definitions",
