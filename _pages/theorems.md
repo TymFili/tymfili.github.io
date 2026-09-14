@@ -263,7 +263,7 @@ We proceed by structural induction on the formula $$\varphi$$.
 
 <h4 id="tautology-soundness">Soundness of the Tautology System</h4>
 
-> **Theorem:** In the [tautology system](/definitions/#def-tautology-system), $$\Sigma \vdash \phi \implies \Sigma \models \phi$$.
+> **Theorem:** In the [tautology system](/definitions/#def-pc-satisfiability-set-system), $$\Sigma \vdash \phi \implies \Sigma \models \phi$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -281,7 +281,7 @@ Let $$\varphi(n)$$ be the statement: *"The thesis holds for all proofs of length
 
 <h4 id="compactness-theorem">The Propositional Compactness Theorem</h4>
 
-> **Theorem:** A set of formulae $$\Sigma$$ is [satisfiable](/definitions/#def-tautology) if and only if it is [finitely satisfiable](/definitions/#def-finitely-satisfiable).
+> **Theorem:** A set of formulae $$\Sigma$$ is [satisfiable](/definitions/#def-pc-satisfiability-set) if and only if it is [finitely satisfiable](/definitions/#def-finitely-satisfiable).
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
