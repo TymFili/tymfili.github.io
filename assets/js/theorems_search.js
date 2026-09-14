@@ -1,4 +1,4 @@
-// Auto-generated search integration for Theorems & Definitions
+// Auto-generated search index for all Theorems & Definitions
 (function() {
   const customItems = [
   {
@@ -249,7 +249,7 @@
   },
   {
     "id": "thm-semidecidable-closure",
-    "title": "Closure Properties of Semidecidable Sets",
+    "title": "Closure Properties of Semi[decidable](/definitions/#def-decidable-set) Sets",
     "section": "Theorems & Proofs",
     "url": "/theorems/#semidecidable-closure"
   },
@@ -381,7 +381,7 @@
   },
   {
     "id": "def-def-bijection",
-    "title": "Bijection & Inverses",
+    "title": "Bijection & Invertibility",
     "section": "Definitions",
     "url": "/definitions/#def-bijection"
   },
@@ -402,6 +402,12 @@
     "title": "Function Sets B\u1d2c",
     "section": "Definitions",
     "url": "/definitions/#def-function-set"
+  },
+  {
+    "id": "def-def-natural-integers",
+    "title": "Informal Number Sets",
+    "section": "Definitions",
+    "url": "/definitions/#def-natural-integers"
   },
   {
     "id": "def-def-relation-properties",
@@ -465,15 +471,27 @@
   },
   {
     "id": "def-def-well-ordering",
-    "title": "Well-Ordering",
+    "title": "Well-Ordering (Woset)",
     "section": "Definitions",
     "url": "/definitions/#def-well-ordering"
+  },
+  {
+    "id": "def-def-successor-element",
+    "title": "Successor Element",
+    "section": "Definitions",
+    "url": "/definitions/#def-successor-element"
   },
   {
     "id": "def-def-well-founded",
     "title": "Well-Founded Relation",
     "section": "Definitions",
     "url": "/definitions/#def-well-founded"
+  },
+  {
+    "id": "def-def-order-boundedness",
+    "title": "Order Boundedness, Cofinality, and Density",
+    "section": "Definitions",
+    "url": "/definitions/#def-order-boundedness"
   },
   {
     "id": "def-def-lattice",
@@ -495,321 +513,9 @@
   },
   {
     "id": "def-def-fixed-point",
-    "title": "Fixed Points & Least Fixed Point (\u03bcf)",
+    "title": "Fixed Point & Least Fixed Point (\u03bcf)",
     "section": "Definitions",
     "url": "/definitions/#def-fixed-point"
-  },
-  {
-    "id": "def-def-proof-system",
-    "title": "Proof System",
-    "section": "Definitions",
-    "url": "/definitions/#def-proof-system"
-  },
-  {
-    "id": "def-def-formal-proof",
-    "title": "Formal Proof, Derivability (\u22a2), and Theorems",
-    "section": "Definitions",
-    "url": "/definitions/#def-formal-proof"
-  },
-  {
-    "id": "def-def-modus-ponens",
-    "title": "Modus Ponens",
-    "section": "Definitions",
-    "url": "/definitions/#def-modus-ponens"
-  },
-  {
-    "id": "def-def-tautology-system",
-    "title": "Tautology System",
-    "section": "Definitions",
-    "url": "/definitions/#def-tautology-system"
-  },
-  {
-    "id": "def-def-hilbert-system",
-    "title": "Hilbert System",
-    "section": "Definitions",
-    "url": "/definitions/#def-hilbert-system"
-  },
-  {
-    "id": "def-def-consistency",
-    "title": "Consistency & Inconsistency",
-    "section": "Definitions",
-    "url": "/definitions/#def-consistency"
-  },
-  {
-    "id": "def-def-soundness-completeness",
-    "title": "Soundness & Completeness of Proof Systems",
-    "section": "Definitions",
-    "url": "/definitions/#def-soundness-completeness"
-  },
-  {
-    "id": "def-def-proof-tree",
-    "title": "Proof Trees & Natural Deduction",
-    "section": "Definitions",
-    "url": "/definitions/#def-proof-tree"
-  },
-  {
-    "id": "def-def-signature",
-    "title": "Signature",
-    "section": "Definitions",
-    "url": "/definitions/#def-signature"
-  },
-  {
-    "id": "def-def-fol-alphabet",
-    "title": "Alphabet of First-Order Logic",
-    "section": "Definitions",
-    "url": "/definitions/#def-fol-alphabet"
-  },
-  {
-    "id": "def-def-terms",
-    "title": "Terms (Trm)",
-    "section": "Definitions",
-    "url": "/definitions/#def-terms"
-  },
-  {
-    "id": "def-def-fol-formulae",
-    "title": "Formulae (AtFrm and Frm)",
-    "section": "Definitions",
-    "url": "/definitions/#def-fol-formulae"
-  },
-  {
-    "id": "def-def-free-variables",
-    "title": "Free Variables of Terms and Formulae",
-    "section": "Definitions",
-    "url": "/definitions/#def-free-variables"
-  },
-  {
-    "id": "def-def-model-theory",
-    "title": "Model of a Set of Formulae",
-    "section": "Definitions",
-    "url": "/definitions/#def-model-theory"
-  },
-  {
-    "id": "def-def-finitely-satisfiable",
-    "title": "Finitely Satisfiable Set of Formulae",
-    "section": "Definitions",
-    "url": "/definitions/#def-finitely-satisfiable"
-  },
-  {
-    "id": "def-def-henkin-property",
-    "title": "The Henkin Property (Witness Property)",
-    "section": "Definitions",
-    "url": "/definitions/#def-henkin-property"
-  },
-  {
-    "id": "def-def-maximal-consistency",
-    "title": "Maximally Consistent Theory",
-    "section": "Definitions",
-    "url": "/definitions/#def-maximal-consistency"
-  },
-  {
-    "id": "def-def-order-boundedness",
-    "title": "Bounded, Cofinal, and Dense Subsets of a Poset",
-    "section": "Definitions",
-    "url": "/definitions/#def-order-boundedness"
-  },
-  {
-    "id": "def-def-cardinal-arithmetic-ops",
-    "title": "Cardinal Arithmetic Operations",
-    "section": "Definitions",
-    "url": "/definitions/#def-cardinal-arithmetic-ops"
-  },
-  {
-    "id": "def-def-symbol-weight",
-    "title": "Symbol Weight & Unique Readability",
-    "section": "Definitions",
-    "url": "/definitions/#def-symbol-weight"
-  },
-  {
-    "id": "def-def-abbreviations",
-    "title": "Abbreviation Conventions",
-    "section": "Definitions",
-    "url": "/definitions/#def-abbreviations"
-  },
-  {
-    "id": "def-def-functional-formula",
-    "title": "Functional Formula",
-    "section": "Definitions",
-    "url": "/definitions/#def-functional-formula"
-  },
-  {
-    "id": "def-def-structure",
-    "title": "Structure & Universe",
-    "section": "Definitions",
-    "url": "/definitions/#def-structure"
-  },
-  {
-    "id": "def-def-variable-assignment",
-    "title": "Variable Assignment",
-    "section": "Definitions",
-    "url": "/definitions/#def-variable-assignment"
-  },
-  {
-    "id": "def-def-term-valuation",
-    "title": "Term Valuation Function (s\u0304)",
-    "section": "Definitions",
-    "url": "/definitions/#def-term-valuation"
-  },
-  {
-    "id": "def-def-modified-assignment",
-    "title": "Modified Assignment",
-    "section": "Definitions",
-    "url": "/definitions/#def-modified-assignment"
-  },
-  {
-    "id": "def-def-satisfaction",
-    "title": "Tarskian Satisfaction Relation (\u22a8)",
-    "section": "Definitions",
-    "url": "/definitions/#def-satisfaction"
-  },
-  {
-    "id": "def-def-sentence",
-    "title": "Sentence",
-    "section": "Definitions",
-    "url": "/definitions/#def-sentence"
-  },
-  {
-    "id": "def-def-truth-structure",
-    "title": "Truth in a Structure (\u22a8)",
-    "section": "Definitions",
-    "url": "/definitions/#def-truth-structure"
-  },
-  {
-    "id": "def-def-fol-validity",
-    "title": "First-Order Validity and Satisfiability",
-    "section": "Definitions",
-    "url": "/definitions/#def-fol-validity"
-  },
-  {
-    "id": "def-def-model-theory",
-    "title": "Model of a Set of Formulae",
-    "section": "Definitions",
-    "url": "/definitions/#def-model-theory"
-  },
-  {
-    "id": "def-def-set-satisfiability",
-    "title": "Satisfiability of a Set of Formulae",
-    "section": "Definitions",
-    "url": "/definitions/#def-set-satisfiability"
-  },
-  {
-    "id": "def-def-fol-entailment",
-    "title": "First-Order Entailment",
-    "section": "Definitions",
-    "url": "/definitions/#def-fol-entailment"
-  },
-  {
-    "id": "def-def-term-verifier",
-    "title": "Canonical Term Structure (\u0393-Verifier)",
-    "section": "Definitions",
-    "url": "/definitions/#def-term-verifier"
-  },
-  {
-    "id": "def-def-quotient-model",
-    "title": "Quotient Model (\u0393-Model)",
-    "section": "Definitions",
-    "url": "/definitions/#def-quotient-model"
-  },
-  {
-    "id": "def-def-zfc-axioms",
-    "title": "The ZFC Axioms",
-    "section": "Definitions",
-    "url": "/definitions/#def-zfc-axioms"
-  },
-  {
-    "id": "def-def-kuratowski-pair",
-    "title": "Kuratowski's Ordered Pair",
-    "section": "Definitions",
-    "url": "/definitions/#def-kuratowski-pair"
-  },
-  {
-    "id": "def-def-successor-inductive",
-    "title": "Successor & Inductive Sets (\u03c9)",
-    "section": "Definitions",
-    "url": "/definitions/#def-successor-inductive"
-  },
-  {
-    "id": "def-def-transitive-set",
-    "title": "Transitive Set",
-    "section": "Definitions",
-    "url": "/definitions/#def-transitive-set"
-  },
-  {
-    "id": "def-def-classes-universe",
-    "title": "Classes & The Universe V",
-    "section": "Definitions",
-    "url": "/definitions/#def-classes-universe"
-  },
-  {
-    "id": "def-def-order-isomorphism",
-    "title": "Order Isomorphism & Embedding",
-    "section": "Definitions",
-    "url": "/definitions/#def-order-isomorphism"
-  },
-  {
-    "id": "def-def-ordinals",
-    "title": "Von Neumann Ordinals",
-    "section": "Definitions",
-    "url": "/definitions/#def-ordinals"
-  },
-  {
-    "id": "def-def-ordinal-bounds",
-    "title": "Ordinal Bounds (sup and inf)",
-    "section": "Definitions",
-    "url": "/definitions/#def-ordinal-bounds"
-  },
-  {
-    "id": "def-def-limit-ordinals",
-    "title": "Successor & Limit Ordinals",
-    "section": "Definitions",
-    "url": "/definitions/#def-limit-ordinals"
-  },
-  {
-    "id": "def-def-transfinite-recursion",
-    "title": "Transfinite Recursion",
-    "section": "Definitions",
-    "url": "/definitions/#def-transfinite-recursion"
-  },
-  {
-    "id": "def-def-ordinal-sequences",
-    "title": "Ordinal Sequences & Limits",
-    "section": "Definitions",
-    "url": "/definitions/#def-ordinal-sequences"
-  },
-  {
-    "id": "def-def-choice-zfc",
-    "title": "The Axiom of Choice & ZFC\u207b",
-    "section": "Definitions",
-    "url": "/definitions/#def-choice-zfc"
-  },
-  {
-    "id": "def-def-cardinal-numbers",
-    "title": "Cardinal Numbers (Initial Ordinals)",
-    "section": "Definitions",
-    "url": "/definitions/#def-cardinal-numbers"
-  },
-  {
-    "id": "def-def-cardinal-ordering",
-    "title": "Cardinal Ordering",
-    "section": "Definitions",
-    "url": "/definitions/#def-cardinal-ordering"
-  },
-  {
-    "id": "def-def-decidability",
-    "title": "Decidable Set",
-    "section": "Definitions",
-    "url": "/definitions/#def-decidability"
-  },
-  {
-    "id": "def-def-semidecidability",
-    "title": "Semidecidable Set",
-    "section": "Definitions",
-    "url": "/definitions/#def-semidecidability"
-  },
-  {
-    "id": "def-def-enumeration",
-    "title": "Algorithmic Enumeration",
-    "section": "Definitions",
-    "url": "/definitions/#def-enumeration"
   },
   {
     "id": "def-def-alphabet",
@@ -836,40 +542,400 @@
     "url": "/definitions/#def-language"
   },
   {
-    "id": "def-def-propositional-syntax",
-    "title": "Syntax & Formulae (Frm)",
+    "id": "def-def-string-initial-segment",
+    "title": "Initial Segment of a String",
     "section": "Definitions",
-    "url": "/definitions/#def-propositional-syntax"
+    "url": "/definitions/#def-string-initial-segment"
   },
   {
-    "id": "def-def-formula-complexity",
+    "id": "def-def-pc-syntax",
+    "title": "Variables, Connectives, and Formulae (Frm)",
+    "section": "Definitions",
+    "url": "/definitions/#def-pc-syntax"
+  },
+  {
+    "id": "def-def-pc-complexity",
     "title": "Formula Complexity",
     "section": "Definitions",
-    "url": "/definitions/#def-formula-complexity"
+    "url": "/definitions/#def-pc-complexity"
   },
   {
-    "id": "def-def-valuation",
-    "title": "Valuation & Standard Interpretation",
+    "id": "def-def-pc-valuation",
+    "title": "Valuation & Extended Interpretation",
     "section": "Definitions",
-    "url": "/definitions/#def-valuation"
+    "url": "/definitions/#def-pc-valuation"
   },
   {
-    "id": "def-def-tautology",
-    "title": "Equivalence, Tautology, and Contradiction",
+    "id": "def-def-pc-equivalence",
+    "title": "Logical Equivalence",
     "section": "Definitions",
-    "url": "/definitions/#def-tautology"
+    "url": "/definitions/#def-pc-equivalence"
   },
   {
-    "id": "def-def-entailment",
-    "title": "Entailment (\u22a8)",
+    "id": "def-def-pc-tautology-contradiction",
+    "title": "Tautology & Contradiction",
     "section": "Definitions",
-    "url": "/definitions/#def-entailment"
+    "url": "/definitions/#def-pc-tautology-contradiction"
   },
   {
-    "id": "def-def-functional-completeness",
+    "id": "def-def-pc-satisfiability-formula",
+    "title": "Formula Satisfiability (PC)",
+    "section": "Definitions",
+    "url": "/definitions/#def-pc-satisfiability-formula"
+  },
+  {
+    "id": "def-def-pc-satisfiability-set",
+    "title": "Set Satisfiability (PC)",
+    "section": "Definitions",
+    "url": "/definitions/#def-pc-satisfiability-set"
+  },
+  {
+    "id": "def-def-pc-entailment",
+    "title": "Entailment (PC)",
+    "section": "Definitions",
+    "url": "/definitions/#def-pc-entailment"
+  },
+  {
+    "id": "def-def-pc-functional-completeness",
     "title": "Functional Completeness",
     "section": "Definitions",
-    "url": "/definitions/#def-functional-completeness"
+    "url": "/definitions/#def-pc-functional-completeness"
+  },
+  {
+    "id": "def-def-proof-system",
+    "title": "Proof System",
+    "section": "Definitions",
+    "url": "/definitions/#def-proof-system"
+  },
+  {
+    "id": "def-def-formal-proof",
+    "title": "Formal Proof",
+    "section": "Definitions",
+    "url": "/definitions/#def-formal-proof"
+  },
+  {
+    "id": "def-def-provability",
+    "title": "Syntactic Provability (\u22a2) & Theorems",
+    "section": "Definitions",
+    "url": "/definitions/#def-provability"
+  },
+  {
+    "id": "def-def-modus-ponens",
+    "title": "Modus Ponens",
+    "section": "Definitions",
+    "url": "/definitions/#def-modus-ponens"
+  },
+  {
+    "id": "def-def-tautology-system",
+    "title": "Tautology System",
+    "section": "Definitions",
+    "url": "/definitions/#def-tautology-system"
+  },
+  {
+    "id": "def-def-hilbert-system",
+    "title": "Hilbert System",
+    "section": "Definitions",
+    "url": "/definitions/#def-hilbert-system"
+  },
+  {
+    "id": "def-def-consistency",
+    "title": "Consistency & Inconsistency",
+    "section": "Definitions",
+    "url": "/definitions/#def-consistency"
+  },
+  {
+    "id": "def-def-system-soundness-completeness",
+    "title": "Soundness & Completeness of a Proof System",
+    "section": "Definitions",
+    "url": "/definitions/#def-system-soundness-completeness"
+  },
+  {
+    "id": "def-def-proof-tree",
+    "title": "Proof Trees & Discharging",
+    "section": "Definitions",
+    "url": "/definitions/#def-proof-tree"
+  },
+  {
+    "id": "def-def-nd-derivation",
+    "title": "Natural Deduction Derivation",
+    "section": "Definitions",
+    "url": "/definitions/#def-nd-derivation"
+  },
+  {
+    "id": "def-def-fol-signature",
+    "title": "Signature (\u03c3)",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-signature"
+  },
+  {
+    "id": "def-def-fol-alphabet",
+    "title": "First-Order Alphabet",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-alphabet"
+  },
+  {
+    "id": "def-def-fol-terms",
+    "title": "Terms (Trm)",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-terms"
+  },
+  {
+    "id": "def-def-fol-formulae",
+    "title": "Atomic & Compound Formulae (Frm)",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-formulae"
+  },
+  {
+    "id": "def-def-fol-weight",
+    "title": "Symbol Weight & Unique Readability",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-weight"
+  },
+  {
+    "id": "def-def-fol-free-variables",
+    "title": "Free Variables (FV)",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-free-variables"
+  },
+  {
+    "id": "def-def-fol-abbreviations",
+    "title": "Precedence & Abbreviations",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-abbreviations"
+  },
+  {
+    "id": "def-def-fol-functional-formula",
+    "title": "Functional Formula",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-functional-formula"
+  },
+  {
+    "id": "def-def-fol-structure",
+    "title": "Structure (\ud835\udd04)",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-structure"
+  },
+  {
+    "id": "def-def-fol-assignment",
+    "title": "Variable Assignment",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-assignment"
+  },
+  {
+    "id": "def-def-fol-valuation-function",
+    "title": "Term Valuation Function (s\u0304)",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-valuation-function"
+  },
+  {
+    "id": "def-def-fol-modified-assignment",
+    "title": "Modified Assignment",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-modified-assignment"
+  },
+  {
+    "id": "def-def-fol-satisfaction",
+    "title": "Satisfaction Relation (\u22a8)",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-satisfaction"
+  },
+  {
+    "id": "def-def-sentence",
+    "title": "Sentence",
+    "section": "Definitions",
+    "url": "/definitions/#def-sentence"
+  },
+  {
+    "id": "def-def-truth-structure",
+    "title": "Truth in a Structure",
+    "section": "Definitions",
+    "url": "/definitions/#def-truth-structure"
+  },
+  {
+    "id": "def-def-fol-validity",
+    "title": "First-Order Validity & Satisfiability",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-validity"
+  },
+  {
+    "id": "def-def-model-theory",
+    "title": "Model of a Set of Formulae",
+    "section": "Definitions",
+    "url": "/definitions/#def-model-theory"
+  },
+  {
+    "id": "def-def-fol-entailment",
+    "title": "First-Order Entailment",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-entailment"
+  },
+  {
+    "id": "def-def-fol-set-satisfiability",
+    "title": "Set Satisfiability (FOL)",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-set-satisfiability"
+  },
+  {
+    "id": "def-def-finitely-satisfiable",
+    "title": "Finite Satisfiability",
+    "section": "Definitions",
+    "url": "/definitions/#def-finitely-satisfiable"
+  },
+  {
+    "id": "def-def-henkin-property",
+    "title": "Henkin Witness Property",
+    "section": "Definitions",
+    "url": "/definitions/#def-henkin-property"
+  },
+  {
+    "id": "def-def-maximally-consistent",
+    "title": "Maximal Consistency",
+    "section": "Definitions",
+    "url": "/definitions/#def-maximally-consistent"
+  },
+  {
+    "id": "def-def-term-verifier",
+    "title": "Canonical Term Structure (\u0393-Verifier)",
+    "section": "Definitions",
+    "url": "/definitions/#def-term-verifier"
+  },
+  {
+    "id": "def-def-quotient-model",
+    "title": "Quotient Model (\u0393-Model)",
+    "section": "Definitions",
+    "url": "/definitions/#def-quotient-model"
+  },
+  {
+    "id": "def-def-set-theory-language",
+    "title": "Language of Set Theory",
+    "section": "Definitions",
+    "url": "/definitions/#def-set-theory-language"
+  },
+  {
+    "id": "def-def-ordered-pair-kuratowski",
+    "title": "Kuratowski Ordered Pair",
+    "section": "Definitions",
+    "url": "/definitions/#def-ordered-pair-kuratowski"
+  },
+  {
+    "id": "def-def-successor-set",
+    "title": "Successor Set",
+    "section": "Definitions",
+    "url": "/definitions/#def-successor-set"
+  },
+  {
+    "id": "def-def-z-minus-zf-minus",
+    "title": "Z\u207b and ZF\u207b",
+    "section": "Definitions",
+    "url": "/definitions/#def-z-minus-zf-minus"
+  },
+  {
+    "id": "def-def-omega-natural-numbers",
+    "title": "Natural Numbers (\u03c9, \u2115)",
+    "section": "Definitions",
+    "url": "/definitions/#def-omega-natural-numbers"
+  },
+  {
+    "id": "def-def-transitive-set",
+    "title": "Transitive Set",
+    "section": "Definitions",
+    "url": "/definitions/#def-transitive-set"
+  },
+  {
+    "id": "def-def-class-proper-class",
+    "title": "Classes & The Universe (V)",
+    "section": "Definitions",
+    "url": "/definitions/#def-class-proper-class"
+  },
+  {
+    "id": "def-def-order-isomorphism",
+    "title": "Order Isomorphism & Automorphism",
+    "section": "Definitions",
+    "url": "/definitions/#def-order-isomorphism"
+  },
+  {
+    "id": "def-def-initial-segment-embedding",
+    "title": "Initial Segment Embedding (\u2291)",
+    "section": "Definitions",
+    "url": "/definitions/#def-initial-segment-embedding"
+  },
+  {
+    "id": "def-def-ordinal-number",
+    "title": "Ordinal Number (Ord)",
+    "section": "Definitions",
+    "url": "/definitions/#def-ordinal-number"
+  },
+  {
+    "id": "def-def-ordinal-sup-inf",
+    "title": "Ordinal Supremum & Infimum",
+    "section": "Definitions",
+    "url": "/definitions/#def-ordinal-sup-inf"
+  },
+  {
+    "id": "def-def-successor-limit-ordinal",
+    "title": "Successor & Limit Ordinals",
+    "section": "Definitions",
+    "url": "/definitions/#def-successor-limit-ordinal"
+  },
+  {
+    "id": "def-def-transfinite-recursion",
+    "title": "Transfinite Recursion",
+    "section": "Definitions",
+    "url": "/definitions/#def-transfinite-recursion"
+  },
+  {
+    "id": "def-def-ordinal-sequence",
+    "title": "Ordinal Sequences & Limits",
+    "section": "Definitions",
+    "url": "/definitions/#def-ordinal-sequence"
+  },
+  {
+    "id": "def-def-axiom-choice",
+    "title": "Axiom of Choice (AC) & ZFC\u207b",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-choice"
+  },
+  {
+    "id": "def-def-cardinality-of-set",
+    "title": "Cardinality of a Set (|A|)",
+    "section": "Definitions",
+    "url": "/definitions/#def-cardinality-of-set"
+  },
+  {
+    "id": "def-def-cardinal-number",
+    "title": "Cardinal Number",
+    "section": "Definitions",
+    "url": "/definitions/#def-cardinal-number"
+  },
+  {
+    "id": "def-def-cardinal-ordering",
+    "title": "Cardinal Ordering (\u2264)",
+    "section": "Definitions",
+    "url": "/definitions/#def-cardinal-ordering"
+  },
+  {
+    "id": "def-def-cardinal-arithmetic",
+    "title": "Cardinal Arithmetic",
+    "section": "Definitions",
+    "url": "/definitions/#def-cardinal-arithmetic"
+  },
+  {
+    "id": "def-def-decidable-set",
+    "title": "Decidable Set",
+    "section": "Definitions",
+    "url": "/definitions/#def-decidable-set"
+  },
+  {
+    "id": "def-def-semidecidable-set",
+    "title": "Semidecidable Set",
+    "section": "Definitions",
+    "url": "/definitions/#def-semidecidable-set"
+  },
+  {
+    "id": "def-def-enumerator",
+    "title": "Enumerator",
+    "section": "Definitions",
+    "url": "/definitions/#def-enumerator"
   }
 ];
 

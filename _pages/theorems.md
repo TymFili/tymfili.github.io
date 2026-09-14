@@ -62,7 +62,7 @@ Welcome to the central reference library of proofs. This archive maintains compl
 * **Theory of Computation:**
   * [Semidecidability and Dovetailing Enumeration](#semidecidability-enumeration)
   * [Kleene's Post Theorem on Decidability](#kleene-theorem)
-  * [Closure Properties of Semidecidable Sets](#semidecidable-closure)
+  * [Closure Properties of Semi[decidable](/definitions/#def-decidable-set) Sets](#semidecidable-closure)
 
 ---
 
@@ -517,7 +517,7 @@ By the inductive hypothesis, this implies that $$\Pi(a)$$ must hold, contradicti
 
 Let $$S := \{x \in X \mid f(x) < x\}$$. If $$S \neq \emptyset$$, let $$s := \min_\le S$$. 
 
-Since $$f(s) < s$$, applying the order-preserving bijection $$f$$ yields $$f(f(s)) < f(s)$$, which contradicts the minimality of $$s$$ in $$S$$. Hence $$S = \emptyset$$, so $$\forall x \in X \ x \le f(x)$$.
+Since $$f(s) < s$$, applying the order-preserving [bijection](/definitions/#def-bijection) $$f$$ yields $$f(f(s)) < f(s)$$, which contradicts the minimality of $$s$$ in $$S$$. Hence $$S = \emptyset$$, so $$\forall x \in X \ x \le f(x)$$.
 
 If $$f$$ is an automorphism, its inverse $$f^{-1}$$ is also an automorphism. Thus for all $$x \in X$$, we have both $$x \le f(x)$$ and $$x \le f^{-1}(x) \implies f(x) \le x$$. Hence $$f(x) = x = \operatorname{id}_X(x)$$.
 
@@ -529,12 +529,12 @@ If $$f$$ is an automorphism, its inverse $$f^{-1}$$ is also an automorphism. Thu
 
 <h4 id="woset-initial-segment">Wosets and Initial Segments</h4>
 
-> **Theorem:** A [well-ordered set](/definitions/#def-well-ordering) $$(X, \le)$$ is never order-isomorphic to any of its proper [initial segments](/definitions/#def-initial-segment) $$X_a$$.
+> **Theorem:** A [well-ordered set](/definitions/#def-well-ordering) $$(X, \le)$$ is never order-isomorphic to any of its proper [[initial segment](/definitions/#def-initial-segment)s](/definitions/#def-initial-segment) $$X_a$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
 
-Suppose for contradiction that $$f \colon X \longrightarrow X_a$$ is an order isomorphism onto the proper initial segment $$X_a := \{x \in X \mid x < a\}$$.
+Suppose for contradiction that $$f \colon X \longrightarrow X_a$$ is an [order isomorphism](/definitions/#def-order-isomorphism) onto the proper [initial segment](/definitions/#def-initial-segment) $$X_a := \{x \in X \mid x < a\}$$.
 
 Then $$f(a) \in X_a$$, which means $$f(a) < a$$. 
 
@@ -549,7 +549,7 @@ However, by the [Uniqueness of Order Automorphisms Theorem](#woset-automorphism)
 <h4 id="woset-comparability">Comparability of Well-Ordered Sets</h4>
 
 > **Theorem:** Let $$\mathrm{X} := (X, \le)$$ and $$\mathrm{Y} := (Y, \hat{\le})$$ be [well-ordered sets](/definitions/#def-well-ordering). Then exactly one of the following holds:
-> 1. $$\mathrm{X} \sqsubset \mathrm{Y}$$,
+> 1. $$\mathrm{X} [\sqsubset](/definitions/#def-initial-segment-embedding) \mathrm{Y}$$,
 > 2. $$\mathrm{X} \cong_{\operatorname{Ord}} \mathrm{Y}$$,
 > 3. $$\mathrm{Y} \sqsubset \mathrm{X}$$.
 
@@ -568,7 +568,7 @@ $$
 $$
 contradicting $$x_0 \notin \operatorname{dom} f$$. Thus $$\operatorname{dom} f = X$$ or $$\operatorname{ran} f = Y$$:
 * $$\operatorname{dom} f = X \land \operatorname{ran} f = Y \implies \mathrm{X} \cong_{\operatorname{Ord}} \mathrm{Y}$$
-* $$\operatorname{dom} f = X \land \operatorname{ran} f = Y_{y_0} \implies \mathrm{X} \sqsubset \mathrm{Y}$$
+* $$\operatorname{dom} f = X \land \operatorname{ran} f = Y_{y_0} \implies \mathrm{X} [\sqsubset](/definitions/#def-initial-segment-embedding) \mathrm{Y}$$
 * $$\operatorname{dom} f = X_{x_0} \land \operatorname{ran} f = Y \implies \mathrm{Y} \sqsubset \mathrm{X}$$
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
@@ -632,7 +632,7 @@ If such an $$\alpha$$ exists, it is unique. By the Axiom of Replacement, $$F(X)$
 
 Such an $$\alpha$$ exists for every $$x \in X$$ (otherwise, consider the least $$x \in X$$ for which it does not). The set $$F(X)$$ is an initial segment of $$\mathbf{Ord}$$. 
 
-Let $$\gamma := \min(\mathbf{Ord} \setminus F(X))$$, which exists by the well-foundedness of the class $$\mathbf{Ord}$$. Then $$F(X) = \gamma \in \mathbf{Ord}$$, and $$F$$ defines an order isomorphism $$(X, \le) \cong_{\operatorname{Ord}} (\gamma, \in)$$.
+Let $$\gamma := \min(\mathbf{Ord} \setminus F(X))$$, which exists by the well-foundedness of the class $$\mathbf{Ord}$$. Then $$F(X) = \gamma \in \mathbf{Ord}$$, and $$F$$ defines an [order isomorphism](/definitions/#def-order-isomorphism) $$(X, \le) \cong_{\operatorname{Ord}} (\gamma, \in)$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
@@ -649,7 +649,7 @@ Let $$\gamma := \min(\mathbf{Ord} \setminus F(X))$$, which exists by the well-fo
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof (Zermelo-Kneser Tower Construction)</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
 
-From the Axiom of Choice ($$\mathbf{AC}$$), let $$g \colon \mathcal{P}(X) \setminus \{\emptyset\} \longrightarrow X$$ be a choice function. 
+From the Axiom of Choice ($$\mathbf{AC}$$), let $$g \colon \mathcal{P}(X) \setminus \{\emptyset\} \longrightarrow X$$ be a [choice function](/definitions/#def-axiom-choice). 
 
 For any chain $$A \subseteq X$$, define the set of candidate extensions:
 $$
@@ -737,7 +737,7 @@ Let $$\mathcal{A}$$ be a set of non-empty sets.
 
 By the [Well-Ordering Theorem](#well-ordering-theorem), there exists a well-ordering $$\le$$ of the union $$\bigcup \mathcal{A}$$. 
 
-Define the choice function $$f \colon \mathcal{A} \longrightarrow \bigcup \mathcal{A}$$ by:
+Define the [choice function](/definitions/#def-axiom-choice) $$f \colon \mathcal{A} \longrightarrow \bigcup \mathcal{A}$$ by:
 $$
 f(A) := \min_\le A
 $$
@@ -772,7 +772,7 @@ For $$B \not\subseteq A$$, we consider the following commutative diagram:
   <img src="{{ '/assets/img/schroder_bernstein_diagram.svg' | relative_url }}" class="img-fluid" style="max-width: 75%; height: auto;" alt="Schröder-Bernstein Diagram">
 </div>
 
-Since $$g$$ is injective, it is bijective onto its range $$g(B) \subseteq A$$. Applying the previous case to $$A$$ and $$g(B)$$ with injections $$g \circ f$$ and inclusion $$\iota$$ yields a bijection $$h \colon A \longrightarrow g(B)$$. Thus $$g^{-1} \circ h \colon A \longrightarrow B$$ is a bijection.
+Since $$g$$ is injective, it is bijective onto its range $$g(B) \subseteq A$$. Applying the previous case to $$A$$ and $$g(B)$$ with [injections](/definitions/#def-injection) $$g \circ f$$ and inclusion $$\iota$$ yields a [bijection](/definitions/#def-bijection) $$h \colon A \longrightarrow g(B)$$. Thus $$g^{-1} \circ h \colon A \longrightarrow B$$ is a bijection.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
@@ -818,9 +818,9 @@ Because $$S$$ and $$A \setminus S$$ partition $$A$$, and $$f(S)$$ and $$B \setmi
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
 
-It suffices to show that there exists no surjection $$f \colon A \longrightarrow \mathcal{P}(A)$$. 
+It suffices to show that there exists no [surjection](/definitions/#def-surjection) $$f \colon A \longrightarrow \mathcal{P}(A)$$. 
 
-Suppose for contradiction that such a surjection exists and define a set:
+Suppose for contradiction that such a [surjection](/definitions/#def-surjection) exists and define a set:
 $$
 B := \{x \in A \mid x \notin f(x)\}
 $$
@@ -902,7 +902,7 @@ Hence, every set has a well-defined cardinal number.
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
 
-We construct injections in both directions:
+We construct [injections](/definitions/#def-injection) in both directions:
 
 1. Define $$f \colon \mathcal{P}(\mathbb{N}) \longrightarrow \mathbb{R}$$ by $$f(S) := \sum_{n \in S} \frac{2}{3^{n+1}}$$. Ternary expansions with digits in $$\{0, 2\}$$ avoid dual representations, so $$f$$ is injective.
 2. Define $$g \colon \mathbb{R} \longrightarrow \mathcal{P}(\mathbb{Q})$$ by $$g(x) := \{q \in \mathbb{Q} \mid q < x\}$$. Density of $$\mathbb{Q}$$ implies $$g$$ is injective. Since $$\mathbb{Q} \sim \mathbb{N}$$, this induces an injection into $$\mathcal{P}(\mathbb{N})$$.
@@ -1051,7 +1051,7 @@ Because one branch is guaranteed to halt in finite time, $$M$$ is a total decisi
 
 ---
 
-<h4 id="semidecidable-closure">Closure Properties of Semidecidable Sets</h4>
+<h4 id="semidecidable-closure">Closure Properties of Semi[decidable](/definitions/#def-decidable-set) Sets</h4>
 
 > **Theorem:** If $$A, B \subseteq \mathbb{N}$$ are semidecidable, then $$A \cup B$$ and $$A \cap B$$ are semidecidable.
 

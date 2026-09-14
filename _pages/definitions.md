@@ -2,46 +2,50 @@
 layout: page
 title: Definitions
 permalink: /definitions/
-description: A curated reference library of formal mathematical definitions.
+description: A curated reference library of formal mathematical definitions from logic and set theory.
 nav: true
 nav_order: 4
 ---
 
-Welcome to the central dictionary of mathematical definitions. This archive establishes the formal notation and concepts used throughout the lecture notes, blog articles, and [Theorems & Proofs Library](/theorems/).
+Welcome to the central dictionary of mathematical definitions. This archive establishes the formal notation and concepts from [Tymoteusz Filipiak's Lecture Notes on Mathematical Logic](/assets/pdf/logic.pdf), serving as the foundational lexicon for the blog and the [Theorems & Proofs Library](/theorems/).
 
 ---
 
 ### Table of Contents
-* **Informal Logic & Foundations:**
+* **Informal Logic & Foundations (Chapter 1):**
   * [Proposition](#def-proposition) &bull; [Argument](#def-argument) &bull; [Validity](#def-validity) &bull; [Soundness](#def-soundness)
-* **Naive Set Theory:**
-  * [Set & Membership](#def-set) &bull; [Subset & Equality](#def-subset) &bull; [Comprehension](#def-comprehension) &bull; [Empty Set](#def-empty-set) &bull; [Ordered Pair](#def-ordered-pair) &bull; [Cartesian Product](#def-cartesian-product) &bull; [Power Set](#def-power-set) &bull; [Union & Intersection](#def-union-intersection)
-* **Relations & Functions:**
-  * [Relations & Arity](#def-relation) &bull; [Domain & Range](#def-domain-range) &bull; [Functional Relation](#def-functional-relation) &bull; [Function](#def-function) &bull; [Composition](#def-composition) &bull; [Identity & Diagonal](#def-diagonal-relation) &bull; [Inclusion](#def-inclusion) &bull; [Injection](#def-injection) &bull; [Surjection](#def-surjection) &bull; [Bijection & Inverses](#def-bijection) &bull; [Image & Preimage](#def-image-preimage) &bull; [Restriction](#def-restriction) &bull; [Function Sets Bᴬ](#def-function-set)
-* **Equivalence Relations & Quotients:**
+* **Naive Set Theory (Chapter 1):**
+  * [Set & Membership](#def-set) &bull; [Subset & Extensional Equality](#def-subset) &bull; [Comprehension](#def-comprehension) &bull; [Empty Set](#def-empty-set) &bull; [Ordered Pair](#def-ordered-pair) &bull; [Cartesian Product & Powers](#def-cartesian-product) &bull; [Power Set](#def-power-set) &bull; [Unions & Intersections](#def-union-intersection)
+* **Relations & Functions (Chapter 1):**
+  * [Relations & Arity](#def-relation) &bull; [Domain & Range](#def-domain-range) &bull; [Functional Relation](#def-functional-relation) &bull; [Function](#def-function) &bull; [Composition](#def-composition) &bull; [Identity & Diagonal](#def-diagonal-relation) &bull; [Inclusion](#def-inclusion) &bull; [Injection](#def-injection) &bull; [Surjection](#def-surjection) &bull; [Bijection & Inverses](#def-bijection) &bull; [Image & Preimage](#def-image-preimage) &bull; [Restriction](#def-restriction) &bull; [Function Sets Bᴬ](#def-function-set) &bull; [Numbers (ℕ, ℤ)](#def-natural-integers)
+* **Equivalence Relations & Quotients (Chapter 1):**
   * [Relational Properties](#def-relation-properties) &bull; [Equivalence Relation](#def-equivalence-relation) &bull; [Equivalence Class](#def-equivalence-class) &bull; [Quotient Set](#def-quotient-set) &bull; [Partition](#def-partition)
-* **Order Theory:**
-  * [Strict & Weak Relations](#def-strict-weak-relations) &bull; [Poset & Total Order](#def-poset) &bull; [Initial Segment](#def-initial-segment) &bull; [Extremal Bounds & Min/Max](#def-bounds-min-max) &bull; [Chain](#def-chain) &bull; [Well-Ordering](#def-well-ordering) &bull; [Well-Founded Relation](#def-well-founded) &bull; [Bounded, Cofinal, Dense](#def-order-boundedness)
-* **Lattice Theory & Fixed Points:**
+* **Order Theory (Chapter 1):**
+  * [Strict & Weak Relations](#def-strict-weak-relations) &bull; [Poset & Total Order](#def-poset) &bull; [Initial Segment](#def-initial-segment) &bull; [Bounds, Extremals, and Min/Max](#def-bounds-min-max) &bull; [Chain](#def-chain) &bull; [Well-Ordering (Woset)](#def-well-ordering) &bull; [Successor Element](#def-successor-element) &bull; [Well-Founded Relation](#def-well-founded) &bull; [Order Boundedness & Density](#def-order-boundedness)
+* **Lattice Theory & Fixed Points (Chapter 1):**
   * [Lattice](#def-lattice) &bull; [Complete Lattice](#def-complete-lattice) &bull; [Monotone Function](#def-monotone-function) &bull; [Fixed Point & Least Fixed Point (μf)](#def-fixed-point)
-* **Proof Theory & Deductive Systems:**
-  * [Proof System](#def-proof-system) &bull; [Finite Satisfiability](#def-finitely-satisfiable) &bull; [Henkin Property](#def-henkin-property) &bull; [Maximal Consistency](#def-maximal-consistency) &bull; [Formal Proof & Consequence (⊢)](#def-formal-proof) &bull; [Modus Ponens](#def-modus-ponens) &bull; [Tautology System](#def-tautology-system) &bull; [Hilbert System](#def-hilbert-system) &bull; [Consistency & Inconsistency](#def-consistency) &bull; [Soundness & Completeness](#def-soundness-completeness) &bull; [Proof Trees & Natural Deduction](#def-proof-tree)
-* **First-Order Syntax & Prefix Weighting:**
-  * [Signature](#def-signature) &bull; [Alphabet of FOL](#def-fol-alphabet) &bull; [Terms (Trm)](#def-terms) &bull; [Formulae (Frm)](#def-fol-formulae) &bull; [Sentence](#def-sentence) &bull; [Truth in a Structure](#def-truth-structure) &bull; [First-Order Validity](#def-fol-validity) &bull; [Set Satisfiability](#def-set-satisfiability) &bull; [Free Variables (FV)](#def-free-variables) &bull; [Symbol Weight & Unique Readability](#def-symbol-weight) &bull; [Abbreviation Conventions](#def-abbreviations) &bull; [Functional Formulae](#def-functional-formula)
-* **Tarskian Semantics & Canonical Models:**
-  * [Structure & Universe](#def-structure) &bull; [Variable Assignment](#def-variable-assignment) &bull; [Term Valuation](#def-term-valuation) &bull; [Modified Assignment](#def-modified-assignment) &bull; [Model of a Theory](#def-model-theory) &bull; [Tarskian Satisfaction (⊨)](#def-satisfaction) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Canonical Term Structure (Verifier)](#def-term-verifier) &bull; [Quotient Model](#def-quotient-model)
-* **Axiomatic Set Theory (ZFC):**
-  * [ZFC Axioms](#def-zfc-axioms) &bull; [Kuratowski Ordered Pair](#def-kuratowski-pair) &bull; [Successor & Inductive Sets (ω)](#def-successor-inductive) &bull; [Transitive Sets](#def-transitive-set) &bull; [Classes & The Universe V](#def-classes-universe)
-* **Ordinal Numbers & Transfinite Recursion:**
-  * [Order Isomorphism & Embedding](#def-order-isomorphism) &bull; [Von Neumann Ordinals](#def-ordinals) &bull; [Ordinal Bounds (sup/inf)](#def-ordinal-bounds) &bull; [Successor & Limit Ordinals](#def-limit-ordinals) &bull; [Transfinite Recursion](#def-transfinite-recursion) &bull; [Ordinal Sequences & Limits](#def-ordinal-sequences)
-* **Choice & Cardinality:**
-  * [Axiom of Choice & ZFC⁻](#def-choice-zfc) &bull; [Cardinal Numbers (Initial Ordinals)](#def-cardinal-numbers) &bull; [Cardinal Ordering](#def-cardinal-ordering) &bull; [Cardinal Arithmetic Operations](#def-cardinal-arithmetic-ops)
-* **Theory of Computation:**
-  * [Decidability](#def-decidability) &bull; [Semidecidability](#def-semidecidability) &bull; [Algorithmic Enumeration](#def-enumeration)
-* **Formal Languages:**
-  * [Alphabet](#def-alphabet) &bull; [Strings (Σ*)](#def-strings) &bull; [Concatenation](#def-concatenation) &bull; [Language](#def-language)
-* **Propositional Calculus:**
-  * [Syntax & Formulae (Frm)](#def-propositional-syntax) &bull; [Formula Complexity](#def-formula-complexity) &bull; [Valuation & Truth](#def-valuation) &bull; [Equivalence & Tautology](#def-tautology) &bull; [Entailment (⊨)](#def-entailment) &bull; [Functional Completeness](#def-functional-completeness)
+* **Formal Languages (Chapter 2):**
+  * [Alphabet](#def-alphabet) &bull; [Strings (Σ*)](#def-strings) &bull; [Concatenation](#def-concatenation) &bull; [Language](#def-language) &bull; [Initial Segment of String](#def-string-initial-segment)
+* **Propositional Calculus: Syntax (Chapter 3):**
+  * [Variables, Connectives, and Formulae (Frm)](#def-pc-syntax) &bull; [Formula Complexity](#def-pc-complexity)
+* **Propositional Calculus: Semantics (Chapter 3):**
+  * [Valuation & Extended Interpretation](#def-pc-valuation) &bull; [Logical Equivalence](#def-pc-equivalence) &bull; [Tautology & Contradiction](#def-pc-tautology-contradiction) &bull; [Formula Satisfiability (PC)](#def-pc-satisfiability-formula) &bull; [Set Satisfiability (PC)](#def-pc-satisfiability-set) &bull; [Entailment (PC)](#def-pc-entailment) &bull; [Functional Completeness](#def-pc-functional-completeness)
+* **Proof Theory (Chapter 4):**
+  * [Proof System](#def-proof-system) &bull; [Formal Proof](#def-formal-proof) &bull; [Syntactic Provability (⊢) & Theorems](#def-provability) &bull; [Modus Ponens](#def-modus-ponens) &bull; [Tautology System](#def-tautology-system) &bull; [Hilbert System](#def-hilbert-system) &bull; [Consistency & Inconsistency](#def-consistency) &bull; [System Soundness & Completeness](#def-system-soundness-completeness) &bull; [Proof Trees & Discharging](#def-proof-tree) &bull; [Natural Deduction Derivation](#def-nd-derivation)
+* **First-Order Logic: Syntax (Chapter 5):**
+  * [Signature (σ)](#def-fol-signature) &bull; [First-Order Alphabet](#def-fol-alphabet) &bull; [Terms (Trm)](#def-fol-terms) &bull; [Atomic & Compound Formulae (Frm)](#def-fol-formulae) &bull; [Symbol Weight & Unique Readability](#def-fol-weight) &bull; [Free Variables (FV)](#def-fol-free-variables) &bull; [Precedence & Abbreviations](#def-fol-abbreviations) &bull; [Functional Formula](#def-fol-functional-formula)
+* **First-Order Logic: Semantics (Chapter 5):**
+  * [Structure (𝔄)](#def-fol-structure) &bull; [Variable Assignment](#def-fol-assignment) &bull; [Term Valuation Function](#def-fol-valuation-function) &bull; [Modified Assignment](#def-fol-modified-assignment) &bull; [Satisfaction Relation (⊨)](#def-fol-satisfaction) &bull; [Sentence](#def-sentence) &bull; [Truth in a Structure](#def-truth-structure) &bull; [Formula Validity & Satisfiability (FOL)](#def-fol-validity) &bull; [Model of a Theory](#def-model-theory) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Set Satisfiability (FOL)](#def-fol-set-satisfiability)
+* **Metatheory of Classical Logic (Chapter 6):**
+  * [Finite Satisfiability](#def-finitely-satisfiable) &bull; [Henkin Witness Property](#def-henkin-property) &bull; [Maximal Consistency](#def-maximally-consistent) &bull; [Canonical Term Structure (Verifier)](#def-term-verifier) &bull; [Quotient Model](#def-quotient-model)
+* **Axiomatic Set Theory: Foundations & Classes (Chapter 7):**
+  * [Language of Set Theory (∈)](#def-set-theory-language) &bull; [Kuratowski Ordered Pair](#def-ordered-pair-kuratowski) &bull; [Successor Set](#def-successor-set) &bull; [ZF⁻ and ZFC⁻](#def-z-minus-zf-minus) &bull; [Natural Numbers (ω, ℕ)](#def-omega-natural-numbers) &bull; [Transitive Set](#def-transitive-set) &bull; [Classes & Proper Classes (V)](#def-class-proper-class)
+* **Axiomatic Set Theory: Ordinals & Choice (Chapter 7):**
+  * [Order Isomorphism & Automorphism](#def-order-isomorphism) &bull; [Initial Segment Embedding (⊑)](#def-initial-segment-embedding) &bull; [Ordinal Number (Ord)](#def-ordinal-number) &bull; [Ordinal Bounds (sup, inf)](#def-ordinal-sup-inf) &bull; [Successor & Limit Ordinals](#def-successor-limit-ordinal) &bull; [Transfinite Recursion](#def-transfinite-recursion) &bull; [Ordinal Sequences & Limits](#def-ordinal-sequence) &bull; [Axiom of Choice (AC)](#def-axiom-choice)
+* **Cardinal Numbers (Chapter 7):**
+  * [Cardinality of a Set (|A|)](#def-cardinality-of-set) &bull; [Cardinal Number](#def-cardinal-number) &bull; [Cardinal Ordering (≤)](#def-cardinal-ordering) &bull; [Cardinal Arithmetic (+, ·, ^)](#def-cardinal-arithmetic)
+* **Theory of Computation (Chapter 8):**
+  * [Decidable Set](#def-decidable-set) &bull; [Semidecidable Set](#def-semidecidable-set) &bull; [Enumerator](#def-enumerator)
 
 ---
 
@@ -94,11 +98,11 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 <h4 id="def-comprehension">Set Comprehension</h4>
 
-> **Definition:** The expression $$A := \{x \mid \varphi(x)\}$$ is defined by:
+> **Definition:** The expression $$A := \{x \mid \varphi(x)\}$$ is the set defined by:
 > $$
 > \forall x \ (x \in A \iff \varphi(x))
 > $$
-> Bounded comprehension within a designated universe $$X$$ is defined as $$\{x \in X \mid \varphi(x)\} := \{x \mid x \in X \land \varphi(x)\}$$.
+> Bounded comprehension within a set $$X$$ is defined as $$\{x \in X \mid \varphi(x)\} := \{x \mid x \in X \land \varphi(x)\}$$.
 
 ---
 
@@ -122,11 +126,11 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 <h4 id="def-cartesian-product">Cartesian Product & Powers</h4>
 
-> **Definition:** The *Cartesian product* of sets $$A$$ and $$B$$ is defined as:
+> **Definition:** The *Cartesian product* of sets $$A$$ and $$B$$ is:
 > $$
 > A \times B := \{(a, b) \mid a \in A \land b \in B\}
 > $$
-> Cartesian powers are defined inductively by $$A^0 := \{\emptyset\}$$ and $$A^{n+1} := A^n \times A$$.
+> Cartesian powers are defined inductively by $$A^0 := \{\emptyset\}$$ and $$A^{n+1} := A^n \times A$$, taken as left-associative.
 
 ---
 
@@ -143,6 +147,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 > **Definition:** For sets $$A$$ and $$B$$:
 > * **Difference:** $$A \setminus B := \{a \in A \mid a \notin B\}$$
+> * **Complement:** Relative to a designated universe $$X$$, $$A^c := X \setminus A$$.
 > * **Binary Union:** $$A \cup B := \{x \mid x \in A \lor x \in B\}$$
 > * **General Union:** $$\bigcup A := \{x \mid \exists y \in A \ x \in y\}$$
 > * **Binary Intersection:** $$A \cap B := \{x \mid x \in A \land x \in B\}$$
@@ -206,7 +211,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > $$
 > \Delta_X := \{(x, x) \mid x \in X\}
 > $$
-> When viewed as a function, it is denoted $$\operatorname{id}_X$$ and called the *identity function* on $$X$$.
+> When viewed as a function, it is denoted $$\operatorname{id}_X$$ and called the *identity function* on $$X$$. Given $$R \subseteq A \times B$$, its *converse* (or transpose) is $$R^T := \{(b, a) \in B \times A \mid (a, b) \in R\}$$.
 
 ---
 
@@ -234,7 +239,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-bijection">Bijection & Inverses</h4>
+<h4 id="def-bijection">Bijection & Invertibility</h4>
 
 > **Definition:** A function $$f \colon A \longrightarrow B$$ is a *bijection* (adj: *bijective*) if it is both injective and surjective.
 > 
@@ -252,10 +257,11 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 <h4 id="def-restriction">Restriction</h4>
 
-> **Definition:** For $$f \colon A \longrightarrow B$$ and $$S \subseteq A$$, the *restriction* of $$f$$ to $$S$$ is:
+> **Definition:** For a function $$f \colon A \longrightarrow B$$ and $$S \subseteq A$$, the *restriction* of $$f$$ to $$S$$ is:
 > $$
 > f \vert_S := f \cap (S \times B)
 > $$
+> For an $$n$$-ary relation $$R \subseteq A^n$$ and $$B \subseteq A$$, we define $$R \vert_B := R \cap B^n$$.
 
 ---
 
@@ -265,6 +271,12 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > $$
 > B^A := \{f \colon A \longrightarrow B\}
 > $$
+
+---
+
+<h4 id="def-natural-integers">Informal Number Sets</h4>
+
+> **Definition:** The set of natural numbers is informally defined as $$\mathbb{N} := \{0, 1, 2, \dots\}$$. The set of integers is informally defined as $$\mathbb{Z} := \{0, 1, -1, 2, -2, \dots\}$$.
 
 ---
 
@@ -338,6 +350,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > $$
 > X_a := \{x \in X \mid x < a\}
 > $$
+> We also define $$(X, \le)_a := (X_a, \le \vert_{X_a})$$.
 
 ---
 
@@ -352,7 +365,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > * **Lower bound of $$S$$:** $$\forall y \in S \ x \le y$$
 > * **Supremum ($$\sup S$$):** Least upper bound of $$S$$
 > * **Infimum ($$\inf S$$):** Greatest lower bound of $$S$$
-> * **$$\min_\le S$$ / $$\max_\le S$$:** The least (respectively greatest) element belonging directly to $$S$$, if it exists.
+> * **$$\min_\le S$$ / $$\max_\le S$$:** The least (respectively greatest) element belonging to $$S$$, if it exists.
 
 ---
 
@@ -366,15 +379,33 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-well-ordering">Well-Ordering</h4>
+<h4 id="def-well-ordering">Well-Ordering (Woset)</h4>
 
 > **Definition:** A partial order $$\le$$ on $$X$$ is a *well-ordering* if every non-empty subset of $$X$$ contains a least element. The pair $$(X, \le)$$ is called a *well-ordered set* (or *woset*).
+
+---
+
+<h4 id="def-successor-element">Successor Element</h4>
+
+> **Definition:** Let $$(X, \le)$$ be a well-ordered set. If the set $$\{y \in X \mid x < y\}$$ is non-empty, we define the *successor* $$\Succ_\le x$$ to be its least element.
 
 ---
 
 <h4 id="def-well-founded">Well-Founded Relation</h4>
 
 > **Definition:** A binary relation $$R \subseteq A \times A$$ is *well-founded* if every non-empty subset of $$A$$ has a minimal element with respect to $$R$$.
+
+---
+
+<h4 id="def-order-boundedness">Order Boundedness, Cofinality, and Density</h4>
+
+> **Definition:** Let $$(X, \le)$$ be a partially ordered set and $$A \subseteq X$$. $$A$$ is:
+> * **Bounded below:** if $$\exists x \in X \ \forall a \in A \ x \le a$$
+> * **Bounded above:** if $$\exists x \in X \ \forall a \in A \ a \le x$$
+> * **Bounded:** if it is bounded below and above in $$X$$
+> * **Unbounded:** if it is not bounded in $$X$$
+> * **Cofinal:** if $$\forall x \in X \ \exists a \in A \ x \le a$$
+> * **Dense:** if $$\forall x < y \in X \ \exists a \in A \ x < a < y$$
 
 ---
 
@@ -387,7 +418,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > 2. **Associativity:** $$(x \land y) \land z = x \land (y \land z)$$ and $$(x \lor y) \lor z = x \lor (y \lor z)$$
 > 3. **Absorption:** $$x \land (x \lor y) = x$$ and $$x \lor (x \land y) = x$$
 > 
-> The natural partial order is induced by $$x \le y \iff x \land y = x$$, under which $$x \land y = \inf\{x, y\}$$ and $$x \lor y = \sup\{x, y\}$$.
+> The natural partial order is defined by $$x \le y \iff x \land y = x$$, under which $$x \land y = \inf\{x, y\}$$ and $$x \lor y = \sup\{x, y\}$$.
 
 ---
 
@@ -406,521 +437,11 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-fixed-point">Fixed Points & Least Fixed Point (μf)</h4>
+<h4 id="def-fixed-point">Fixed Point & Least Fixed Point (μf)</h4>
 
 > **Definition:** An element $$x \in L$$ is a *fixed point* of $$f \colon L \longrightarrow L$$ if $$f(x) = x$$.
 > 
 > The least fixed point is denoted $$\mu f$$, and the greatest fixed point is denoted $$\nu f$$.
-
----
-
----
-
-### Proof Theory & Deductive Systems
-
-<h4 id="def-proof-system">Proof System</h4>
-
-> **Definition:** A *proof system* is a triple $$(\mathscr{L}, \mathscr{R}, \mathscr{A})$$, where:
-> 1. $$\mathscr{L}$$ is a formal language.
-> 2. $$\mathscr{R}$$ is a set of rules of inference.
-> 3. $$\mathscr{A}$$ is a set of axioms.
-
----
-
-<h4 id="def-formal-proof">Formal Proof, Derivability (⊢), and Theorems</h4>
-
-> **Definition:** A *proof* in a proof system $$(\mathscr{L}, \mathscr{R}, \mathscr{A})$$ is a finite sequence of formulae in $$\mathscr{L}$$, where each formula is an axiom, an assumption, or follows from preceding formulae via an inference rule.
-> 
-> We write $$\Sigma \vdash \phi$$ (*"$$\Sigma$$ proves $$\phi$$"*) if there exists a formal proof of $$\phi$$ with active assumptions in $$\Sigma$$. A formula $$\varphi$$ is a *theorem* if $$\emptyset \vdash \varphi$$, written simply as $$\vdash \varphi$$.
-
----
-
-<h4 id="def-modus-ponens">Modus Ponens</h4>
-
-> **Definition:** *Modus Ponens* is the rule of inference: from $$\phi$$ and $$\phi \rightarrow \psi$$, we may infer $$\psi$$.
-
----
-
-<h4 id="def-tautology-system">Tautology System</h4>
-
-> **Definition:** The *tautology system* is a propositional proof system where $$\mathscr{R}$$ contains only Modus Ponens, and $$\mathscr{A}$$ consists of all semantic tautologies.
-
----
-
-<h4 id="def-hilbert-system">Hilbert System</h4>
-
-> **Definition:** The *Hilbert system* is a propositional proof system where $$\mathscr{R}$$ contains only Modus Ponens, and the axioms $$\mathscr{A}$$ are all formulae of the following forms:
-> * **A1:** $$\phi \rightarrow (\psi \rightarrow \phi)$$
-> * **A2:** $$(\phi \rightarrow (\psi \rightarrow \chi)) \rightarrow ((\phi \rightarrow \psi) \rightarrow (\phi \rightarrow \chi))$$
-> * **A3:** $$(\neg \phi \rightarrow \neg \psi) \rightarrow (\psi \rightarrow \phi)$$
-
----
-
-<h4 id="def-consistency">Consistency & Inconsistency</h4>
-
-> **Definition:** A set of formulae $$\Gamma$$ is *inconsistent* if $$\Gamma \vdash \bot$$. A set $$\Gamma$$ is *consistent* if it is not inconsistent ($$\Gamma \nvdash \bot$$).
-
----
-
-<h4 id="def-soundness-completeness">Soundness & Completeness of Proof Systems</h4>
-
-> **Definition:** A proof system is:
-> * **Sound:** if $$\Sigma \vdash \phi \implies \Sigma \models \phi$$ (every provable formula is semantically true).
-> * **Complete:** if $$\Sigma \models \phi \implies \Sigma \vdash \phi$$ (every semantic consequence is formally provable).
-
----
-
-<h4 id="def-proof-tree">Proof Trees & Natural Deduction</h4>
-
-> **Definition:** The set of *proof trees* over language $$\mathscr{L}$$ and rules $$\mathscr{R}$$ is defined inductively:
-> 1. For any $$\phi \in \mathscr{L}$$, the single-node tree $$\phi$$ is a proof tree with *open assumption* $$\phi$$.
-> 2. If subtrees $$\Pi_1, \dots, \Pi_k$$ have conclusions $$\phi_1, \dots, \phi_k$$, and $$\frac{\phi_1 \dots \phi_k}{\psi}$$ is an inference rule, placing $$\psi$$ as the new root yields a proof tree of $$\psi$$.
-> 
-> When an inference rule *discharges* an assumption, all leaves labeled with that formula are enclosed in brackets and indexed: $$[\phi]^n$$. A formula $$\phi$$ is provable in Natural Deduction ($$\Sigma \vdash \phi$$) if there exists a finite proof tree with root $$\phi$$ whose undischarged assumptions belong to $$\Sigma$$.
-
----
-
-### First-Order Syntax & Prefix Weighting
-
-<h4 id="def-signature">Signature</h4>
-
-> **Definition:** A *signature* $$\sigma$$ is a quadruple $$(\mathbf{F}, \mathbf{R}, \mathbf{C}, \operatorname{ar})$$, where $$\mathbf{F}$$ (function symbols), $$\mathbf{R}$$ (relation symbols), and $$\mathbf{C}$$ (constant symbols) are pairwise disjoint sets, no element of which is an initial segment of another. The arity function $$\operatorname{ar}$$ assigns a non-negative integer to each symbol in $$\mathbf{F} \cup \mathbf{R}$$.
-
----
-
-<h4 id="def-fol-alphabet">Alphabet of First-Order Logic</h4>
-
-> **Definition:** The alphabet of First-Order Logic over signature $$\sigma$$ consists of:
-> 1. **Logical symbols:** Connectives ($$\neg, \land, \lor, \rightarrow, \leftrightarrow$$) and Quantifiers ($$\forall, \exists$$).
-> 2. **Variables:** $$x_0, x_1, x_2, \dots$$
-> 3. **Non-logical symbols:** Functions $$\mathbf{F}$$, Relations $$\mathbf{R}$$, and Constants $$\mathbf{C}$$.
-> 4. **Equality:** The symbol $$=$$.
-
----
-
-<h4 id="def-terms">Terms (Trm)</h4>
-
-> **Definition:** The set of *terms* $$\mathbf{Trm}(\sigma)$$ over $$\sigma$$ is the smallest set satisfying:
-> 1. All constant symbols in $$\mathbf{C}$$ and all variables are in $$\mathbf{Trm}(\sigma)$$.
-> 2. If $$t_1, \dots, t_n \in \mathbf{Trm}(\sigma)$$ and $$f \in \mathbf{F}$$ is an $$n$$-ary function symbol, the string $$f t_1 \dots t_n$$ is in $$\mathbf{Trm}(\sigma)$$.
-
----
-
-<h4 id="def-fol-formulae">Formulae (AtFrm and Frm)</h4>
-
-> **Definition:** The sets of *atomic formulae* $$\mathbf{AtFrm}(\sigma)$$ and *formulae* $$\mathbf{Frm}(\sigma)$$ are defined inductively:
-> 1. **Atomic:** If $$t_1, \dots, t_n \in \mathbf{Trm}(\sigma)$$ and $$R \in \mathbf{R}$$ is an $$n$$-ary relation symbol, then $$R t_1 \dots t_n \in \mathbf{AtFrm}(\sigma)$$. If $$t_1, t_2 \in \mathbf{Trm}(\sigma)$$, then $$= t_1 t_2 \in \mathbf{AtFrm}(\sigma)$$.
-> 2. **Inclusion:** $$\mathbf{AtFrm}(\sigma) \subseteq \mathbf{Frm}(\sigma)$$.
-> 3. **Compound:** If $$\varphi, \psi \in \mathbf{Frm}(\sigma)$$, then $$\neg \varphi$$, $$\land \varphi \psi$$, $$\lor \varphi \psi$$, $$\rightarrow \varphi \psi$$, $$\leftrightarrow \varphi \psi$$, $$\forall x \varphi$$, and $$\exists x \varphi$$ are in $$\mathbf{Frm}(\sigma)$$.
-
----
-
-
-<h4 id="def-free-variables">Free Variables of Terms and Formulae</h4>
-
-> **Definition:** For a term $$t \in \mathbf{Trm}(\sigma)$$, $$\mathbf{Var}(t)$$ denotes the set of variables occurring in $$t$$.
-> 
-> The set of *free variables* of a formula $$\varphi$$, denoted $$\mathbf{FV}(\varphi)$$, is defined recursively:
-> * $$\mathbf{FV}(R t_1 \dots t_n) := \bigcup_{k=1}^n \mathbf{Var}(t_k)$$
-> * $$\mathbf{FV}(= t_1 t_2) := \mathbf{Var}(t_1) \cup \mathbf{Var}(t_2)$$
-> * $$\mathbf{FV}(\neg \varphi) := \mathbf{FV}(\varphi)$$
-> * $$\mathbf{FV}(\ast \varphi \psi) := \mathbf{FV}(\varphi) \cup \mathbf{FV}(\psi)$$ for $$\ast \in \{\land, \lor, \rightarrow, \leftrightarrow\}$$
-> * $$\mathbf{FV}(\ast x \ \varphi) := \mathbf{FV}(\varphi) \setminus \{x\}$$ for $$\ast \in \{\forall, \exists\}$$
-
----
-
-<h4 id="def-model-theory">Model of a Set of Formulae</h4>
-
-> **Definition:** A structure $$\mathfrak{A}$$ is a *model* of a set of formulae $$\Gamma$$, written $$\mathfrak{A} \models \Gamma$$, if:
-> $$
-> \mathfrak{A} \models \varphi \quad \text{for every } \varphi \in \Gamma
-> $$
-
----
-
-<h4 id="def-finitely-satisfiable">Finitely Satisfiable Set of Formulae</h4>
-
-> **Definition:** A set of formulae $$\Sigma$$ is *finitely satisfiable* if every finite subset $$\Sigma_0 \subseteq \Sigma$$ is satisfiable.
-
----
-
-<h4 id="def-henkin-property">The Henkin Property (Witness Property)</h4>
-
-> **Definition:** A set of formulae $$T$$ has the *Henkin property* (or *witness property*) if whenever $$T \vdash \exists x \ \varphi(x)$$, then:
-> $$
-> T \vdash \varphi(c) \quad \text{for some constant symbol } c
-> $$
-
----
-
-<h4 id="def-maximal-consistency">Maximally Consistent Theory</h4>
-
-> **Definition:** A set of formulae $$\Gamma$$ is *maximally consistent* if it is consistent and:
-> $$
-> \forall \phi \ (\phi \in \Gamma \lor \neg \phi \in \Gamma)
-> $$
-
----
-
-<h4 id="def-order-boundedness">Bounded, Cofinal, and Dense Subsets of a Poset</h4>
-
-> **Definition:** Let $$(X, \le)$$ be a partially ordered set and $$A \subseteq X$$. We say $$A$$ is (in $$X$$):
-> * **bounded below:** if $$\exists x \in X \ \forall a \in A \ x \le a$$
-> * **bounded above:** if $$\exists x \in X \ \forall a \in A \ a \le x$$
-> * **bounded:** if it is bounded both below and above in $$X$$
-> * **unbounded:** if it is not bounded in $$X$$
-> * **cofinal:** if $$\forall x \in X \ \exists a \in A \ x \le a$$
-> * **dense:** if $$\forall x, y \in X \ (x < y \rightarrow \exists a \in A \ x < a < y)$$
-
----
-
-<h4 id="def-cardinal-arithmetic-ops">Cardinal Arithmetic Operations</h4>
-
-> **Definition:** Let $$\kappa$$ and $$\lambda$$ be cardinal numbers, and let $$A, B$$ be sets such that $$\vert A \vert = \kappa$$ and $$\vert B \vert = \lambda$$. We define:
-> * **Addition:** $$\kappa + \lambda := \vert A \sqcup B \vert$$
-> * **Multiplication:** $$\kappa \cdot \lambda := \vert A \times B \vert$$
-> * **Exponentiation:** $$\kappa^\lambda := \vert A^B \vert$$
-
----
-<h4 id="def-symbol-weight">Symbol Weight & Unique Readability</h4>
-
-> **Definition:** The *weight assignment* $$w$$ on first-order symbols is defined by:
-> * $$w(f) := \operatorname{ar}(f) - 1$$ for $$f \in \mathbf{F}$$
-> * $$w(R) := \operatorname{ar}(R) - 1$$ for $$R \in \mathbf{R}$$
-> * $$w(c) := -1$$ for $$c \in \mathbf{C}$$, and $$w(x_i) := -1$$ for variables
-> * $$w(=) := 1$$
-> * $$w(\neg) := 0$$, and $$w(\land) = w(\lor) = w(\rightarrow) = w(\leftrightarrow) := 1$$
-> * $$w(\forall) = w(\exists) := 1$$
-> 
-> The cumulative weight of a string is $$\hat{w}(\varepsilon) := 0$$ and $$\hat{w}(\sigma s) := \hat{w}(\sigma) + w(s)$$. A string $$t$$ is a term if and only if $$\hat{w}(t) = -1$$ and every proper initial segment has weight $$\ge 0$$. This guarantees that prefix notation is uniquely readable without parentheses.
-
----
-
-<h4 id="def-abbreviations">Abbreviation Conventions</h4>
-
-> **Definition:** For ease of reading, standard infix abbreviations are adopted:
-> 1. $$\varphi(\bar{x})$$ abbreviates $$\varphi(x_1, \dots, x_n)$$.
-> 2. Bounded universal quantification: $$\forall R(\bar{x}) \ \varphi := \forall \bar{x} (R(\bar{x}) \rightarrow \varphi)$$.
-> 3. Bounded existential quantification: $$\exists R(\bar{x}) \ \varphi := \exists \bar{x} (R(\bar{x}) \land \varphi)$$.
-> 4. Unique existence: $$\exists! x \ \varphi(x) := \exists x (\varphi(x) \land \forall y (\varphi(y) \rightarrow x = y))$$.
-
----
-
-<h4 id="def-functional-formula">Functional Formula</h4>
-
-> **Definition:** A first-order formula $$\varphi(\bar{x}, y)$$ is *functional* in $$y$$ if:
-> $$
-> \forall \bar{x} \exists! y \ \varphi(\bar{x}, y)
-> $$
-
----
-
-### Tarskian Semantics & Canonical Models
-
-<h4 id="def-structure">Structure & Universe</h4>
-
-> **Definition:** A *structure* $$\mathfrak{A}$$ over signature $$\sigma = (\mathbf{F}, \mathbf{R}, \mathbf{C}, \operatorname{ar})$$ is a pair $$(A, \cdot^\mathfrak{A})$$, where $$A \ne \emptyset$$ is a set called the *universe* (denoted $$\vert \mathfrak{A} \vert$$), and $$\cdot^\mathfrak{A}$$ is an interpretation function mapping:
-> 1. Each $$n$$-ary $$f \in \mathbf{F}$$ to a function $$f^\mathfrak{A} \colon A^n \longrightarrow A$$.
-> 2. Each $$n$$-ary $$R \in \mathbf{R}$$ to a relation $$R^\mathfrak{A} \subseteq A^n$$.
-> 3. Each constant $$c \in \mathbf{C}$$ to an element $$c^\mathfrak{A} \in A$$.
-
----
-
-<h4 id="def-variable-assignment">Variable Assignment</h4>
-
-> **Definition:** A *variable assignment* in a structure $$\mathfrak{A}$$ is a function $$s \colon \mathbf{Var} \longrightarrow \vert \mathfrak{A} \vert$$.
-
----
-
-<h4 id="def-term-valuation">Term Valuation Function (s̄)</h4>
-
-> **Definition:** The *valuation function* $$\bar{s} \colon \mathbf{Trm}(\sigma) \longrightarrow \vert \mathfrak{A} \vert$$ corresponding to assignment $$s$$ is defined recursively:
-> 1. $$\bar{s}(x_i) := s(x_i)$$ for variables.
-> 2. $$\bar{s}(c) := c^\mathfrak{A}$$ for constants.
-> 3. $$\bar{s}(f t_1 \dots t_n) := f^\mathfrak{A}(\bar{s}(t_1), \dots, \bar{s}(t_n))$$.
-
----
-
-<h4 id="def-modified-assignment">Modified Assignment</h4>
-
-> **Definition:** For an assignment $$s$$, variable $$x$$, and element $$t \in \vert \mathfrak{A} \vert$$, the *modified assignment* $$s_{x \mapsto t}$$ is defined by:
-> $$
-> s_{x \mapsto t}(y) := \begin{cases} s(y) & \text{if } y \ne x, \\ t & \text{if } y = x. \end{cases}
-> $$
-
----
-
-<h4 id="def-satisfaction">Tarskian Satisfaction Relation (⊨)</h4>
-
-> **Definition:** The *satisfaction relation* $$\mathfrak{A} \models \varphi[s]$$, stating that assignment $$s$$ satisfies formula $$\varphi$$ in structure $$\mathfrak{A}$$, is defined recursively:
-> 1. $$\mathfrak{A} \models R t_1 \dots t_n[s] \iff (\bar{s}(t_1), \dots, \bar{s}(t_n)) \in R^\mathfrak{A}$$
-> 2. $$\mathfrak{A} \models {= t_1 t_2}[s] \iff \bar{s}(t_1) = \bar{s}(t_2)$$
-> 3. $$\mathfrak{A} \models \neg \psi[s] \iff \mathfrak{A} \not\models \psi[s]$$
-> 4. $$\mathfrak{A} \models (\psi \land \xi)[s] \iff \mathfrak{A} \models \psi[s] \land \mathfrak{A} \models \xi[s]$$
-> 5. $$\mathfrak{A} \models (\psi \lor \xi)[s] \iff \mathfrak{A} \models \psi[s] \lor \mathfrak{A} \models \xi[s]$$
-> 6. $$\mathfrak{A} \models (\psi \rightarrow \xi)[s] \iff \mathfrak{A} \not\models \psi[s] \lor \mathfrak{A} \models \xi[s]$$
-> 7. $$\mathfrak{A} \models (\psi \leftrightarrow \xi)[s] \iff (\mathfrak{A} \models \psi[s] \iff \mathfrak{A} \models \xi[s])$$
-> 8. $$\mathfrak{A} \models \forall x \psi[s] \iff \forall t \in \vert \mathfrak{A} \vert \ \mathfrak{A} \models \psi[s_{x \mapsto t}]$$
-> 9. $$\mathfrak{A} \models \exists x \psi[s] \iff \exists t \in \vert \mathfrak{A} \vert \ \mathfrak{A} \models \psi[s_{x \mapsto t}]$$
-
----
-
-<h4 id="def-sentence">Sentence</h4>
-
-> **Definition:** A first-order formula $$\varphi$$ is a *sentence* (or closed formula) if it contains no free variables:
-> $$
-> \mathbf{FV}(\varphi) = \emptyset
-> $$
-
----
-
-<h4 id="def-truth-structure">Truth in a Structure (⊨)</h4>
-
-> **Definition:** For a structure $$\mathfrak{A}$$ and a formula $$\varphi$$, we define $$\mathfrak{A} \models \varphi$$ to mean that:
-> $$
-> \mathfrak{A} \models \varphi[s] \quad \text{for every assignment } s
-> $$
-> By the Free Variable Agreement Theorem, if $$\varphi$$ is a sentence, the choice of assignment has no effect on satisfaction, so $$\mathfrak{A} \models \varphi$$ holds if and only if it holds for some assignment.
-
----
-
-<h4 id="def-fol-validity">First-Order Validity and Satisfiability</h4>
-
-> **Definition:** A first-order formula $$\varphi$$ is:
-> * **Satisfiable:** if $$\mathfrak{A} \models \varphi[s]$$ for some structure $$\mathfrak{A}$$ and assignment $$s$$.
-> * **Unsatisfiable (Contradiction):** if it is not satisfiable.
-> * **Valid (Tautology):** written $$\models \varphi$$, if $$\mathfrak{A} \models \varphi$$ for every structure $$\mathfrak{A}$$.
-> * **Invalid:** written $$\not\models \varphi$$, if $$\mathfrak{A} \not\models \varphi$$ for some structure $$\mathfrak{A}$$.
-
----
-
-<h4 id="def-model-theory">Model of a Set of Formulae</h4>
-
-> **Definition:** A structure $$\mathfrak{A}$$ is a *model* of a set of formulae $$\Gamma$$, written $$\mathfrak{A} \models \Gamma$$, if:
-> $$
-> \mathfrak{A} \models \varphi \quad \text{for every } \varphi \in \Gamma
-> $$
-
----
-
-<h4 id="def-set-satisfiability">Satisfiability of a Set of Formulae</h4>
-
-> **Definition:** A set of formulae $$\Sigma$$ is:
-> * **Satisfiable:** if for some structure $$\mathfrak{A}$$ and assignment $$s$$, $$\mathfrak{A} \models \varphi[s]$$ for every $$\varphi \in \Sigma$$.
-> * **Unsatisfiable:** if it is not satisfiable.
-
----
-
-<h4 id="def-fol-entailment">First-Order Entailment</h4>
-
-> **Definition:** A set of first-order formulae $$\Sigma$$ *entails* $$\varphi$$, written $$\Sigma \models \varphi$$, if for every structure $$\mathfrak{A}$$ and assignment $$s$$, whenever $$\mathfrak{A} \models \psi[s]$$ for all $$\psi \in \Sigma$$, we have $$\mathfrak{A} \models \varphi[s]$$.
-
----
-
-<h4 id="def-term-verifier">Canonical Term Structure (Γ-Verifier)</h4>
-
-> **Definition:** Let $$\Delta$$ be a maximal consistent set of formulae containing Henkin witness constants. The *canonical term structure* (or $$\Gamma$$-verifier) $$\mathfrak{A}$$ has universe $$\vert \mathfrak{A} \vert := \mathbf{Trm}(\mathscr{L} \cup \{c_n\})$$, with functions and relations defined purely syntactically:
-> 1. $$f^\mathfrak{A}(t_1, \dots, t_n) := f t_1 \dots t_n$$
-> 2. $$R^\mathfrak{A}(t_1, \dots, t_n) \iff R t_1 \dots t_n \in \Delta$$
-> 3. $$E^\mathfrak{A}(t_1, t_2) \iff {= t_1 t_2} \in \Delta$$
-
----
-
-<h4 id="def-quotient-model">Quotient Model (Γ-Model)</h4>
-
-> **Definition:** The *canonical quotient model* $$\mathfrak{A}' := \mathfrak{A} / E^\mathfrak{A}$$ is obtained by collapsing syntactically provable equalities into equivalence classes $$[t]$$:
-> 1. $$f^{\mathfrak{A}'}([t_1], \dots, [t_n]) := [f t_1 \dots t_n]$$
-> 2. $$R^{\mathfrak{A}'}([t_1], \dots, [t_n]) \iff R t_1 \dots t_n \in \Delta$$
-> 
-> Under this construction, $$\mathfrak{A}' \models \phi \iff \phi \in \Delta$$.
-
----
-
----
-
-### Axiomatic Set Theory (ZFC)
-
-<h4 id="def-zfc-axioms">The ZFC Axioms</h4>
-
-> **Definition:** The language of Set Theory contains a single binary relation symbol $$\in$$. The axioms of $$\mathrm{ZFC}$$ are:
-> * **Extensionality ($$\mathbf{Ex}$$):** $$\forall x \forall y \ (\forall z \ (z \in x \iff z \in y) \rightarrow x = y)$$
-> * **Empty Set ($$\mathbf{ES}$$):** $$\exists x \forall y \ \neg (y \in x)$$
-> * **Pairing ($$\mathbf{Pa}$$):** $$\forall x \forall y \exists z \forall w \ (w \in z \iff (w = x \lor w = y))$$
-> * **Union ($$\mathbf{U}$$):** $$\forall x \exists y \forall z \ (z \in y \iff \exists w \ (z \in w \land w \in x))$$
-> * **Specification Schema ($$\mathbf{S}$$):** For any formula $$\varphi(z, \bar{p})$$:
->   $$
->   \forall \bar{p} \forall x \exists y \forall z \ (z \in y \iff (z \in x \land \varphi(z, \bar{p})))
->   $$
-> * **Replacement Schema ($$\mathbf{R}$$):** For any formula $$\varphi(w, z, \bar{p})$$ functional in $$z$$:
->   $$
->   \forall \bar{p} \forall x \ (\forall w \in x \exists! z \ \varphi(w, z, \bar{p}) \rightarrow \exists y \forall z \ (z \in y \iff \exists w \in x \ \varphi(w, z, \bar{p})))
->   $$
-> * **Power Set ($$\mathbf{PS}$$):** $$\forall x \exists y \forall z \ (z \in y \iff \forall w \ (w \in z \rightarrow w \in x))$$
-> * **Infinity ($$\mathbf{I}$$):** $$\exists x \ (\emptyset \in x \land \forall y \ (y \in x \rightarrow y \cup \{y\} \in x))$$
-> * **Foundation / Regularity ($$\mathbf{F}$$):** $$\forall x \ (x \ne \emptyset \rightarrow \exists y \in x \ (y \cap x = \emptyset))$$
-
----
-
-<h4 id="def-kuratowski-pair">Kuratowski's Ordered Pair</h4>
-
-> **Definition:** The *ordered pair* $$(a, b)$$ is formally defined set-theoretically as:
-> $$
-> (a, b) := \{\{a\}, \{a, b\}\}
-> $$
-> satisfying the characteristic property $$(a, b) = (c, d) \iff a = c \land b = d$$.
-
----
-
-<h4 id="def-successor-inductive">Successor & Inductive Sets (ω)</h4>
-
-> **Definition:** For any set $$n$$, its *successor* is defined as:
-> $$
-> n + 1 := n \cup \{n\}
-> $$
-> A set $$x$$ is *inductive* if $$\emptyset \in x$$ and $$\forall y \ (y \in x \rightarrow y + 1 \in x)$$. 
-> 
-> The set of natural numbers is defined as the minimal inductive set:
-> $$
-> \mathbb{N} := \omega := \bigcap \{x \in \mathcal{P}(\mathcal{I}) \mid x \text{ is inductive}\}
-> $$
-
----
-
-<h4 id="def-transitive-set">Transitive Set</h4>
-
-> **Definition:** A set $$X$$ is *transitive* if every element of $$X$$ is also a subset of $$X$$:
-> $$
-> \forall x \in X \ x \subseteq X \iff X \subseteq \mathcal{P}(X)
-> $$
-
----
-
-<h4 id="def-classes-universe">Classes & The Universe V</h4>
-
-> **Definition:** For any formula $$\varphi(x, \bar{t})$$, the *class* of all sets satisfying $$\varphi$$ is denoted:
-> $$
-> A := \{x \mid \varphi(x, \bar{t})\}
-> $$
-> A class that is not a set is called a *proper class*. The class of all sets is denoted:
-> $$
-> \mathbf{V} := \{x \mid x = x\}
-> $$
-
----
-
-### Ordinal Numbers & Transfinite Recursion
-
-<h4 id="def-order-isomorphism">Order Isomorphism & Embedding</h4>
-
-> **Definition:** Let $$(X, \le)$$ and $$(Y, \hat{\le})$$ be partially ordered sets.
-> * A function $$f \colon X \longrightarrow Y$$ is an *order isomorphism* if $$f$$ is bijective and:
->   $$
->   \forall x, y \in X \ (x \le y \iff f(x) \hat{\le} f(y))
->   $$
->   denoted $$(X, \le) \cong_{\operatorname{Ord}} (Y, \hat{\le})$$.
-> * If $$(X, \le)$$ is isomorphic to an initial segment of $$(Y, \hat{\le})$$, we write $$(X, \le) \sqsubseteq (Y, \hat{\le})$$.
-
----
-
-<h4 id="def-ordinals">Von Neumann Ordinals</h4>
-
-> **Definition:** A well-ordered set $$(X, \le)$$ is an *ordinal* if every element is equal to the initial segment it determines:
-> $$
-> \forall \alpha \in X \ X_\alpha = \alpha
-> $$
-> The class of all ordinals is denoted $$\mathbf{Ord}$$. For any two ordinals $$\alpha, \beta \in \mathbf{Ord}$$, the order relation is simply membership:
-> $$
-> \alpha < \beta \iff \alpha \in \beta \iff \alpha \subset \beta \iff \alpha \sqsubset \beta
-> $$
-
----
-
-<h4 id="def-ordinal-bounds">Ordinal Bounds (sup and inf)</h4>
-
-> **Definition:** For any set of ordinals $$X \subseteq \mathbf{Ord}$$:
-> $$
-> \inf X := \bigcap X, \qquad \sup X := \bigcup X
-> $$
-> Both $$\inf X$$ and $$\sup X$$ are ordinals, representing the greatest lower bound and least upper bound of $$X$$ in $$\mathbf{Ord}$$.
-
----
-
-<h4 id="def-limit-ordinals">Successor & Limit Ordinals</h4>
-
-> **Definition:** Let $$\alpha \in \mathbf{Ord}$$ with $$\alpha > 0$$.
-> * If there exists an ordinal $$\beta$$ such that $$\alpha = \beta + 1$$, then $$\alpha$$ is a *successor ordinal*.
-> * Otherwise, $$\alpha$$ is a *limit ordinal* (satisfying $$\alpha = \sup \{\beta \in \mathbf{Ord} \mid \beta < \alpha\}$$).
-
----
-
-<h4 id="def-transfinite-recursion">Transfinite Recursion</h4>
-
-> **Definition:** Let $$G \colon \mathbf{V} \longrightarrow \mathbf{V}$$ be a class function. The *Principle of Transfinite Recursion* guarantees the existence of a unique class function $$F \colon \mathbf{Ord} \longrightarrow \mathbf{V}$$ satisfying for every ordinal $$\alpha$$:
-> $$
-> F(\alpha) = G(F \vert_\alpha)
-> $$
-
----
-
-<h4 id="def-ordinal-sequences">Ordinal Sequences & Limits</h4>
-
-> **Definition:** An $$\alpha$$-sequence of elements of $$X$$ is a function $$\xi \colon \alpha \longrightarrow X$$, denoted $$\xi(\beta) := \xi_\beta$$.
-> 
-> An $$\alpha$$-sequence of ordinals $$\xi$$ *converges* to $$\eta$$, written $$\lim_{\beta < \alpha} \xi_\beta = \eta$$, if:
-> $$
-> \forall \lambda < \eta \ \exists \beta < \alpha \ \forall \gamma \ (\beta \le \gamma < \alpha \rightarrow \lambda < \xi_\gamma \le \eta)
-> $$
-
----
-
-### Choice & Cardinality
-
-<h4 id="def-choice-zfc">The Axiom of Choice & ZFC⁻</h4>
-
-> **Definition:** The *Axiom of Choice* ($$\mathbf{AC}$$) asserts that for every family $$\mathcal{A}$$ of non-empty sets, there exists a choice function:
-> $$
-> f \colon \mathcal{A} \longrightarrow \bigcup \mathcal{A} \quad \text{such that} \quad \forall A \in \mathcal{A} \ f(A) \in A
-> $$
-> We define $$\mathrm{Z}^- := \{\mathbf{Ex}, \mathbf{ES}, \mathbf{Pa}, \mathbf{U}, \mathbf{PS}, \mathbf{I}\}$$, $$\mathrm{ZF}^- := \mathrm{Z}^- \cup \mathbf{R}$$, and $$\mathrm{ZFC}^- := \mathrm{ZF}^- \cup \{\mathbf{AC}\}$$.
-
----
-
-<h4 id="def-cardinal-numbers">Cardinal Numbers (Initial Ordinals)</h4>
-
-> **Definition:** For any set $$A$$, its *cardinality* $$\vert A \vert$$ is defined as the smallest ordinal equinumerous to $$A$$:
-> $$
-> \vert A \vert := \min \{\alpha \in \mathbf{Ord} \mid \alpha \sim A\}
-> $$
-> An ordinal $$\kappa \in \mathbf{Ord}$$ is a *cardinal number* if it is its own cardinality: $$\kappa = \vert \kappa \vert$$.
-
----
-
-<h4 id="def-cardinal-ordering">Cardinal Ordering</h4>
-
-> **Definition:** For two cardinals $$\kappa, \lambda$$, we define:
-> $$
-> \kappa \le \lambda \iff \exists \text{ an injection } f \colon \kappa \longrightarrow \lambda
-> $$
-
----
-
-### Theory of Computation
-
-<h4 id="def-decidability">Decidable Set</h4>
-
-> **Definition:** A set $$A \subseteq \mathbb{N}$$ is *decidable* (or *computable*) if there exists an algorithm that, given any input $$n \in \mathbb{N}$$, halts in finite time and returns **Yes** if $$n \in A$$, and **No** if $$n \notin A$$.
-
----
-
-<h4 id="def-semidecidability">Semidecidable Set</h4>
-
-> **Definition:** A set $$A \subseteq \mathbb{N}$$ is *semidecidable* (or *recursively enumerable*) if there exists an algorithm that, on input $$n \in \mathbb{N}$$, halts and returns **Yes** if $$n \in A$$, and runs forever (or halts without output) if $$n \notin A$$.
-
----
-
-<h4 id="def-enumeration">Algorithmic Enumeration</h4>
-
-> **Definition:** An algorithm *enumerates* a set $$A \subseteq \mathbb{N}$$ if it outputs a sequence of elements such that every element of $$A$$ is eventually printed in finite time, and no element outside $$A$$ is ever printed.
 
 ---
 
@@ -954,48 +475,552 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-### Propositional Calculus
+<h4 id="def-string-initial-segment">Initial Segment of a String</h4>
 
-<h4 id="def-propositional-syntax">Syntax & Formulae (Frm)</h4>
+> **Definition:** Let $$\sigma, \pi \in \Sigma^*$$. We say $$\sigma$$ is an *initial segment* of $$\pi$$ if there exists a string $$\tau \in \Sigma^*$$ such that $$\pi = \sigma \tau$$.
 
-> **Definition:** Let $$\mathbf{Var} := \{p_1, p_2, \dots\}$$ be variables, and $$\mathbf{Con} := \{c_1^0, \dots, c_1^1, \dots\}$$ be logical connectives with superscripts denoting arity. The set of propositional formulae $$\textbf{Frm}$$ is the smallest set satisfying:
+---
+
+### Propositional Calculus: Syntax
+
+<h4 id="def-pc-syntax">Variables, Connectives, and Formulae (Frm)</h4>
+
+> **Definition:** Let $$\mathbf{Var} := \{p_1, p_2, \dots\}$$ be propositional variables, and $$\mathbf{Con} := \{c_1^0, \dots, c_1^1, \dots\}$$ be logical connectives with superscripts denoting arity. The set of propositional formulae $$\textbf{Frm}$$ is the smallest set satisfying:
 > 1. All variables in $$\mathbf{Var}$$ are in $$\textbf{Frm}$$.
 > 2. If $$\varphi_1, \dots, \varphi_n \in \textbf{Frm}$$ and $$c_k^n$$ is an $$n$$-ary connective, then the string $$c_k^n(\varphi_1, \dots, \varphi_n)$$ is in $$\textbf{Frm}$$.
 
 ---
 
-<h4 id="def-formula-complexity">Formula Complexity</h4>
+<h4 id="def-pc-complexity">Formula Complexity</h4>
 
-> **Definition:** The *complexity* of a formula $$\varphi \in \textbf{Frm}$$ is defined recursively by:
+> **Definition:** The *complexity* of a propositional formula is defined recursively by:
 > 1. $$\operatorname{comp}(p) = 0$$ for any variable $$p \in \mathbf{Var}$$ and 0-ary connective $$c_n^0$$.
 > 2. $$\operatorname{comp}(c_k^n(\varphi_1, \dots, \varphi_n)) = \max\{\operatorname{comp}(\varphi_1), \dots, \operatorname{comp}(\varphi_n)\} + 1$$.
 
 ---
 
-<h4 id="def-valuation">Valuation & Standard Interpretation</h4>
+### Propositional Calculus: Semantics
 
-> **Definition:** An *interpretation* (or *valuation*) is a function $$\mathcal{I} \colon \mathbf{Var} \longrightarrow \{\operatorname{False}, \operatorname{True}\}$$. 
+<h4 id="def-pc-valuation">Valuation & Extended Interpretation</h4>
+
+> **Definition:** An *interpretation* (or *valuation*) is a function $$\mathcal{I} \colon \mathbf{Var} \longrightarrow \{\False, \True\}$$. 
 > 
-> The standard extended interpretation $$\hat{\mathcal{I}} \colon \textbf{Frm} \longrightarrow \{\operatorname{False}, \operatorname{True}\}$$ agrees with $$\mathcal{I}$$ on variables and evaluates connectives via classical truth tables.
+> The standard extended interpretation $$\hat{\mathcal{I}} \colon \textbf{Frm} \longrightarrow \{\False, \True\}$$ agrees with $$\mathcal{I}$$ on variables and evaluates connectives via classical truth tables.
 
 ---
 
-<h4 id="def-tautology">Equivalence, Tautology, and Contradiction</h4>
+<h4 id="def-pc-equivalence">Logical Equivalence</h4>
+
+> **Definition:** Two formulae $$\varphi$$ and $$\psi$$ are *equivalent*, written $$\varphi \equiv \psi$$, if $$\mathcal{I}(\varphi) = \mathcal{I}(\psi)$$ for all valuations $$\mathcal{I}$$.
+
+---
+
+<h4 id="def-pc-tautology-contradiction">Tautology & Contradiction</h4>
 
 > **Definition:** 
-> * Formulae $$\varphi$$ and $$\psi$$ are *equivalent* ($$\varphi \equiv \psi$$) if $$\mathcal{I}(\varphi) = \mathcal{I}(\psi)$$ for all valuations $$\mathcal{I}$$.
 > * A formula $$\varphi$$ is a *tautology* if $$\varphi \equiv \top$$.
 > * A formula $$\varphi$$ is a *contradiction* if $$\varphi \equiv \bot$$.
-> * A formula $$\varphi$$ is *satisfiable* if there exists some valuation $$\mathcal{I}$$ with $$\mathcal{I}(\varphi) = \operatorname{True}$$.
 
 ---
 
-<h4 id="def-entailment">Entailment (⊨)</h4>
+<h4 id="def-pc-satisfiability-formula">Formula Satisfiability (PC)</h4>
 
-> **Definition:** A set of formulae $$\Sigma$$ *entails* $$\varphi$$, written $$\Sigma \models \varphi$$, if every interpretation that satisfies every formula in $$\Sigma$$ also satisfies $$\varphi$$.
+> **Definition:** A propositional formula $$\varphi$$ is *satisfiable* if there exists some valuation $$\mathcal{I}$$ such that:
+> $$
+> \mathcal{I}(\varphi) = \True
+> $$
 
 ---
 
-<h4 id="def-functional-completeness">Functional Completeness</h4>
+<h4 id="def-pc-satisfiability-set">Set Satisfiability (PC)</h4>
+
+> **Definition:** An interpretation $$\mathcal{I}$$ *satisfies* a set of formulae $$\Sigma$$ if it satisfies every formula in $$\Sigma$$.
+> 
+> A set of formulae $$\Sigma$$ is *satisfiable* if there exists some interpretation $$\mathcal{I}$$ such that:
+> $$
+> \mathcal{I}(\varphi) = \True \quad \text{for all } \varphi \in \Sigma
+> $$
+
+---
+
+<h4 id="def-pc-entailment">Entailment (PC)</h4>
+
+> **Definition:** A set of formulae $$\Sigma$$ *entails* $$\varphi$$, written $$\Sigma \models \varphi$$, if every interpretation that satisfies $$\Sigma$$ also satisfies $$\varphi$$. We write $$\phi \models \psi$$ for $$\{\phi\} \models \psi$$, and $$\models \phi$$ for $$\emptyset \models \phi$$.
+
+---
+
+<h4 id="def-pc-functional-completeness">Functional Completeness</h4>
 
 > **Definition:** A set of logical connectives $$\mathscr{C}$$ is *functionally complete* if every possible formula is semantically equivalent to some formula containing only connectives from $$\mathscr{C}$$.
+
+---
+
+### Proof Theory
+
+<h4 id="def-proof-system">Proof System</h4>
+
+> **Definition:** A *proof system* is a triple $$(\mathscr{L}, \mathscr{R}, \mathscr{A})$$, where $$\mathscr{L}$$ is a formal language, $$\mathscr{R}$$ is a set of rules of inference, and $$\mathscr{A}$$ is a set of axioms.
+
+---
+
+<h4 id="def-formal-proof">Formal Proof</h4>
+
+> **Definition:** A *proof* in a proof system $$(\mathscr{L}, \mathscr{R}, \mathscr{A})$$ is a finite sequence of formulae in $$\mathscr{L}$$, where each formula is either an axiom, an assumption, or follows from preceding formulae via an inference rule.
+
+---
+
+<h4 id="def-provability">Syntactic Provability (⊢) & Theorems</h4>
+
+> **Definition:** We write $$\Sigma \vdash \phi$$, read as *"$$\Sigma$$ proves $$\phi$$"*, if there exists a formal proof of $$\phi$$ where all active assumptions belong to $$\Sigma$$. A formula $$\varphi$$ is a *theorem* of a proof system if $$\emptyset \vdash \varphi$$, written simply as $$\vdash \varphi$$.
+
+---
+
+<h4 id="def-modus-ponens">Modus Ponens</h4>
+
+> **Definition:** *Modus Ponens* is the rule of inference: from $$\phi$$ and $$\phi \rightarrow \psi$$, we may infer $$\psi$$.
+
+---
+
+<h4 id="def-tautology-system">Tautology System</h4>
+
+> **Definition:** The *tautology system* is a propositional proof system where $$\mathscr{R}$$ contains only Modus Ponens, and $$\mathscr{A}$$ consists of all semantic tautologies.
+
+---
+
+<h4 id="def-hilbert-system">Hilbert System</h4>
+
+> **Definition:** The *Hilbert system* is a proof system where $$\mathscr{R}$$ consists solely of Modus Ponens, and the axioms $$\mathscr{A}$$ are all formulae of the forms:
+> * **A1:** $$\phi \rightarrow (\psi \rightarrow \phi)$$
+> * **A2:** $$(\phi \rightarrow (\psi \rightarrow \chi)) \rightarrow ((\phi \rightarrow \psi) \rightarrow (\phi \rightarrow \chi))$$
+> * **A3:** $$(\neg \phi \rightarrow \neg \psi) \rightarrow (\psi \rightarrow \phi)$$
+
+---
+
+<h4 id="def-consistency">Consistency & Inconsistency</h4>
+
+> **Definition:** A set of formulae $$\Gamma$$ is *inconsistent* if $$\Gamma \vdash \bot$$. A set of formulae $$\Gamma$$ is *consistent* if it is not inconsistent.
+
+---
+
+<h4 id="def-system-soundness-completeness">Soundness & Completeness of a Proof System</h4>
+
+> **Definition:** A proof system is:
+> * **Sound:** if $$\Sigma \vdash \phi \implies \Sigma \models \phi$$
+> * **Complete:** if $$\Sigma \models \phi \implies \Sigma \vdash \phi$$
+
+---
+
+<h4 id="def-proof-tree">Proof Trees & Discharging</h4>
+
+> **Definition:** The set of *proof trees* over $$\mathscr{L}$$ is the smallest set where:
+> 1. A single node $$\phi$$ is a proof tree (with open assumption $$\phi$$).
+> 2. If $$\Pi_1, \dots, \Pi_k$$ are proof trees with conclusions $$\phi_1, \dots, \phi_k$$ and $$\frac{\phi_1 \dots \phi_k}{\psi} \in \mathscr{R}$$, placing $$\psi$$ as a root below them yields a proof tree.
+> 
+> Applying an inference rule that *discharges* open assumptions encloses those leaves in brackets with a numerical index, written $$[\phi]^n$$, marking them as closed.
+
+---
+
+<h4 id="def-nd-derivation">Natural Deduction Derivation</h4>
+
+> **Definition:** We say $$\Sigma$$ proves $$\phi$$ in Natural Deduction, written $$\Sigma \vdash \phi$$, if there exists a finite proof tree with root $$\phi$$ such that every undischarged (open) assumption belongs to $$\Sigma$$.
+
+---
+
+### First-Order Logic: Syntax
+
+<h4 id="def-fol-signature">Signature (σ)</h4>
+
+> **Definition:** A *signature* $$\sigma$$ is a quadruple $$(\mathbf{F}, \mathbf{R}, \mathbf{C}, \operatorname{ar})$$, where $$\mathbf{F}$$ (function symbols), $$\mathbf{R}$$ (relation symbols), and $$\mathbf{C}$$ (constant symbols) are pairwise disjoint sets such that no element is an initial segment of another. The function $$\operatorname{ar}$$ assigns an arity in $$\mathbb{N}$$ to every element of $$\mathbf{F} \cup \mathbf{R}$$.
+
+---
+
+<h4 id="def-fol-alphabet">First-Order Alphabet</h4>
+
+> **Definition:** The alphabet of First-Order Logic over signature $$\sigma$$ consists of:
+> * **Logical symbols:** Connectives ($$\neg, \land, \lor, \rightarrow, \leftrightarrow$$) and quantifiers ($$\forall, \exists$$).
+> * **Variables:** $$x_0, x_1, x_2, \dots$$
+> * **Non-logical symbols:** Elements of $$\mathbf{F}$$, $$\mathbf{R}$$, and $$\mathbf{C}$$.
+
+---
+
+<h4 id="def-fol-terms">Terms (Trm)</h4>
+
+> **Definition:** The set of *terms* $$\textbf{Trm}(\sigma)$$ over $$\sigma$$ is the smallest set satisfying:
+> 1. All constant symbols and variables are in $$\textbf{Trm}(\sigma)$$.
+> 2. If $$t_1, \dots, t_n \in \textbf{Trm}(\sigma)$$ and $$f \in \mathbf{F}$$ has arity $$n$$, the string $$f t_1 \dots t_n$$ is in $$\textbf{Trm}(\sigma)$$.
+> 
+> The set of variables used in a term $$t$$ is denoted $$\mathbf{Var}(t)$$.
+
+---
+
+<h4 id="def-fol-formulae">Atomic & Compound Formulae (Frm)</h4>
+
+> **Definition:** 
+> * **Atomic formulae ($$\textbf{AtFrm}(\sigma)$$):** The smallest set containing $$R t_1 \dots t_n$$ (for $$R \in \mathbf{R}$$ of arity $$n$$) and $$= t_1 t_2$$ for terms $$t_i \in \textbf{Trm}(\sigma)$$.
+> * **Formulae ($$\textbf{Frm}(\sigma)$$):** The smallest set containing $$\textbf{AtFrm}(\sigma)$$ and closed under $$\neg \varphi$$, $$\land \varphi \psi$$, $$\lor \varphi \psi$$, $$\rightarrow \varphi \psi$$, $$\leftrightarrow \varphi \psi$$, $$\forall x \varphi$$, and $$\exists x \varphi$$.
+
+---
+
+<h4 id="def-fol-weight">Symbol Weight & Unique Readability</h4>
+
+> **Definition:** The weight assignment $$w$$ assigns:
+> * $$w(f) := \operatorname{ar}(f) - 1$$ for $$f \in \mathbf{F}$$
+> * $$w(R) := \operatorname{ar}(R) - 1$$ for $$R \in \mathbf{R}$$
+> * $$w(c) := -1$$ for $$c \in \mathbf{C}$$ and $$w(x_i) := -1$$ for variables
+> * $$w(=) := 1$$
+> * $$w(\neg) := 0$$, and $$w(\ast) := 1$$ for binary connectives and quantifiers.
+> 
+> The cumulative weight of a string is defined by $$\hat{w}(\varepsilon) := 0$$ and $$\hat{w}(\sigma s) := \hat{w}(\sigma) + w(s)$$. Prefix strings are uniquely readable because $$\hat{w}(t) = -1$$ for every term or formula, while $$\hat{w}(\sigma) \ge 0$$ for every proper initial segment.
+
+---
+
+<h4 id="def-fol-free-variables">Free Variables (FV)</h4>
+
+> **Definition:** The set of *free variables* $$\mathbf{FV}(\varphi)$$ of a formula $$\varphi$$ is defined recursively by:
+> * $$\mathbf{FV}(R t_1 \dots t_n) := \bigcup_{k=1}^n \mathbf{Var}(t_k)$$
+> * $$\mathbf{FV}(= t_1 t_2) := \mathbf{Var}(t_1) \cup \mathbf{Var}(t_2)$$
+> * $$\mathbf{FV}(\neg \varphi) := \mathbf{FV}(\varphi)$$
+> * $$\mathbf{FV}(\ast \varphi \psi) := \mathbf{FV}(\varphi) \cup \mathbf{FV}(\psi)$$ for binary connectives $$\ast$$
+> * $$\mathbf{FV}(\ast x \ \varphi) := \mathbf{FV}(\varphi) \setminus \{x\}$$ for quantifiers $$\ast \in \{\forall, \exists\}$$
+
+---
+
+<h4 id="def-fol-abbreviations">Precedence & Abbreviations</h4>
+
+> **Definition:** Standard abbreviations:
+> * $$\forall \bar{x} \varphi$$ and $$\exists \bar{x} \varphi$$ abbreviate iterated quantifiers.
+> * $$\forall R(\bar{x}) \ \varphi := \forall \bar{x} (R(\bar{x}) \rightarrow \varphi)$$ and $$\exists R(\bar{x}) \ \varphi := \exists \bar{x} (R(\bar{x}) \land \varphi)$$.
+> * $$\exists! x \ \varphi(x) := \exists x (\varphi(x) \land \forall y (\varphi(y) \rightarrow x = y))$$.
+> * **Operator Precedence:** $$\neg > \land, \lor > \forall, \exists > \rightarrow, \iff$$, with binary connectives right-associative.
+
+---
+
+<h4 id="def-fol-functional-formula">Functional Formula</h4>
+
+> **Definition:** A formula $$\varphi(\bar{x}, y)$$ is *functional* in $$y$$ if:
+> $$
+> \forall \bar{x} \exists! y \ \varphi(\bar{x}, y)
+> $$
+
+---
+
+### First-Order Logic: Semantics
+
+<h4 id="def-fol-structure">Structure (𝔄)</h4>
+
+> **Definition:** A *structure* $$\mathfrak{A}$$ over signature $$\sigma = (\mathbf{F}, \mathbf{R}, \mathbf{C}, \operatorname{ar})$$ is a pair $$(A, \cdot^\mathfrak{A})$$, where $$A \ne \emptyset$$ is a set called the *universe* (denoted $$\vert \mathfrak{A} \vert$$), and $$\cdot^\mathfrak{A}$$ maps:
+> * Each $$f \in \mathbf{F}$$ of arity $$n$$ to a function $$f^\mathfrak{A} \colon A^n \longrightarrow A$$.
+> * Each $$R \in \mathbf{R}$$ of arity $$n$$ to a relation $$R^\mathfrak{A} \subseteq A^n$$.
+> * Each $$c \in \mathbf{C}$$ to an element $$c^\mathfrak{A} \in A$$.
+
+---
+
+<h4 id="def-fol-assignment">Variable Assignment</h4>
+
+> **Definition:** A *variable assignment* in structure $$\mathfrak{A}$$ is a function $$s \colon \mathbf{Var} \longrightarrow \vert \mathfrak{A} \vert$$.
+
+---
+
+<h4 id="def-fol-valuation-function">Term Valuation Function (s̄)</h4>
+
+> **Definition:** The *valuation function* $$\bar{s} \colon \textbf{Trm}(\sigma) \longrightarrow \vert \mathfrak{A} \vert$$ corresponding to assignment $$s$$ is defined recursively by:
+> 1. $$\bar{s}(x_i) := s(x_i)$$
+> 2. $$\bar{s}(c) := c^\mathfrak{A}$$
+> 3. $$\bar{s}(f t_1 \dots t_n) := f^\mathfrak{A}(\bar{s}(t_1), \dots, \bar{s}(t_n))$$
+
+---
+
+<h4 id="def-fol-modified-assignment">Modified Assignment</h4>
+
+> **Definition:** The modified assignment $$s_{x \mapsto t}$$ is defined by:
+> $$
+> s_{x \mapsto t}(y) := \begin{cases} s(y) & \text{if } y \ne x, \\ t & \text{if } y = x. \end{cases}
+> $$
+
+---
+
+<h4 id="def-fol-satisfaction">Satisfaction Relation (⊨)</h4>
+
+> **Definition:** The *satisfaction* relation $$\mathfrak{A} \models \varphi[s]$$ is defined recursively by:
+> 1. $$\mathfrak{A} \models R t_1 \dots t_n[s] \iff (\bar{s}(t_1), \dots, \bar{s}(t_n)) \in R^\mathfrak{A}$$
+> 2. $$\mathfrak{A} \models {= t_1 t_2}[s] \iff \bar{s}(t_1) = \bar{s}(t_2)$$
+> 3. $$\mathfrak{A} \models \neg \psi[s] \iff \mathfrak{A} \not\models \psi[s]$$
+> 4. $$\mathfrak{A} \models \land \psi \xi[s] \iff \mathfrak{A} \models \psi[s] \land \mathfrak{A} \models \xi[s]$$
+> 5. $$\mathfrak{A} \models \lor \psi \xi[s] \iff \mathfrak{A} \models \psi[s] \lor \mathfrak{A} \models \xi[s]$$
+> 6. $$\mathfrak{A} \models \rightarrow \psi \xi[s] \iff \mathfrak{A} \not\models \psi[s] \lor \mathfrak{A} \models \xi[s]$$
+> 7. $$\mathfrak{A} \models \leftrightarrow \psi \xi[s] \iff (\mathfrak{A} \models \psi[s] \iff \mathfrak{A} \models \xi[s])$$
+> 8. $$\mathfrak{A} \models \forall x \psi[s] \iff \forall t \in \vert \mathfrak{A} \vert \ \mathfrak{A} \models \psi[s_{x \mapsto t}]$$
+> 9. $$\mathfrak{A} \models \exists x \psi[s] \iff \exists t \in \vert \mathfrak{A} \vert \ \mathfrak{A} \models \psi[s_{x \mapsto t}]$$
+
+---
+
+<h4 id="def-sentence">Sentence</h4>
+
+> **Definition:** A first-order formula $$\varphi$$ is a *sentence* (or closed formula) if it contains no free variables:
+> $$
+> \mathbf{FV}(\varphi) = \emptyset
+> $$
+
+---
+
+<h4 id="def-truth-structure">Truth in a Structure</h4>
+
+> **Definition:** For a structure $$\mathfrak{A}$$ and formula $$\varphi$$, we define $$\mathfrak{A} \models \varphi$$ to mean:
+> $$
+> \mathfrak{A} \models \varphi[s] \quad \text{for every assignment } s
+> $$
+> For sentences, this holds if and only if it holds for some assignment.
+
+---
+
+<h4 id="def-fol-validity">First-Order Validity & Satisfiability</h4>
+
+> **Definition:** A first-order formula $$\varphi$$ is:
+> * **Satisfiable:** if $$\mathfrak{A} \models \varphi[s]$$ for some structure $$\mathfrak{A}$$ and assignment $$s$$.
+> * **Unsatisfiable (Contradiction):** if it is not satisfiable.
+> * **Valid (Tautology):** written $$\models \varphi$$, if $$\mathfrak{A} \models \varphi$$ for every structure $$\mathfrak{A}$$.
+> * **Invalid:** written $$\not\models \varphi$$, if $$\mathfrak{A} \not\models \varphi$$ for some structure $$\mathfrak{A}$$.
+
+---
+
+<h4 id="def-model-theory">Model of a Set of Formulae</h4>
+
+> **Definition:** A structure $$\mathfrak{A}$$ is a *model* of a set of formulae $$\Gamma$$, written $$\mathfrak{A} \models \Gamma$$, if:
+> $$
+> \mathfrak{A} \models \varphi \quad \text{for every } \varphi \in \Gamma
+> $$
+
+---
+
+<h4 id="def-fol-entailment">First-Order Entailment</h4>
+
+> **Definition:** We say $$\Sigma \models \varphi$$ if for every structure $$\mathfrak{A}$$ and assignment $$s$$, if $$\mathfrak{A} \models \psi[s]$$ for all $$\psi \in \Sigma$$, then $$\mathfrak{A} \models \varphi[s]$$.
+
+---
+
+<h4 id="def-fol-set-satisfiability">Set Satisfiability (FOL)</h4>
+
+> **Definition:** A set of formulae $$\Sigma$$ is:
+> * **Satisfiable:** if $$\mathfrak{A} \models \Sigma$$ for some structure $$\mathfrak{A}$$.
+> * **Unsatisfiable:** if it is not satisfiable.
+
+---
+
+### Metatheory of Classical Logic
+
+<h4 id="def-finitely-satisfiable">Finite Satisfiability</h4>
+
+> **Definition:** A set of formulae $$\Sigma$$ is *finitely satisfiable* if every finite subset $$\Sigma_0 \subseteq \Sigma$$ is satisfiable.
+
+---
+
+<h4 id="def-henkin-property">Henkin Witness Property</h4>
+
+> **Definition:** A theory $$T$$ has the *Henkin property* (or witness property) if whenever $$T \vdash \exists x \ \varphi(x)$$, then $$T \vdash \varphi(c)$$ for some constant symbol $$c$$.
+
+---
+
+<h4 id="def-maximally-consistent">Maximal Consistency</h4>
+
+> **Definition:** A set of formulae $$\Gamma$$ is *maximally consistent* if it is consistent and for every formula $$\phi$$, either $$\phi \in \Gamma$$ or $$\neg \phi \in \Gamma$$.
+
+---
+
+<h4 id="def-term-verifier">Canonical Term Structure (Γ-Verifier)</h4>
+
+> **Definition:** Let $$\Delta$$ be a complete consistent Henkin theory. The *canonical term structure* $$\mathfrak{A}$$ has universe $$\vert \mathfrak{A} \vert := \textbf{Trm}(\mathscr{L} \cup \{c_n\})$$ defined by:
+> 1. $$R^\mathfrak{A}(t_1, \dots, t_n) \iff R t_1 \dots t_n \in \Delta$$
+> 2. $$f^\mathfrak{A}(t_1, \dots, t_n) := f t_1 \dots t_n$$
+> 3. $$E^\mathfrak{A}(t_1, t_2) \iff = t_1 t_2 \in \Delta$$
+
+---
+
+<h4 id="def-quotient-model">Quotient Model (Γ-Model)</h4>
+
+> **Definition:** The *quotient structure* $$\mathfrak{A}' := \mathfrak{A} / E^\mathfrak{A}$$ is defined by:
+> 1. $$R^{\mathfrak{A}'}([t_1], \dots, [t_n]) \iff R^\mathfrak{A}(t_1, \dots, t_n)$$
+> 2. $$f^{\mathfrak{A}'}([t_1], \dots, [t_n]) := [f^\mathfrak{A}(t_1, \dots, t_n)]$$
+
+---
+
+### Axiomatic Set Theory: Foundations & Classes
+
+<h4 id="def-set-theory-language">Language of Set Theory</h4>
+
+> **Definition:** The formal language of Set Theory contains a single binary relation symbol $$\in$$.
+
+---
+
+<h4 id="def-ordered-pair-kuratowski">Kuratowski Ordered Pair</h4>
+
+> **Definition:** The *ordered pair* $$(a, b)$$ is formally defined set-theoretically as:
+> $$
+> (a, b) := \{\{a\}, \{a, b\}\}
+> $$
+
+---
+
+<h4 id="def-successor-set">Successor Set</h4>
+
+> **Definition:** The *successor* of a set $$n$$ is defined as:
+> $$
+> n + 1 := n \cup \{n\}
+> $$
+
+---
+
+<h4 id="def-z-minus-zf-minus">Z⁻ and ZF⁻</h4>
+
+> **Definition:** 
+> * $$\mathrm{Z}^- := \{\mathbf{Ex, ES, Pa, U, PS, I}\}$$
+> * $$\mathrm{ZF}^- := \mathrm{Z}^- \cup \mathbf{R}$$
+
+---
+
+<h4 id="def-omega-natural-numbers">Natural Numbers (ω, ℕ)</h4>
+
+> **Definition:** Let $$\mathcal{I}$$ be an inductive set. We define the set of natural numbers by:
+> $$
+> \omega := \bigcap \{x \in \mathcal{P}(\mathcal{I}) \mid x \text{ is inductive}\}, \qquad \mathbb{N} := \omega
+> $$
+
+---
+
+<h4 id="def-transitive-set">Transitive Set</h4>
+
+> **Definition:** A set $$X$$ is *transitive* if every element of $$X$$ is a subset of $$X$$:
+> $$
+> \forall x \in X \ x \subseteq X
+> $$
+
+---
+
+<h4 id="def-class-proper-class">Classes & The Universe (V)</h4>
+
+> **Definition:** For any formula $$\varphi(x, \bar{t})$$, the *class* of elements satisfying $$\varphi$$ is $$A = \{x \mid \varphi(x, \bar{t})\}$$. A class that is not a set is called a *proper class*. The class of all sets is:
+> $$
+> \mathbf{V} := \{x \mid x = x\}
+> $$
+
+---
+
+### Axiomatic Set Theory: Ordinals & Choice
+
+<h4 id="def-order-isomorphism">Order Isomorphism & Automorphism</h4>
+
+> **Definition:** A function $$f \colon X \longrightarrow Y$$ between posets is an *order isomorphism* if $$f$$ is bijective and:
+> $$
+> \forall x, y \in X \ (x \le y \iff f(x) \le f(y))
+> $$
+> We write $$(X, \le) \cong_{\operatorname{Ord}} (Y, \hat{\le})$$. An order isomorphism from a poset to itself is an *order automorphism*.
+
+---
+
+<h4 id="def-initial-segment-embedding">Initial Segment Embedding (⊑)</h4>
+
+> **Definition:** We write $$(X, \le) \sqsubseteq (Y, \hat{\le})$$ if $$(X, \le)$$ is order-isomorphic to an initial segment of $$(Y, \hat{\le})$$.
+
+---
+
+<h4 id="def-ordinal-number">Ordinal Number (Ord)</h4>
+
+> **Definition:** A well-ordered set $$(X, \le)$$ is an *ordinal* if:
+> $$
+> \forall \alpha \in X \ X_\alpha = \alpha
+> $$
+> We define $$\mathbf{Ord} := \{\alpha \mid \alpha \text{ is an ordinal number}\}$$, and define $$\alpha < \beta \iff \alpha \in \beta$$.
+
+---
+
+<h4 id="def-ordinal-sup-inf">Ordinal Supremum & Infimum</h4>
+
+> **Definition:** For a set of ordinals $$X$$, we define:
+> $$
+> \inf X := \bigcap X, \qquad \sup X := \bigcup X
+> $$
+
+---
+
+<h4 id="def-successor-limit-ordinal">Successor & Limit Ordinals</h4>
+
+> **Definition:** An ordinal $$\alpha > 0$$ is a *successor ordinal* if $$\exists \beta \ \alpha = \beta + 1$$. Otherwise, $$\alpha$$ is a *limit ordinal*.
+
+---
+
+<h4 id="def-transfinite-recursion">Transfinite Recursion</h4>
+
+> **Definition:** For any class function $$G \colon \mathbf{V} \longrightarrow \mathbf{V}$$, there exists a unique class function $$F \colon \mathbf{Ord} \longrightarrow \mathbf{V}$$ such that:
+> $$
+> F(\alpha) = G(F \vert_\alpha) \quad \text{for every } \alpha \in \mathbf{Ord}
+> $$
+
+---
+
+<h4 id="def-ordinal-sequence">Ordinal Sequences & Limits</h4>
+
+> **Definition:** An $$\alpha$$-sequence is a function $$\xi \colon \alpha \longrightarrow X$$. An $$\alpha$$-sequence of ordinals *converges* to $$\eta$$, written $$\xi \rightarrow \eta$$, if:
+> $$
+> \forall \lambda < \eta \ \exists \beta \ \forall \gamma \ (\beta \le \gamma < \alpha \rightarrow \lambda < \xi_\gamma \le \eta)
+> $$
+
+---
+
+<h4 id="def-axiom-choice">Axiom of Choice (AC) & ZFC⁻</h4>
+
+> **Definition:** The *Axiom of Choice* ($$\mathbf{AC}$$) asserts that for any set of non-empty sets $$\mathcal{A}$$, there exists a choice function $$f \colon \mathcal{A} \longrightarrow \bigcup \mathcal{A}$$ such that:
+> $$
+> \forall A \in \mathcal{A} \ f(A) \in A
+> $$
+> We define $$\mathrm{ZFC}^- := \mathrm{ZF}^- \cup \{\mathbf{AC}\}$$.
+
+---
+
+### Cardinal Numbers
+
+<h4 id="def-cardinality-of-set">Cardinality of a Set (|A|)</h4>
+
+> **Definition:** For any set $$A$$, its *cardinality* $$\vert A \vert$$ is the smallest ordinal $$\alpha$$ such that there exists a bijection $$f \colon A \longrightarrow \alpha$$.
+
+---
+
+<h4 id="def-cardinal-number">Cardinal Number</h4>
+
+> **Definition:** An ordinal number $$\kappa$$ is a *cardinal number* if:
+> $$
+> \kappa = \vert \kappa \vert
+> $$
+
+---
+
+<h4 id="def-cardinal-ordering">Cardinal Ordering (≤)</h4>
+
+> **Definition:** For two cardinal numbers $$\kappa, \lambda$$, we define $$\kappa \le \lambda$$ if there exists an injection $$f \colon \kappa \longrightarrow \lambda$$.
+
+---
+
+<h4 id="def-cardinal-arithmetic">Cardinal Arithmetic</h4>
+
+> **Definition:** Let $$\vert A \vert = \kappa$$ and $$\vert B \vert = \lambda$$. We define:
+> * $$\kappa + \lambda := \vert A \sqcup B \vert$$
+> * $$\kappa \cdot \lambda := \vert A \times B \vert$$
+> * $$\kappa^\lambda := \vert A^B \vert$$
+
+---
+
+### Theory of Computation
+
+<h4 id="def-decidable-set">Decidable Set</h4>
+
+> **Definition:** A set $$A \subseteq \mathbb{N}$$ is *decidable* (or computable) if there exists an algorithm that, on input $$n \in \mathbb{N}$$, returns **Yes** if $$n \in A$$, and **No** if $$n \notin A$$.
+
+---
+
+<h4 id="def-semidecidable-set">Semidecidable Set</h4>
+
+> **Definition:** A set $$A \subseteq \mathbb{N}$$ is *semidecidable* (or recursively enumerable) if there exists an algorithm that, on input $$n \in \mathbb{N}$$, returns **Yes** if $$n \in A$$, and runs forever (or halts without output) if $$n \notin A$$.
+
+---
+
+<h4 id="def-enumerator">Enumerator</h4>
+
+> **Definition:** An algorithm *enumerates* $$A$$ if it lists the elements of $$A$$ such that every element of $$A$$ is eventually listed in finite time, and no elements outside $$A$$ are ever listed.
