@@ -331,7 +331,7 @@
   },
   {
     "id": "thm-semidecidable-closure",
-    "title": "Closure Properties of Semi[decidable](/definitions/#def-decidable-set) Sets",
+    "title": "Closure Properties of [Semidecidable](/definitions/#def-semidecidable-set) Sets",
     "section": "Theorems & Proofs",
     "url": "/theorems/#semidecidable-closure",
     "path": "/theorems/",
@@ -656,6 +656,14 @@
     "url": "/definitions/#def-order-boundedness",
     "path": "/definitions/",
     "anchor": "def-order-boundedness"
+  },
+  {
+    "id": "def-def-completeness-axiom",
+    "title": "The Completeness Axiom of \u211d",
+    "section": "Definitions",
+    "url": "/definitions/#def-completeness-axiom",
+    "path": "/definitions/",
+    "anchor": "def-completeness-axiom"
   },
   {
     "id": "def-def-lattice",
@@ -1265,14 +1273,12 @@
             ninja.close();
             const currentPath = window.location.pathname.replace(/\/index\.html$/, '/');
             if (currentPath.endsWith(item.path)) {
-              // Already on the page: smooth scroll to element and update URL hash
               const target = document.getElementById(item.anchor);
               if (target) {
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 history.pushState(null, null, '#' + item.anchor);
               }
             } else {
-              // Navigate to the target page with anchor
               window.location.href = item.url;
             }
           }

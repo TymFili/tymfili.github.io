@@ -62,7 +62,7 @@ Welcome to the central reference library of proofs. This archive maintains compl
 * **Theory of Computation:**
   * [Semidecidability and Dovetailing Enumeration](#semidecidability-enumeration)
   * [Kleene's Post Theorem on Decidability](#kleene-theorem)
-  * [Closure Properties of Semi[decidable](/definitions/#def-decidable-set) Sets](#semidecidable-closure)
+  * [Closure Properties of [Semidecidable](/definitions/#def-semidecidable-set) Sets](#semidecidable-closure)
 
 ---
 
@@ -966,7 +966,7 @@ Suppose for contradiction that there exist $$x, y \in \mathbb{R}$$ with $$x > 0$
 
 Define $$S := \{nx \mid n \in \mathbb{N}\}$$. Since $$x \in S$$, $$S \ne \emptyset$$, and $$S$$ is bounded from above by $$y$$. 
 
-By the Completeness Axiom, let $$\alpha := \sup S \in \mathbb{R}$$. Since $$x > 0$$, $$\alpha - x < \alpha$$, so $$\alpha - x$$ is not an upper bound of $$S$$. Pick $$m \in \mathbb{N}$$ such that $$mx > \alpha - x$$. Then $$(m + 1)x > \alpha$$. Since $$m + 1 \in \mathbb{N}$$, $$(m + 1)x \in S$$, which contradicts that $$\alpha$$ is an upper bound of $$S$$.
+By the [Completeness Axiom of ℝ](/definitions/#def-completeness-axiom), let $$\alpha := \sup S \in \mathbb{R}$$. Since $$x > 0$$, $$\alpha - x < \alpha$$, so $$\alpha - x$$ is not an upper bound of $$S$$. Pick $$m \in \mathbb{N}$$ such that $$mx > \alpha - x$$. Then $$(m + 1)x > \alpha$$. Since $$m + 1 \in \mathbb{N}$$, $$(m + 1)x \in S$$, which contradicts that $$\alpha$$ is an upper bound of $$S$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>
 
@@ -976,7 +976,7 @@ By the Completeness Axiom, let $$\alpha := \sup S \in \mathbb{R}$$. Since $$x > 
 
 <h4 id="density-of-rationals">Density of ℚ in ℝ</h4>
 
-> **Theorem:** $$\forall x, y \in \mathbb{R} \ (x < y \rightarrow \exists q \in \mathbb{Q} \ x < q < y)$$.
+> **Theorem:** $$\mathbb{Q}$$ is [dense](/definitions/#def-order-boundedness) in $$\mathbb{R}$$.
 
 <details class="border rounded p-3 my-3" markdown="1">
 <summary style="cursor: pointer;"><b>Proof</b> <span class="text-muted font-italic">(click to reveal)</span></summary>
@@ -1051,7 +1051,7 @@ Because one branch is guaranteed to halt in finite time, $$M$$ is a total decisi
 
 ---
 
-<h4 id="semidecidable-closure">Closure Properties of Semi[decidable](/definitions/#def-decidable-set) Sets</h4>
+<h4 id="semidecidable-closure">Closure Properties of [Semidecidable](/definitions/#def-semidecidable-set) Sets</h4>
 
 > **Theorem:** If $$A, B \subseteq \mathbb{N}$$ are semidecidable, then $$A \cup B$$ and $$A \cap B$$ are semidecidable.
 

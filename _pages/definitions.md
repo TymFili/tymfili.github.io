@@ -21,7 +21,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 * **Equivalence Relations & Quotients (Chapter 1):**
   * [Relational Properties](#def-relation-properties) &bull; [Equivalence Relation](#def-equivalence-relation) &bull; [Equivalence Class](#def-equivalence-class) &bull; [Quotient Set](#def-quotient-set) &bull; [Partition](#def-partition)
 * **Order Theory (Chapter 1):**
-  * [Strict & Weak Relations](#def-strict-weak-relations) &bull; [Poset & Total Order](#def-poset) &bull; [Initial Segment](#def-initial-segment) &bull; [Bounds, Extremals, and Min/Max](#def-bounds-min-max) &bull; [Chain](#def-chain) &bull; [Well-Ordering (Woset)](#def-well-ordering) &bull; [Successor Element](#def-successor-element) &bull; [Well-Founded Relation](#def-well-founded) &bull; [Order Boundedness & Density](#def-order-boundedness)
+  * [Strict & Weak Relations](#def-strict-weak-relations) &bull; [Poset & Total Order](#def-poset) &bull; [Initial Segment](#def-initial-segment) &bull; [Bounds, Extremals, and Min/Max](#def-bounds-min-max) &bull; [Completeness Axiom of ℝ](#def-completeness-axiom) &bull; [Chain](#def-chain) &bull; [Well-Ordering (Woset)](#def-well-ordering) &bull; [Successor Element](#def-successor-element) &bull; [Well-Founded Relation](#def-well-founded) &bull; [Order Boundedness & Density](#def-order-boundedness)
 * **Lattice Theory & Fixed Points (Chapter 1):**
   * [Lattice](#def-lattice) &bull; [Complete Lattice](#def-complete-lattice) &bull; [Monotone Function](#def-monotone-function) &bull; [Fixed Point & Least Fixed Point (μf)](#def-fixed-point)
 * **Formal Languages (Chapter 2):**
@@ -312,7 +312,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 > **Definition:** Given an equivalence relation $$\sim \subseteq X \times X$$, the *quotient set* of $$X$$ by $$\sim$$ is:
 > $$
-> \quot{X}{\sim} := \{[x]_\sim \mid x \in X\}
+> X / \sim := \{[x]_\sim \mid x \in X\}
 > $$
 
 ---
@@ -387,7 +387,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 <h4 id="def-successor-element">Successor Element</h4>
 
-> **Definition:** Let $$(X, \le)$$ be a well-ordered set. If the set $$\{y \in X \mid x < y\}$$ is non-empty, we define the *successor* $$\Succ_\le x$$ to be its least element.
+> **Definition:** Let $$(X, \le)$$ be a well-ordered set. If the set $$\{y \in X \mid x < y\}$$ is non-empty, we define the *successor* $$\operatorname{Succ}_\le x$$ to be its least element.
 
 ---
 
@@ -410,6 +410,17 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 ---
 
 ### Lattice Theory & Fixed Points
+
+---
+
+<h4 id="def-completeness-axiom">The Completeness Axiom of ℝ</h4>
+
+> **Definition:** The *Completeness Axiom* (the Least Upper Bound Property) asserts that every non-empty subset of real numbers bounded from above has a supremum in $$\mathbb{R}$$:
+> $$
+> \emptyset \ne A \subseteq \mathbb{R} \text{ bounded above} \implies \sup A \in \mathbb{R}
+> $$
+
+---
 
 <h4 id="def-lattice">Lattice</h4>
 
@@ -503,9 +514,9 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 <h4 id="def-pc-valuation">Valuation & Extended Interpretation</h4>
 
-> **Definition:** An *interpretation* (or *valuation*) is a function $$\mathcal{I} \colon \mathbf{Var} \longrightarrow \{\False, \True\}$$. 
+> **Definition:** An *interpretation* (or *valuation*) is a function $$\mathcal{I} \colon \mathbf{Var} \longrightarrow \{\mathrm{False}, \mathrm{True}\}$$. 
 > 
-> The standard extended interpretation $$\hat{\mathcal{I}} \colon \textbf{Frm} \longrightarrow \{\False, \True\}$$ agrees with $$\mathcal{I}$$ on variables and evaluates connectives via classical truth tables.
+> The standard extended interpretation $$\hat{\mathcal{I}} \colon \textbf{Frm} \longrightarrow \{\mathrm{False}, \mathrm{True}\}$$ agrees with $$\mathcal{I}$$ on variables and evaluates connectives via classical truth tables.
 
 ---
 
@@ -527,7 +538,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 > **Definition:** A propositional formula $$\varphi$$ is *satisfiable* if there exists some valuation $$\mathcal{I}$$ such that:
 > $$
-> \mathcal{I}(\varphi) = \True
+> \mathcal{I}(\varphi) = \mathrm{True}
 > $$
 
 ---
@@ -538,7 +549,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > 
 > A set of formulae $$\Sigma$$ is *satisfiable* if there exists some interpretation $$\mathcal{I}$$ such that:
 > $$
-> \mathcal{I}(\varphi) = \True \quad \text{for all } \varphi \in \Sigma
+> \mathcal{I}(\varphi) = \mathrm{True} \quad \text{for all } \varphi \in \Sigma
 > $$
 
 ---
