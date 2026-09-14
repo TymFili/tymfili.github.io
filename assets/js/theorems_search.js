@@ -638,6 +638,108 @@
     "url": "/definitions/#def-quotient-model"
   },
   {
+    "id": "def-def-zfc-axioms",
+    "title": "The ZFC Axioms",
+    "section": "Definitions",
+    "url": "/definitions/#def-zfc-axioms"
+  },
+  {
+    "id": "def-def-kuratowski-pair",
+    "title": "Kuratowski's Ordered Pair",
+    "section": "Definitions",
+    "url": "/definitions/#def-kuratowski-pair"
+  },
+  {
+    "id": "def-def-successor-inductive",
+    "title": "Successor & Inductive Sets (\u03c9)",
+    "section": "Definitions",
+    "url": "/definitions/#def-successor-inductive"
+  },
+  {
+    "id": "def-def-transitive-set",
+    "title": "Transitive Set",
+    "section": "Definitions",
+    "url": "/definitions/#def-transitive-set"
+  },
+  {
+    "id": "def-def-classes-universe",
+    "title": "Classes & The Universe V",
+    "section": "Definitions",
+    "url": "/definitions/#def-classes-universe"
+  },
+  {
+    "id": "def-def-order-isomorphism",
+    "title": "Order Isomorphism & Embedding",
+    "section": "Definitions",
+    "url": "/definitions/#def-order-isomorphism"
+  },
+  {
+    "id": "def-def-ordinals",
+    "title": "Von Neumann Ordinals",
+    "section": "Definitions",
+    "url": "/definitions/#def-ordinals"
+  },
+  {
+    "id": "def-def-ordinal-bounds",
+    "title": "Ordinal Bounds (sup and inf)",
+    "section": "Definitions",
+    "url": "/definitions/#def-ordinal-bounds"
+  },
+  {
+    "id": "def-def-limit-ordinals",
+    "title": "Successor & Limit Ordinals",
+    "section": "Definitions",
+    "url": "/definitions/#def-limit-ordinals"
+  },
+  {
+    "id": "def-def-transfinite-recursion",
+    "title": "Transfinite Recursion",
+    "section": "Definitions",
+    "url": "/definitions/#def-transfinite-recursion"
+  },
+  {
+    "id": "def-def-ordinal-sequences",
+    "title": "Ordinal Sequences & Limits",
+    "section": "Definitions",
+    "url": "/definitions/#def-ordinal-sequences"
+  },
+  {
+    "id": "def-def-choice-zfc",
+    "title": "The Axiom of Choice & ZFC\u207b",
+    "section": "Definitions",
+    "url": "/definitions/#def-choice-zfc"
+  },
+  {
+    "id": "def-def-cardinal-numbers",
+    "title": "Cardinal Numbers (Initial Ordinals)",
+    "section": "Definitions",
+    "url": "/definitions/#def-cardinal-numbers"
+  },
+  {
+    "id": "def-def-cardinal-ordering",
+    "title": "Cardinal Ordering",
+    "section": "Definitions",
+    "url": "/definitions/#def-cardinal-ordering"
+  },
+  {
+    "id": "def-def-decidability",
+    "title": "Decidable Set",
+    "section": "Definitions",
+    "url": "/definitions/#def-decidability"
+  },
+  {
+    "id": "def-def-semidecidability",
+    "title": "Semidecidable Set",
+    "section": "Definitions",
+    "url": "/definitions/#def-semidecidability"
+  },
+  {
+    "id": "def-def-enumeration",
+    "title": "Algorithmic Enumeration",
+    "section": "Definitions",
+    "url": "/definitions/#def-enumeration"
+  },
+  {
     "id": "def-def-alphabet",
     "title": "Alphabet",
     "section": "Definitions",

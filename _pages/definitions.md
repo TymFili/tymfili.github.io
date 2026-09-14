@@ -30,6 +30,14 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
   * [Signature](#def-signature) &bull; [Alphabet of FOL](#def-fol-alphabet) &bull; [Terms (Trm)](#def-terms) &bull; [Formulae (Frm)](#def-fol-formulae) &bull; [Symbol Weight & Unique Readability](#def-symbol-weight) &bull; [Abbreviation Conventions](#def-abbreviations) &bull; [Functional Formulae](#def-functional-formula)
 * **Tarskian Semantics & Canonical Models:**
   * [Structure & Universe](#def-structure) &bull; [Variable Assignment](#def-variable-assignment) &bull; [Term Valuation](#def-term-valuation) &bull; [Modified Assignment](#def-modified-assignment) &bull; [Tarskian Satisfaction (⊨)](#def-satisfaction) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Canonical Term Structure (Verifier)](#def-term-verifier) &bull; [Quotient Model](#def-quotient-model)
+* **Axiomatic Set Theory (ZFC):**
+  * [ZFC Axioms](#def-zfc-axioms) &bull; [Kuratowski Ordered Pair](#def-kuratowski-pair) &bull; [Successor & Inductive Sets (ω)](#def-successor-inductive) &bull; [Transitive Sets](#def-transitive-set) &bull; [Classes & The Universe V](#def-classes-universe)
+* **Ordinal Numbers & Transfinite Recursion:**
+  * [Order Isomorphism & Embedding](#def-order-isomorphism) &bull; [Von Neumann Ordinals](#def-ordinals) &bull; [Ordinal Bounds (sup/inf)](#def-ordinal-bounds) &bull; [Successor & Limit Ordinals](#def-limit-ordinals) &bull; [Transfinite Recursion](#def-transfinite-recursion) &bull; [Ordinal Sequences & Limits](#def-ordinal-sequences)
+* **Choice & Cardinality:**
+  * [Axiom of Choice & ZFC⁻](#def-choice-zfc) &bull; [Cardinal Numbers (Initial Ordinals)](#def-cardinal-numbers) &bull; [Cardinal Ordering](#def-cardinal-ordering)
+* **Theory of Computation:**
+  * [Decidability](#def-decidability) &bull; [Semidecidability](#def-semidecidability) &bull; [Algorithmic Enumeration](#def-enumeration)
 * **Formal Languages:**
   * [Alphabet](#def-alphabet) &bull; [Strings (Σ*)](#def-strings) &bull; [Concatenation](#def-concatenation) &bull; [Language](#def-language)
 * **Propositional Calculus:**
@@ -612,6 +620,194 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > 2. $$R^{\mathfrak{A}'}([t_1], \dots, [t_n]) \iff R t_1 \dots t_n \in \Delta$$
 > 
 > Under this construction, $$\mathfrak{A}' \models \phi \iff \phi \in \Delta$$.
+
+---
+
+---
+
+### Axiomatic Set Theory (ZFC)
+
+<h4 id="def-zfc-axioms">The ZFC Axioms</h4>
+
+> **Definition:** The language of Set Theory contains a single binary relation symbol $$\in$$. The axioms of $$\mathrm{ZFC}$$ are:
+> * **Extensionality ($$\mathbf{Ex}$$):** $$\forall x \forall y \ (\forall z \ (z \in x \iff z \in y) \rightarrow x = y)$$
+> * **Empty Set ($$\mathbf{ES}$$):** $$\exists x \forall y \ \neg (y \in x)$$
+> * **Pairing ($$\mathbf{Pa}$$):** $$\forall x \forall y \exists z \forall w \ (w \in z \iff (w = x \lor w = y))$$
+> * **Union ($$\mathbf{U}$$):** $$\forall x \exists y \forall z \ (z \in y \iff \exists w \ (z \in w \land w \in x))$$
+> * **Specification Schema ($$\mathbf{S}$$):** For any formula $$\varphi(z, \bar{p})$$:
+>   $$
+>   \forall \bar{p} \forall x \exists y \forall z \ (z \in y \iff (z \in x \land \varphi(z, \bar{p})))
+>   $$
+> * **Replacement Schema ($$\mathbf{R}$$):** For any formula $$\varphi(w, z, \bar{p})$$ functional in $$z$$:
+>   $$
+>   \forall \bar{p} \forall x \ (\forall w \in x \exists! z \ \varphi(w, z, \bar{p}) \rightarrow \exists y \forall z \ (z \in y \iff \exists w \in x \ \varphi(w, z, \bar{p})))
+>   $$
+> * **Power Set ($$\mathbf{PS}$$):** $$\forall x \exists y \forall z \ (z \in y \iff \forall w \ (w \in z \rightarrow w \in x))$$
+> * **Infinity ($$\mathbf{I}$$):** $$\exists x \ (\emptyset \in x \land \forall y \ (y \in x \rightarrow y \cup \{y\} \in x))$$
+> * **Foundation / Regularity ($$\mathbf{F}$$):** $$\forall x \ (x \ne \emptyset \rightarrow \exists y \in x \ (y \cap x = \emptyset))$$
+
+---
+
+<h4 id="def-kuratowski-pair">Kuratowski's Ordered Pair</h4>
+
+> **Definition:** The *ordered pair* $$(a, b)$$ is formally defined set-theoretically as:
+> $$
+> (a, b) := \{\{a\}, \{a, b\}\}
+> $$
+> satisfying the characteristic property $$(a, b) = (c, d) \iff a = c \land b = d$$.
+
+---
+
+<h4 id="def-successor-inductive">Successor & Inductive Sets (ω)</h4>
+
+> **Definition:** For any set $$n$$, its *successor* is defined as:
+> $$
+> n + 1 := n \cup \{n\}
+> $$
+> A set $$x$$ is *inductive* if $$\emptyset \in x$$ and $$\forall y \ (y \in x \rightarrow y + 1 \in x)$$. 
+> 
+> The set of natural numbers is defined as the minimal inductive set:
+> $$
+> \mathbb{N} := \omega := \bigcap \{x \in \mathcal{P}(\mathcal{I}) \mid x \text{ is inductive}\}
+> $$
+
+---
+
+<h4 id="def-transitive-set">Transitive Set</h4>
+
+> **Definition:** A set $$X$$ is *transitive* if every element of $$X$$ is also a subset of $$X$$:
+> $$
+> \forall x \in X \ x \subseteq X \iff X \subseteq \mathcal{P}(X)
+> $$
+
+---
+
+<h4 id="def-classes-universe">Classes & The Universe V</h4>
+
+> **Definition:** For any formula $$\varphi(x, \bar{t})$$, the *class* of all sets satisfying $$\varphi$$ is denoted:
+> $$
+> A := \{x \mid \varphi(x, \bar{t})\}
+> $$
+> A class that is not a set is called a *proper class*. The class of all sets is denoted:
+> $$
+> \mathbf{V} := \{x \mid x = x\}
+> $$
+
+---
+
+### Ordinal Numbers & Transfinite Recursion
+
+<h4 id="def-order-isomorphism">Order Isomorphism & Embedding</h4>
+
+> **Definition:** Let $$(X, \le)$$ and $$(Y, \hat{\le})$$ be partially ordered sets.
+> * A function $$f \colon X \longrightarrow Y$$ is an *order isomorphism* if $$f$$ is bijective and:
+>   $$
+>   \forall x, y \in X \ (x \le y \iff f(x) \hat{\le} f(y))
+>   $$
+>   denoted $$(X, \le) \cong_{\operatorname{Ord}} (Y, \hat{\le})$$.
+> * If $$(X, \le)$$ is isomorphic to an initial segment of $$(Y, \hat{\le})$$, we write $$(X, \le) \sqsubseteq (Y, \hat{\le})$$.
+
+---
+
+<h4 id="def-ordinals">Von Neumann Ordinals</h4>
+
+> **Definition:** A well-ordered set $$(X, \le)$$ is an *ordinal* if every element is equal to the initial segment it determines:
+> $$
+> \forall \alpha \in X \ X_\alpha = \alpha
+> $$
+> The class of all ordinals is denoted $$\mathbf{Ord}$$. For any two ordinals $$\alpha, \beta \in \mathbf{Ord}$$, the order relation is simply membership:
+> $$
+> \alpha < \beta \iff \alpha \in \beta \iff \alpha \subset \beta \iff \alpha \sqsubset \beta
+> $$
+
+---
+
+<h4 id="def-ordinal-bounds">Ordinal Bounds (sup and inf)</h4>
+
+> **Definition:** For any set of ordinals $$X \subseteq \mathbf{Ord}$$:
+> $$
+> \inf X := \bigcap X, \qquad \sup X := \bigcup X
+> $$
+> Both $$\inf X$$ and $$\sup X$$ are ordinals, representing the greatest lower bound and least upper bound of $$X$$ in $$\mathbf{Ord}$$.
+
+---
+
+<h4 id="def-limit-ordinals">Successor & Limit Ordinals</h4>
+
+> **Definition:** Let $$\alpha \in \mathbf{Ord}$$ with $$\alpha > 0$$.
+> * If there exists an ordinal $$\beta$$ such that $$\alpha = \beta + 1$$, then $$\alpha$$ is a *successor ordinal*.
+> * Otherwise, $$\alpha$$ is a *limit ordinal* (satisfying $$\alpha = \sup \{\beta \in \mathbf{Ord} \mid \beta < \alpha\}$$).
+
+---
+
+<h4 id="def-transfinite-recursion">Transfinite Recursion</h4>
+
+> **Definition:** Let $$G \colon \mathbf{V} \longrightarrow \mathbf{V}$$ be a class function. The *Principle of Transfinite Recursion* guarantees the existence of a unique class function $$F \colon \mathbf{Ord} \longrightarrow \mathbf{V}$$ satisfying for every ordinal $$\alpha$$:
+> $$
+> F(\alpha) = G(F \vert_\alpha)
+> $$
+
+---
+
+<h4 id="def-ordinal-sequences">Ordinal Sequences & Limits</h4>
+
+> **Definition:** An $$\alpha$$-sequence of elements of $$X$$ is a function $$\xi \colon \alpha \longrightarrow X$$, denoted $$\xi(\beta) := \xi_\beta$$.
+> 
+> An $$\alpha$$-sequence of ordinals $$\xi$$ *converges* to $$\eta$$, written $$\lim_{\beta < \alpha} \xi_\beta = \eta$$, if:
+> $$
+> \forall \lambda < \eta \ \exists \beta < \alpha \ \forall \gamma \ (\beta \le \gamma < \alpha \rightarrow \lambda < \xi_\gamma \le \eta)
+> $$
+
+---
+
+### Choice & Cardinality
+
+<h4 id="def-choice-zfc">The Axiom of Choice & ZFC⁻</h4>
+
+> **Definition:** The *Axiom of Choice* ($$\mathbf{AC}$$) asserts that for every family $$\mathcal{A}$$ of non-empty sets, there exists a choice function:
+> $$
+> f \colon \mathcal{A} \longrightarrow \bigcup \mathcal{A} \quad \text{such that} \quad \forall A \in \mathcal{A} \ f(A) \in A
+> $$
+> We define $$\mathrm{Z}^- := \{\mathbf{Ex}, \mathbf{ES}, \mathbf{Pa}, \mathbf{U}, \mathbf{PS}, \mathbf{I}\}$$, $$\mathrm{ZF}^- := \mathrm{Z}^- \cup \mathbf{R}$$, and $$\mathrm{ZFC}^- := \mathrm{ZF}^- \cup \{\mathbf{AC}\}$$.
+
+---
+
+<h4 id="def-cardinal-numbers">Cardinal Numbers (Initial Ordinals)</h4>
+
+> **Definition:** For any set $$A$$, its *cardinality* $$\vert A \vert$$ is defined as the smallest ordinal equinumerous to $$A$$:
+> $$
+> \vert A \vert := \min \{\alpha \in \mathbf{Ord} \mid \alpha \sim A\}
+> $$
+> An ordinal $$\kappa \in \mathbf{Ord}$$ is a *cardinal number* if it is its own cardinality: $$\kappa = \vert \kappa \vert$$.
+
+---
+
+<h4 id="def-cardinal-ordering">Cardinal Ordering</h4>
+
+> **Definition:** For two cardinals $$\kappa, \lambda$$, we define:
+> $$
+> \kappa \le \lambda \iff \exists \text{ an injection } f \colon \kappa \longrightarrow \lambda
+> $$
+
+---
+
+### Theory of Computation
+
+<h4 id="def-decidability">Decidable Set</h4>
+
+> **Definition:** A set $$A \subseteq \mathbb{N}$$ is *decidable* (or *computable*) if there exists an algorithm that, given any input $$n \in \mathbb{N}$$, halts in finite time and returns **Yes** if $$n \in A$$, and **No** if $$n \notin A$$.
+
+---
+
+<h4 id="def-semidecidability">Semidecidable Set</h4>
+
+> **Definition:** A set $$A \subseteq \mathbb{N}$$ is *semidecidable* (or *recursively enumerable*) if there exists an algorithm that, on input $$n \in \mathbb{N}$$, halts and returns **Yes** if $$n \in A$$, and runs forever (or halts without output) if $$n \notin A$$.
+
+---
+
+<h4 id="def-enumeration">Algorithmic Enumeration</h4>
+
+> **Definition:** An algorithm *enumerates* a set $$A \subseteq \mathbb{N}$$ if it outputs a sequence of elements such that every element of $$A$$ is eventually printed in finite time, and no element outside $$A$$ is ever printed.
 
 ---
 
