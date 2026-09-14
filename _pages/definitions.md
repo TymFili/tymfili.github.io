@@ -12,39 +12,39 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 ---
 
 ### Table of Contents
-* **Informal Logic & Foundations (Chapter 1):**
+* **Informal Logic & Foundations:**
   * [Proposition](#def-proposition) &bull; [Argument](#def-argument) &bull; [Validity](#def-validity) &bull; [Soundness](#def-soundness)
-* **Naive Set Theory (Chapter 1):**
-  * [Set & Membership](#def-set) &bull; [Subset & Extensional Equality](#def-subset) &bull; [Comprehension](#def-comprehension) &bull; [Empty Set](#def-empty-set) &bull; [Ordered Pair](#def-ordered-pair) &bull; [Cartesian Product & Powers](#def-cartesian-product) &bull; [Power Set](#def-power-set) &bull; [Unions & Intersections](#def-union-intersection)
-* **Relations & Functions (Chapter 1):**
-  * [Relations & Arity](#def-relation) &bull; [Domain & Range](#def-domain-range) &bull; [Functional Relation](#def-functional-relation) &bull; [Function](#def-function) &bull; [Composition](#def-composition) &bull; [Identity & Diagonal](#def-diagonal-relation) &bull; [Inclusion](#def-inclusion) &bull; [Injection](#def-injection) &bull; [Surjection](#def-surjection) &bull; [Bijection & Inverses](#def-bijection) &bull; [Image & Preimage](#def-image-preimage) &bull; [Restriction](#def-restriction) &bull; [Function Sets Bᴬ](#def-function-set) &bull; [Numbers (ℕ, ℤ)](#def-natural-integers)
-* **Equivalence Relations & Quotients (Chapter 1):**
+* **Naive Set Theory:**
+  * [Set and Membership](#def-set) &bull; [Subset and Extensional Equality](#def-subset) &bull; [Set Comprehension](#def-comprehension) &bull; [Empty Set](#def-empty-set) &bull; [Ordered Pair](#def-ordered-pair) &bull; [Cartesian Product and Powers](#def-cartesian-product) &bull; [Power Set](#def-power-set) &bull; [Unions, Intersections, and Differences](#def-union-intersection)
+* **Relations & Functions:**
+  * [Relations](#def-relation) &bull; [Domain and Range](#def-domain-range) &bull; [Functional Relation](#def-functional-relation) &bull; [Function](#def-function) &bull; [Composition](#def-composition) &bull; [Identity Function and Diagonal Relation](#def-diagonal-relation) &bull; [Inclusion](#def-inclusion) &bull; [Injection](#def-injection) &bull; [Surjection](#def-surjection) &bull; [Bijection and Invertibility](#def-bijection) &bull; [Image and Preimage](#def-image-preimage) &bull; [Restriction](#def-restriction) &bull; [Function Sets Bᴬ](#def-function-set) &bull; [Natural Numbers and Integers (ℕ, ℤ)](#def-natural-integers)
+* **Equivalence Relations & Quotients:**
   * [Relational Properties](#def-relation-properties) &bull; [Equivalence Relation](#def-equivalence-relation) &bull; [Equivalence Class](#def-equivalence-class) &bull; [Quotient Set](#def-quotient-set) &bull; [Partition](#def-partition)
-* **Order Theory (Chapter 1):**
-  * [Strict & Weak Relations](#def-strict-weak-relations) &bull; [Poset & Total Order](#def-poset) &bull; [Initial Segment](#def-initial-segment) &bull; [Bounds, Extremals, and Min/Max](#def-bounds-min-max) &bull; [Completeness Axiom of ℝ](#def-completeness-axiom) &bull; [Chain](#def-chain) &bull; [Well-Ordering (Woset)](#def-well-ordering) &bull; [Successor Element](#def-successor-element) &bull; [Well-Founded Relation](#def-well-founded) &bull; [Order Boundedness & Density](#def-order-boundedness)
-* **Lattice Theory & Fixed Points (Chapter 1):**
-  * [Lattice](#def-lattice) &bull; [Complete Lattice](#def-complete-lattice) &bull; [Monotone Function](#def-monotone-function) &bull; [Fixed Point & Least Fixed Point (μf)](#def-fixed-point)
-* **Formal Languages (Chapter 2):**
-  * [Alphabet](#def-alphabet) &bull; [Strings (Σ*)](#def-strings) &bull; [Concatenation](#def-concatenation) &bull; [Language](#def-language) &bull; [Initial Segment of String](#def-string-initial-segment)
-* **Propositional Calculus: Syntax (Chapter 3):**
+* **Order Theory:**
+  * [Strict and Weak Relations](#def-strict-weak-relations) &bull; [Poset and Total Order](#def-poset) &bull; [Initial Segment](#def-initial-segment) &bull; [Bounds, Extremal Elements, and Min/Max](#def-bounds-min-max) &bull; [Completeness Axiom of ℝ](#def-completeness-axiom) &bull; [Chain](#def-chain) &bull; [Well-Ordering (Woset)](#def-well-ordering) &bull; [Successor Element](#def-successor-element) &bull; [Well-Founded Relation](#def-well-founded) &bull; [Order Boundedness, Cofinality, and Density](#def-order-boundedness)
+* **Lattice Theory & Fixed Points:**
+  * [Lattice](#def-lattice) &bull; [Complete Lattice](#def-complete-lattice) &bull; [Monotone Function](#def-monotone-function) &bull; [Fixed Point and Least Fixed Point (μf)](#def-fixed-point)
+* **Formal Languages:**
+  * [Alphabet](#def-alphabet) &bull; [Strings (Σ*)](#def-strings) &bull; [Concatenation](#def-concatenation) &bull; [Language](#def-language) &bull; [Initial Segment of a String](#def-string-initial-segment)
+* **Propositional Calculus: Syntax:**
   * [Variables, Connectives, and Formulae (Frm)](#def-pc-syntax) &bull; [Formula Complexity](#def-pc-complexity)
-* **Propositional Calculus: Semantics (Chapter 3):**
-  * [Valuation & Extended Interpretation](#def-pc-valuation) &bull; [Logical Equivalence](#def-pc-equivalence) &bull; [Tautology & Contradiction](#def-pc-tautology-contradiction) &bull; [Formula Satisfiability (PC)](#def-pc-satisfiability-formula) &bull; [Set Satisfiability (PC)](#def-pc-satisfiability-set) &bull; [Entailment (PC)](#def-pc-entailment) &bull; [Functional Completeness](#def-pc-functional-completeness)
-* **Proof Theory (Chapter 4):**
-  * [Proof System](#def-proof-system) &bull; [Formal Proof](#def-formal-proof) &bull; [Syntactic Provability (⊢) & Theorems](#def-provability) &bull; [Modus Ponens](#def-modus-ponens) &bull; [Tautology System](#def-tautology-system) &bull; [Hilbert System](#def-hilbert-system) &bull; [Consistency & Inconsistency](#def-consistency) &bull; [System Soundness & Completeness](#def-system-soundness-completeness) &bull; [Proof Trees & Discharging](#def-proof-tree) &bull; [Natural Deduction Derivation](#def-nd-derivation)
-* **First-Order Logic: Syntax (Chapter 5):**
-  * [Signature (σ)](#def-fol-signature) &bull; [First-Order Alphabet](#def-fol-alphabet) &bull; [Terms (Trm)](#def-fol-terms) &bull; [Atomic & Compound Formulae (Frm)](#def-fol-formulae) &bull; [Symbol Weight & Unique Readability](#def-fol-weight) &bull; [Free Variables (FV)](#def-fol-free-variables) &bull; [Precedence & Abbreviations](#def-fol-abbreviations) &bull; [Functional Formula](#def-fol-functional-formula)
-* **First-Order Logic: Semantics (Chapter 5):**
-  * [Structure (𝔄)](#def-fol-structure) &bull; [Variable Assignment](#def-fol-assignment) &bull; [Term Valuation Function](#def-fol-valuation-function) &bull; [Modified Assignment](#def-fol-modified-assignment) &bull; [Satisfaction Relation (⊨)](#def-fol-satisfaction) &bull; [Sentence](#def-sentence) &bull; [Truth in a Structure](#def-truth-structure) &bull; [Formula Validity & Satisfiability (FOL)](#def-fol-validity) &bull; [Model of a Theory](#def-model-theory) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Set Satisfiability (FOL)](#def-fol-set-satisfiability)
-* **Metatheory of Classical Logic (Chapter 6):**
-  * [Finite Satisfiability](#def-finitely-satisfiable) &bull; [Henkin Witness Property](#def-henkin-property) &bull; [Maximal Consistency](#def-maximally-consistent) &bull; [Canonical Term Structure (Verifier)](#def-term-verifier) &bull; [Quotient Model](#def-quotient-model)
-* **Axiomatic Set Theory: Foundations & Classes (Chapter 7):**
-  * [Language of Set Theory (∈)](#def-set-theory-language) &bull; [Kuratowski Ordered Pair](#def-ordered-pair-kuratowski) &bull; [Successor Set](#def-successor-set) &bull; [ZF⁻ and ZFC⁻](#def-z-minus-zf-minus) &bull; [Natural Numbers (ω, ℕ)](#def-omega-natural-numbers) &bull; [Transitive Set](#def-transitive-set) &bull; [Classes & Proper Classes (V)](#def-class-proper-class)
-* **Axiomatic Set Theory: Ordinals & Choice (Chapter 7):**
-  * [Order Isomorphism & Automorphism](#def-order-isomorphism) &bull; [Initial Segment Embedding (⊑)](#def-initial-segment-embedding) &bull; [Ordinal Number (Ord)](#def-ordinal-number) &bull; [Ordinal Bounds (sup, inf)](#def-ordinal-sup-inf) &bull; [Successor & Limit Ordinals](#def-successor-limit-ordinal) &bull; [Transfinite Recursion](#def-transfinite-recursion) &bull; [Ordinal Sequences & Limits](#def-ordinal-sequence) &bull; [Axiom of Choice (AC)](#def-axiom-choice)
-* **Cardinal Numbers (Chapter 7):**
-  * [Cardinality of a Set (|A|)](#def-cardinality-of-set) &bull; [Cardinal Number](#def-cardinal-number) &bull; [Cardinal Ordering (≤)](#def-cardinal-ordering) &bull; [Cardinal Arithmetic (+, ·, ^)](#def-cardinal-arithmetic)
-* **Theory of Computation (Chapter 8):**
+* **Propositional Calculus: Semantics:**
+  * [Valuation and Extended Interpretation](#def-pc-valuation) &bull; [Logical Equivalence](#def-pc-equivalence) &bull; [Tautology and Contradiction](#def-pc-tautology-contradiction) &bull; [Formula Satisfiability (PC)](#def-pc-satisfiability-formula) &bull; [Set Satisfiability (PC)](#def-pc-satisfiability-set) &bull; [Entailment (PC)](#def-pc-entailment) &bull; [Functional Completeness](#def-pc-functional-completeness)
+* **Proof Theory:**
+  * [Proof System](#def-proof-system) &bull; [Formal Proof](#def-formal-proof) &bull; [Syntactic Provability (⊢) and Theorems](#def-provability) &bull; [Modus Ponens](#def-modus-ponens) &bull; [Tautology System](#def-tautology-system) &bull; [Hilbert System](#def-hilbert-system) &bull; [Consistency and Inconsistency](#def-consistency) &bull; [Soundness and Completeness of a Proof System](#def-system-soundness-completeness) &bull; [Proof Trees and Discharging](#def-proof-tree) &bull; [Natural Deduction Derivation](#def-nd-derivation)
+* **First-Order Logic: Syntax:**
+  * [Signature (σ)](#def-fol-signature) &bull; [First-Order Alphabet](#def-fol-alphabet) &bull; [Terms (Trm)](#def-fol-terms) &bull; [Atomic and Compound Formulae (Frm)](#def-fol-formulae) &bull; [Symbol Weight and Unique Readability](#def-fol-weight) &bull; [Free Variables (FV)](#def-fol-free-variables) &bull; [Precedence and Abbreviations](#def-fol-abbreviations) &bull; [Functional Formula](#def-fol-functional-formula)
+* **First-Order Logic: Semantics:**
+  * [Structure (𝔄)](#def-fol-structure) &bull; [Variable Assignment](#def-fol-assignment) &bull; [Term Valuation Function (s̄)](#def-fol-valuation-function) &bull; [Modified Assignment](#def-fol-modified-assignment) &bull; [Satisfaction Relation (⊨)](#def-fol-satisfaction) &bull; [Sentence](#def-sentence) &bull; [Truth in a Structure](#def-truth-structure) &bull; [First-Order Satisfiability, Unsatisfiability, Validity, and Invalidity](#def-fol-validity) &bull; [Model of a Set of Formulae](#def-model-theory) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Set Satisfiability (FOL)](#def-fol-set-satisfiability)
+* **Metatheory of Classical Logic:**
+  * [Finite Satisfiability](#def-finitely-satisfiable) &bull; [Henkin Witness Property](#def-henkin-property) &bull; [Maximal Consistency](#def-maximally-consistent) &bull; [Canonical Term Structure (Γ-Verifier)](#def-term-verifier) &bull; [Quotient Model (Γ-Model)](#def-quotient-model)
+* **Axiomatic Set Theory: Foundations & Classes:**
+  * [Language of Set Theory](#def-set-theory-language) &bull; [Kuratowski Ordered Pair](#def-ordered-pair-kuratowski) &bull; [Successor Set](#def-successor-set) &bull; [Z⁻ and ZF⁻](#def-z-minus-zf-minus) &bull; [Natural Numbers (ω, ℕ)](#def-omega-natural-numbers) &bull; [Transitive Set](#def-transitive-set) &bull; [Classes and The Universe (V)](#def-class-proper-class)
+* **Axiomatic Set Theory: Ordinals & Choice:**
+  * [Order Isomorphism and Automorphism](#def-order-isomorphism) &bull; [Initial Segment Embedding (⊑)](#def-initial-segment-embedding) &bull; [Ordinal Number (Ord)](#def-ordinal-number) &bull; [Ordinal Supremum and Infimum (sup, inf)](#def-ordinal-sup-inf) &bull; [Successor and Limit Ordinals](#def-successor-limit-ordinal) &bull; [Transfinite Recursion](#def-transfinite-recursion) &bull; [Ordinal Sequences and Limits](#def-ordinal-sequence) &bull; [Axiom of Choice (AC) and ZFC⁻](#def-axiom-choice)
+* **Cardinal Numbers:**
+  * [Cardinality of a Set](#def-cardinality-of-set) &bull; [Cardinal Number](#def-cardinal-number) &bull; [Cardinal Ordering (≤)](#def-cardinal-ordering) &bull; [Cardinal Arithmetic](#def-cardinal-arithmetic)
+* **Theory of Computation:**
   * [Decidable Set](#def-decidable-set) &bull; [Semidecidable Set](#def-semidecidable-set) &bull; [Enumerator](#def-enumerator)
 
 ---
@@ -77,13 +77,13 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ### Naive Set Theory
 
-<h4 id="def-set">Set & Membership</h4>
+<h4 id="def-set">Set and Membership</h4>
 
 > **Definition:** A *set* is a collection of objects. If $$A$$ is a set, the statement $$a \in A$$ is read as *"$$a$$ is an element of $$A$$"* and is a logical sentence.
 
 ---
 
-<h4 id="def-subset">Subset & Extensional Equality</h4>
+<h4 id="def-subset">Subset and Extensional Equality</h4>
 
 > **Definition:** A set $$A$$ is a *subset* of $$B$$, written $$A \subseteq B$$, if:
 > $$
@@ -124,7 +124,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-cartesian-product">Cartesian Product & Powers</h4>
+<h4 id="def-cartesian-product">Cartesian Product and Powers</h4>
 
 > **Definition:** The *Cartesian product* of sets $$A$$ and $$B$$ is:
 > $$
@@ -163,7 +163,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-domain-range">Domain & Range</h4>
+<h4 id="def-domain-range">Domain and Range</h4>
 
 > **Definition:** For a relation $$R \subseteq A_1 \times \dots \times A_n \times B$$:
 > $$
@@ -205,7 +205,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-diagonal-relation">Identity Function & Diagonal Relation</h4>
+<h4 id="def-diagonal-relation">Identity Function and Diagonal Relation</h4>
 
 > **Definition:** The *diagonal relation* on a set $$X$$ is defined as:
 > $$
@@ -239,7 +239,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-bijection">Bijection & Invertibility</h4>
+<h4 id="def-bijection">Bijection and Invertibility</h4>
 
 > **Definition:** A function $$f \colon A \longrightarrow B$$ is a *bijection* (adj: *bijective*) if it is both injective and surjective.
 > 
@@ -247,7 +247,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-image-preimage">Image & Preimage</h4>
+<h4 id="def-image-preimage">Image and Preimage</h4>
 
 > **Definition:** For a function $$f \colon A \longrightarrow B$$:
 > * **Image:** For $$X \subseteq A$$, $$f(X) := \{b \in B \mid \exists x \in X \ f(x) = b\}$$.
@@ -274,7 +274,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-natural-integers">Informal Number Sets</h4>
+<h4 id="def-natural-integers">Natural Numbers and Integers (ℕ, ℤ)</h4>
 
 > **Definition:** The set of natural numbers is informally defined as $$\mathbb{N} := \{0, 1, 2, \dots\}$$. The set of integers is informally defined as $$\mathbb{Z} := \{0, 1, -1, 2, -2, \dots\}$$.
 
@@ -328,7 +328,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ### Order Theory
 
-<h4 id="def-strict-weak-relations">Strict & Weak Relations</h4>
+<h4 id="def-strict-weak-relations">Strict and Weak Relations</h4>
 
 > **Definition:** For a binary relation $$R \subseteq A \times A$$:
 > * **Strict relation:** $$R \setminus \Delta_A$$
@@ -336,7 +336,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-poset">Poset & Total Order</h4>
+<h4 id="def-poset">Poset and Total Order</h4>
 
 > **Definition:** A *partially ordered set* (or *poset*) is a pair $$(X, \le)$$ where $$\le \subseteq X \times X$$ is reflexive, antisymmetric, and transitive. We denote the corresponding strict relation by $$<$$.
 > 
@@ -366,6 +366,15 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > * **Supremum ($$\sup S$$):** Least upper bound of $$S$$
 > * **Infimum ($$\inf S$$):** Greatest lower bound of $$S$$
 > * **$$\min_\le S$$ / $$\max_\le S$$:** The least (respectively greatest) element belonging to $$S$$, if it exists.
+
+---
+
+<h4 id="def-completeness-axiom">The Completeness Axiom of ℝ</h4>
+
+> **Definition:** The *Completeness Axiom* (the Least Upper Bound Property) asserts that every non-empty subset of real numbers bounded from above has a supremum in $$\mathbb{R}$$:
+> $$
+> \emptyset \ne A \subseteq \mathbb{R} \text{ bounded above} \implies \sup A \in \mathbb{R}
+> $$
 
 ---
 
@@ -411,17 +420,6 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ### Lattice Theory & Fixed Points
 
----
-
-<h4 id="def-completeness-axiom">The Completeness Axiom of ℝ</h4>
-
-> **Definition:** The *Completeness Axiom* (the Least Upper Bound Property) asserts that every non-empty subset of real numbers bounded from above has a supremum in $$\mathbb{R}$$:
-> $$
-> \emptyset \ne A \subseteq \mathbb{R} \text{ bounded above} \implies \sup A \in \mathbb{R}
-> $$
-
----
-
 <h4 id="def-lattice">Lattice</h4>
 
 > **Definition:** A *lattice* is a triple $$(L, \land, \lor)$$ satisfying for all $$x, y, z \in L$$:
@@ -448,7 +446,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-fixed-point">Fixed Point & Least Fixed Point (μf)</h4>
+<h4 id="def-fixed-point">Fixed Point and Least Fixed Point (μf)</h4>
 
 > **Definition:** An element $$x \in L$$ is a *fixed point* of $$f \colon L \longrightarrow L$$ if $$f(x) = x$$.
 > 
@@ -512,7 +510,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ### Propositional Calculus: Semantics
 
-<h4 id="def-pc-valuation">Valuation & Extended Interpretation</h4>
+<h4 id="def-pc-valuation">Valuation and Extended Interpretation</h4>
 
 > **Definition:** An *interpretation* (or *valuation*) is a function $$\mathcal{I} \colon \mathbf{Var} \longrightarrow \{\mathrm{False}, \mathrm{True}\}$$. 
 > 
@@ -526,7 +524,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-pc-tautology-contradiction">Tautology & Contradiction</h4>
+<h4 id="def-pc-tautology-contradiction">Tautology and Contradiction</h4>
 
 > **Definition:** 
 > * A formula $$\varphi$$ is a *tautology* if $$\varphi \equiv \top$$.
@@ -580,7 +578,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-provability">Syntactic Provability (⊢) & Theorems</h4>
+<h4 id="def-provability">Syntactic Provability (⊢) and Theorems</h4>
 
 > **Definition:** We write $$\Sigma \vdash \phi$$, read as *"$$\Sigma$$ proves $$\phi$$"*, if there exists a formal proof of $$\phi$$ where all active assumptions belong to $$\Sigma$$. A formula $$\varphi$$ is a *theorem* of a proof system if $$\emptyset \vdash \varphi$$, written simply as $$\vdash \varphi$$.
 
@@ -607,13 +605,13 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-consistency">Consistency & Inconsistency</h4>
+<h4 id="def-consistency">Consistency and Inconsistency</h4>
 
 > **Definition:** A set of formulae $$\Gamma$$ is *inconsistent* if $$\Gamma \vdash \bot$$. A set of formulae $$\Gamma$$ is *consistent* if it is not inconsistent.
 
 ---
 
-<h4 id="def-system-soundness-completeness">Soundness & Completeness of a Proof System</h4>
+<h4 id="def-system-soundness-completeness">Soundness and Completeness of a Proof System</h4>
 
 > **Definition:** A proof system is:
 > * **Sound:** if $$\Sigma \vdash \phi \implies \Sigma \models \phi$$
@@ -621,7 +619,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-proof-tree">Proof Trees & Discharging</h4>
+<h4 id="def-proof-tree">Proof Trees and Discharging</h4>
 
 > **Definition:** The set of *proof trees* over $$\mathscr{L}$$ is the smallest set where:
 > 1. A single node $$\phi$$ is a proof tree (with open assumption $$\phi$$).
@@ -664,7 +662,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-fol-formulae">Atomic & Compound Formulae (Frm)</h4>
+<h4 id="def-fol-formulae">Atomic and Compound Formulae (Frm)</h4>
 
 > **Definition:** 
 > * **Atomic formulae ($$\textbf{AtFrm}(\sigma)$$):** The smallest set containing $$R t_1 \dots t_n$$ (for $$R \in \mathbf{R}$$ of arity $$n$$) and $$= t_1 t_2$$ for terms $$t_i \in \textbf{Trm}(\sigma)$$.
@@ -672,7 +670,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-fol-weight">Symbol Weight & Unique Readability</h4>
+<h4 id="def-fol-weight">Symbol Weight and Unique Readability</h4>
 
 > **Definition:** The weight assignment $$w$$ assigns:
 > * $$w(f) := \operatorname{ar}(f) - 1$$ for $$f \in \mathbf{F}$$
@@ -696,7 +694,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-fol-abbreviations">Precedence & Abbreviations</h4>
+<h4 id="def-fol-abbreviations">Precedence and Abbreviations</h4>
 
 > **Definition:** Standard abbreviations:
 > * $$\forall \bar{x} \varphi$$ and $$\exists \bar{x} \varphi$$ abbreviate iterated quantifiers.
@@ -784,7 +782,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-fol-validity">First-Order Validity & Satisfiability</h4>
+<h4 id="def-fol-validity">First-Order Satisfiability, Unsatisfiability, Validity, and Invalidity</h4>
 
 > **Definition:** A first-order formula $$\varphi$$ is:
 > * **Satisfiable:** if $$\mathfrak{A} \models \varphi[s]$$ for some structure $$\mathfrak{A}$$ and assignment $$s$$.
@@ -906,7 +904,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-class-proper-class">Classes & The Universe (V)</h4>
+<h4 id="def-class-proper-class">Classes and The Universe (V)</h4>
 
 > **Definition:** For any formula $$\varphi(x, \bar{t})$$, the *class* of elements satisfying $$\varphi$$ is $$A = \{x \mid \varphi(x, \bar{t})\}$$. A class that is not a set is called a *proper class*. The class of all sets is:
 > $$
@@ -917,7 +915,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ### Axiomatic Set Theory: Ordinals & Choice
 
-<h4 id="def-order-isomorphism">Order Isomorphism & Automorphism</h4>
+<h4 id="def-order-isomorphism">Order Isomorphism and Automorphism</h4>
 
 > **Definition:** A function $$f \colon X \longrightarrow Y$$ between posets is an *order isomorphism* if $$f$$ is bijective and:
 > $$
@@ -943,7 +941,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-ordinal-sup-inf">Ordinal Supremum & Infimum</h4>
+<h4 id="def-ordinal-sup-inf">Ordinal Supremum and Infimum (sup, inf)</h4>
 
 > **Definition:** For a set of ordinals $$X$$, we define:
 > $$
@@ -952,7 +950,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-successor-limit-ordinal">Successor & Limit Ordinals</h4>
+<h4 id="def-successor-limit-ordinal">Successor and Limit Ordinals</h4>
 
 > **Definition:** An ordinal $$\alpha > 0$$ is a *successor ordinal* if $$\exists \beta \ \alpha = \beta + 1$$. Otherwise, $$\alpha$$ is a *limit ordinal*.
 
@@ -967,7 +965,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-ordinal-sequence">Ordinal Sequences & Limits</h4>
+<h4 id="def-ordinal-sequence">Ordinal Sequences and Limits</h4>
 
 > **Definition:** An $$\alpha$$-sequence is a function $$\xi \colon \alpha \longrightarrow X$$. An $$\alpha$$-sequence of ordinals *converges* to $$\eta$$, written $$\xi \rightarrow \eta$$, if:
 > $$
@@ -976,7 +974,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ---
 
-<h4 id="def-axiom-choice">Axiom of Choice (AC) & ZFC⁻</h4>
+<h4 id="def-axiom-choice">Axiom of Choice (AC) and ZFC⁻</h4>
 
 > **Definition:** The *Axiom of Choice* ($$\mathbf{AC}$$) asserts that for any set of non-empty sets $$\mathcal{A}$$, there exists a choice function $$f \colon \mathcal{A} \longrightarrow \bigcup \mathcal{A}$$ such that:
 > $$
@@ -988,7 +986,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 ### Cardinal Numbers
 
-<h4 id="def-cardinality-of-set">Cardinality of a Set (|A|)</h4>
+<h4 id="def-cardinality-of-set">Cardinality of a Set</h4>
 
 > **Definition:** For any set $$A$$, its *cardinality* $$\vert A \vert$$ is the smallest ordinal $$\alpha$$ such that there exists a bijection $$f \colon A \longrightarrow \alpha$$.
 

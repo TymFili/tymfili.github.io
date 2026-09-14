@@ -371,7 +371,7 @@
   },
   {
     "id": "def-def-set",
-    "title": "Set & Membership",
+    "title": "Set and Membership",
     "section": "Definitions",
     "url": "/definitions/#def-set",
     "path": "/definitions/",
@@ -379,7 +379,7 @@
   },
   {
     "id": "def-def-subset",
-    "title": "Subset & Extensional Equality",
+    "title": "Subset and Extensional Equality",
     "section": "Definitions",
     "url": "/definitions/#def-subset",
     "path": "/definitions/",
@@ -411,7 +411,7 @@
   },
   {
     "id": "def-def-cartesian-product",
-    "title": "Cartesian Product & Powers",
+    "title": "Cartesian Product and Powers",
     "section": "Definitions",
     "url": "/definitions/#def-cartesian-product",
     "path": "/definitions/",
@@ -443,7 +443,7 @@
   },
   {
     "id": "def-def-domain-range",
-    "title": "Domain & Range",
+    "title": "Domain and Range",
     "section": "Definitions",
     "url": "/definitions/#def-domain-range",
     "path": "/definitions/",
@@ -475,7 +475,7 @@
   },
   {
     "id": "def-def-diagonal-relation",
-    "title": "Identity Function & Diagonal Relation",
+    "title": "Identity Function and Diagonal Relation",
     "section": "Definitions",
     "url": "/definitions/#def-diagonal-relation",
     "path": "/definitions/",
@@ -507,7 +507,7 @@
   },
   {
     "id": "def-def-bijection",
-    "title": "Bijection & Invertibility",
+    "title": "Bijection and Invertibility",
     "section": "Definitions",
     "url": "/definitions/#def-bijection",
     "path": "/definitions/",
@@ -515,7 +515,7 @@
   },
   {
     "id": "def-def-image-preimage",
-    "title": "Image & Preimage",
+    "title": "Image and Preimage",
     "section": "Definitions",
     "url": "/definitions/#def-image-preimage",
     "path": "/definitions/",
@@ -539,7 +539,7 @@
   },
   {
     "id": "def-def-natural-integers",
-    "title": "Informal Number Sets",
+    "title": "Natural Numbers and Integers (\u2115, \u2124)",
     "section": "Definitions",
     "url": "/definitions/#def-natural-integers",
     "path": "/definitions/",
@@ -587,7 +587,7 @@
   },
   {
     "id": "def-def-strict-weak-relations",
-    "title": "Strict & Weak Relations",
+    "title": "Strict and Weak Relations",
     "section": "Definitions",
     "url": "/definitions/#def-strict-weak-relations",
     "path": "/definitions/",
@@ -595,7 +595,7 @@
   },
   {
     "id": "def-def-poset",
-    "title": "Poset & Total Order",
+    "title": "Poset and Total Order",
     "section": "Definitions",
     "url": "/definitions/#def-poset",
     "path": "/definitions/",
@@ -616,6 +616,14 @@
     "url": "/definitions/#def-bounds-min-max",
     "path": "/definitions/",
     "anchor": "def-bounds-min-max"
+  },
+  {
+    "id": "def-def-completeness-axiom",
+    "title": "The Completeness Axiom of \u211d",
+    "section": "Definitions",
+    "url": "/definitions/#def-completeness-axiom",
+    "path": "/definitions/",
+    "anchor": "def-completeness-axiom"
   },
   {
     "id": "def-def-chain",
@@ -658,14 +666,6 @@
     "anchor": "def-order-boundedness"
   },
   {
-    "id": "def-def-completeness-axiom",
-    "title": "The Completeness Axiom of \u211d",
-    "section": "Definitions",
-    "url": "/definitions/#def-completeness-axiom",
-    "path": "/definitions/",
-    "anchor": "def-completeness-axiom"
-  },
-  {
     "id": "def-def-lattice",
     "title": "Lattice",
     "section": "Definitions",
@@ -691,7 +691,7 @@
   },
   {
     "id": "def-def-fixed-point",
-    "title": "Fixed Point & Least Fixed Point (\u03bcf)",
+    "title": "Fixed Point and Least Fixed Point (\u03bcf)",
     "section": "Definitions",
     "url": "/definitions/#def-fixed-point",
     "path": "/definitions/",
@@ -755,7 +755,7 @@
   },
   {
     "id": "def-def-pc-valuation",
-    "title": "Valuation & Extended Interpretation",
+    "title": "Valuation and Extended Interpretation",
     "section": "Definitions",
     "url": "/definitions/#def-pc-valuation",
     "path": "/definitions/",
@@ -771,7 +771,7 @@
   },
   {
     "id": "def-def-pc-tautology-contradiction",
-    "title": "Tautology & Contradiction",
+    "title": "Tautology and Contradiction",
     "section": "Definitions",
     "url": "/definitions/#def-pc-tautology-contradiction",
     "path": "/definitions/",
@@ -827,7 +827,7 @@
   },
   {
     "id": "def-def-provability",
-    "title": "Syntactic Provability (\u22a2) & Theorems",
+    "title": "Syntactic Provability (\u22a2) and Theorems",
     "section": "Definitions",
     "url": "/definitions/#def-provability",
     "path": "/definitions/",
@@ -859,7 +859,7 @@
   },
   {
     "id": "def-def-consistency",
-    "title": "Consistency & Inconsistency",
+    "title": "Consistency and Inconsistency",
     "section": "Definitions",
     "url": "/definitions/#def-consistency",
     "path": "/definitions/",
@@ -867,7 +867,7 @@
   },
   {
     "id": "def-def-system-soundness-completeness",
-    "title": "Soundness & Completeness of a Proof System",
+    "title": "Soundness and Completeness of a Proof System",
     "section": "Definitions",
     "url": "/definitions/#def-system-soundness-completeness",
     "path": "/definitions/",
@@ -875,7 +875,7 @@
   },
   {
     "id": "def-def-proof-tree",
-    "title": "Proof Trees & Discharging",
+    "title": "Proof Trees and Discharging",
     "section": "Definitions",
     "url": "/definitions/#def-proof-tree",
     "path": "/definitions/",
@@ -915,7 +915,7 @@
   },
   {
     "id": "def-def-fol-formulae",
-    "title": "Atomic & Compound Formulae (Frm)",
+    "title": "Atomic and Compound Formulae (Frm)",
     "section": "Definitions",
     "url": "/definitions/#def-fol-formulae",
     "path": "/definitions/",
@@ -923,7 +923,7 @@
   },
   {
     "id": "def-def-fol-weight",
-    "title": "Symbol Weight & Unique Readability",
+    "title": "Symbol Weight and Unique Readability",
     "section": "Definitions",
     "url": "/definitions/#def-fol-weight",
     "path": "/definitions/",
@@ -939,7 +939,7 @@
   },
   {
     "id": "def-def-fol-abbreviations",
-    "title": "Precedence & Abbreviations",
+    "title": "Precedence and Abbreviations",
     "section": "Definitions",
     "url": "/definitions/#def-fol-abbreviations",
     "path": "/definitions/",
@@ -1011,7 +1011,7 @@
   },
   {
     "id": "def-def-fol-validity",
-    "title": "First-Order Validity & Satisfiability",
+    "title": "First-Order Satisfiability, Unsatisfiability, Validity, and Invalidity",
     "section": "Definitions",
     "url": "/definitions/#def-fol-validity",
     "path": "/definitions/",
@@ -1131,7 +1131,7 @@
   },
   {
     "id": "def-def-class-proper-class",
-    "title": "Classes & The Universe (V)",
+    "title": "Classes and The Universe (V)",
     "section": "Definitions",
     "url": "/definitions/#def-class-proper-class",
     "path": "/definitions/",
@@ -1139,7 +1139,7 @@
   },
   {
     "id": "def-def-order-isomorphism",
-    "title": "Order Isomorphism & Automorphism",
+    "title": "Order Isomorphism and Automorphism",
     "section": "Definitions",
     "url": "/definitions/#def-order-isomorphism",
     "path": "/definitions/",
@@ -1163,7 +1163,7 @@
   },
   {
     "id": "def-def-ordinal-sup-inf",
-    "title": "Ordinal Supremum & Infimum",
+    "title": "Ordinal Supremum and Infimum (sup, inf)",
     "section": "Definitions",
     "url": "/definitions/#def-ordinal-sup-inf",
     "path": "/definitions/",
@@ -1171,7 +1171,7 @@
   },
   {
     "id": "def-def-successor-limit-ordinal",
-    "title": "Successor & Limit Ordinals",
+    "title": "Successor and Limit Ordinals",
     "section": "Definitions",
     "url": "/definitions/#def-successor-limit-ordinal",
     "path": "/definitions/",
@@ -1187,7 +1187,7 @@
   },
   {
     "id": "def-def-ordinal-sequence",
-    "title": "Ordinal Sequences & Limits",
+    "title": "Ordinal Sequences and Limits",
     "section": "Definitions",
     "url": "/definitions/#def-ordinal-sequence",
     "path": "/definitions/",
@@ -1195,7 +1195,7 @@
   },
   {
     "id": "def-def-axiom-choice",
-    "title": "Axiom of Choice (AC) & ZFC\u207b",
+    "title": "Axiom of Choice (AC) and ZFC\u207b",
     "section": "Definitions",
     "url": "/definitions/#def-axiom-choice",
     "path": "/definitions/",
@@ -1203,7 +1203,7 @@
   },
   {
     "id": "def-def-cardinality-of-set",
-    "title": "Cardinality of a Set (|A|)",
+    "title": "Cardinality of a Set",
     "section": "Definitions",
     "url": "/definitions/#def-cardinality-of-set",
     "path": "/definitions/",
