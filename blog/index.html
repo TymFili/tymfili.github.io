@@ -27,6 +27,17 @@
   html[data-theme="dark"] footer a {
     color: #57b87b !important;
   }
+    html[data-theme="dark"] footer,
+  html[data-theme="dark"] footer.fixed-bottom,
+  html[data-theme="dark"] footer.sticky-bottom,
+  html[data-theme="dark"] .footer-fixed,
+  html[data-theme="dark"] footer * {
+    background-color: #1a1c1e !important;
+    color: #adb5bd !important;
+  }
+  html[data-theme="dark"] footer a {
+    color: #57b87b !important;
+  }
 </style> <script src="/assets/js/theorems_search.js" defer></script> Last updated: September 14, 2026. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
@@ -68,7 +79,7 @@ ninja.data = [{
           },
         },{id: "nav-definitions",
           title: "Definitions",
-          description: "A curated reference library of formal mathematical definitions.",
+          description: "A curated reference library of formal mathematical definitions from logic and set theory.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/definitions/";
