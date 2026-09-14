@@ -861,9 +861,9 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 
 <h4 id="def-valuation">Valuation & Standard Interpretation</h4>
 
-> **Definition:** An *interpretation* (or *valuation*) is a function $$\mathcal{I} \colon \mathbf{Var} \longrightarrow \{\False, \True\}$$. 
+> **Definition:** An *interpretation* (or *valuation*) is a function $$\mathcal{I} \colon \mathbf{Var} \longrightarrow \{\operatorname{False}, \operatorname{True}\}$$. 
 > 
-> The standard extended interpretation $$\hat{\mathcal{I}} \colon \textbf{Frm} \longrightarrow \{\False, \True\}$$ agrees with $$\mathcal{I}$$ on variables and evaluates connectives via classical truth tables.
+> The standard extended interpretation $$\hat{\mathcal{I}} \colon \textbf{Frm} \longrightarrow \{\operatorname{False}, \operatorname{True}\}$$ agrees with $$\mathcal{I}$$ on variables and evaluates connectives via classical truth tables.
 
 ---
 
@@ -873,7 +873,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > * Formulae $$\varphi$$ and $$\psi$$ are *equivalent* ($$\varphi \equiv \psi$$) if $$\mathcal{I}(\varphi) = \mathcal{I}(\psi)$$ for all valuations $$\mathcal{I}$$.
 > * A formula $$\varphi$$ is a *tautology* if $$\varphi \equiv \top$$.
 > * A formula $$\varphi$$ is a *contradiction* if $$\varphi \equiv \bot$$.
-> * A formula $$\varphi$$ is *satisfiable* if there exists some valuation $$\mathcal{I}$$ with $$\mathcal{I}(\varphi) = \True$$.
+> * A formula $$\varphi$$ is *satisfiable* if there exists some valuation $$\mathcal{I}$$ with $$\mathcal{I}(\varphi) = \operatorname{True}$$.
 
 ---
 

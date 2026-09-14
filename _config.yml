@@ -14,6 +14,8 @@ description: >
 
 footer_text: >
   <style>
+    .navbar-brand { display: none !important; }
+
     :root {
       --global-theme-color: #205c3b !important;
       --global-hover-color: #164029 !important;

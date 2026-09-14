@@ -32,15 +32,15 @@ pagination:
 {% assign tag_array = site_tags | split: ',' | sort %}
 
 {% if tag_array.size > 0 %}
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
+  <div class="tag-category-list my-2">
+    <ul class="p-0 m-0 d-flex flex-wrap justify-content-center align-items-center" style="list-style: none; gap: 0.35rem 0.65rem;">
       {% for tag in tag_array %}
         {% if tag != "" %}
           <li>
             <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
           </li>
           {% unless forloop.last %}
-            <p>&bull;</p>
+            <span class="text-muted" style="opacity: 0.5;">&bull;</span>
           {% endunless %}
         {% endif %}
       {% endfor %}
