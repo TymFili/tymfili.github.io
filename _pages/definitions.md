@@ -27,7 +27,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 * **Proof Theory & Deductive Systems:**
   * [Proof System](#def-proof-system) &bull; [Finite Satisfiability](#def-finitely-satisfiable) &bull; [Henkin Property](#def-henkin-property) &bull; [Maximal Consistency](#def-maximal-consistency) &bull; [Formal Proof & Consequence (⊢)](#def-formal-proof) &bull; [Modus Ponens](#def-modus-ponens) &bull; [Tautology System](#def-tautology-system) &bull; [Hilbert System](#def-hilbert-system) &bull; [Consistency & Inconsistency](#def-consistency) &bull; [Soundness & Completeness](#def-soundness-completeness) &bull; [Proof Trees & Natural Deduction](#def-proof-tree)
 * **First-Order Syntax & Prefix Weighting:**
-  * [Signature](#def-signature) &bull; [Alphabet of FOL](#def-fol-alphabet) &bull; [Terms (Trm)](#def-terms) &bull; [Formulae (Frm)](#def-fol-formulae) &bull; [Free Variables (FV)](#def-free-variables) &bull; [Symbol Weight & Unique Readability](#def-symbol-weight) &bull; [Abbreviation Conventions](#def-abbreviations) &bull; [Functional Formulae](#def-functional-formula)
+  * [Signature](#def-signature) &bull; [Alphabet of FOL](#def-fol-alphabet) &bull; [Terms (Trm)](#def-terms) &bull; [Formulae (Frm)](#def-fol-formulae) &bull; [Sentence](#def-sentence) &bull; [Truth in a Structure](#def-truth-structure) &bull; [First-Order Validity](#def-fol-validity) &bull; [Set Satisfiability](#def-set-satisfiability) &bull; [Free Variables (FV)](#def-free-variables) &bull; [Symbol Weight & Unique Readability](#def-symbol-weight) &bull; [Abbreviation Conventions](#def-abbreviations) &bull; [Functional Formulae](#def-functional-formula)
 * **Tarskian Semantics & Canonical Models:**
   * [Structure & Universe](#def-structure) &bull; [Variable Assignment](#def-variable-assignment) &bull; [Term Valuation](#def-term-valuation) &bull; [Modified Assignment](#def-modified-assignment) &bull; [Model of a Theory](#def-model-theory) &bull; [Tarskian Satisfaction (⊨)](#def-satisfaction) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Canonical Term Structure (Verifier)](#def-term-verifier) &bull; [Quotient Model](#def-quotient-model)
 * **Axiomatic Set Theory (ZFC):**
@@ -662,6 +662,52 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 > 7. $$\mathfrak{A} \models (\psi \leftrightarrow \xi)[s] \iff (\mathfrak{A} \models \psi[s] \iff \mathfrak{A} \models \xi[s])$$
 > 8. $$\mathfrak{A} \models \forall x \psi[s] \iff \forall t \in \vert \mathfrak{A} \vert \ \mathfrak{A} \models \psi[s_{x \mapsto t}]$$
 > 9. $$\mathfrak{A} \models \exists x \psi[s] \iff \exists t \in \vert \mathfrak{A} \vert \ \mathfrak{A} \models \psi[s_{x \mapsto t}]$$
+
+---
+
+<h4 id="def-sentence">Sentence</h4>
+
+> **Definition:** A first-order formula $$\varphi$$ is a *sentence* (or closed formula) if it contains no free variables:
+> $$
+> \mathbf{FV}(\varphi) = \emptyset
+> $$
+
+---
+
+<h4 id="def-truth-structure">Truth in a Structure (⊨)</h4>
+
+> **Definition:** For a structure $$\mathfrak{A}$$ and a formula $$\varphi$$, we define $$\mathfrak{A} \models \varphi$$ to mean that:
+> $$
+> \mathfrak{A} \models \varphi[s] \quad \text{for every assignment } s
+> $$
+> By the Free Variable Agreement Theorem, if $$\varphi$$ is a sentence, the choice of assignment has no effect on satisfaction, so $$\mathfrak{A} \models \varphi$$ holds if and only if it holds for some assignment.
+
+---
+
+<h4 id="def-fol-validity">First-Order Validity and Satisfiability</h4>
+
+> **Definition:** A first-order formula $$\varphi$$ is:
+> * **Satisfiable:** if $$\mathfrak{A} \models \varphi[s]$$ for some structure $$\mathfrak{A}$$ and assignment $$s$$.
+> * **Unsatisfiable (Contradiction):** if it is not satisfiable.
+> * **Valid (Tautology):** written $$\models \varphi$$, if $$\mathfrak{A} \models \varphi$$ for every structure $$\mathfrak{A}$$.
+> * **Invalid:** written $$\not\models \varphi$$, if $$\mathfrak{A} \not\models \varphi$$ for some structure $$\mathfrak{A}$$.
+
+---
+
+<h4 id="def-model-theory">Model of a Set of Formulae</h4>
+
+> **Definition:** A structure $$\mathfrak{A}$$ is a *model* of a set of formulae $$\Gamma$$, written $$\mathfrak{A} \models \Gamma$$, if:
+> $$
+> \mathfrak{A} \models \varphi \quad \text{for every } \varphi \in \Gamma
+> $$
+
+---
+
+<h4 id="def-set-satisfiability">Satisfiability of a Set of Formulae</h4>
+
+> **Definition:** A set of formulae $$\Sigma$$ is:
+> * **Satisfiable:** if for some structure $$\mathfrak{A}$$ and assignment $$s$$, $$\mathfrak{A} \models \varphi[s]$$ for every $$\varphi \in \Sigma$$.
+> * **Unsatisfiable:** if it is not satisfiable.
 
 ---
 

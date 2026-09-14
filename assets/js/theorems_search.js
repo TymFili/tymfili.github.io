@@ -662,6 +662,36 @@
     "url": "/definitions/#def-satisfaction"
   },
   {
+    "id": "def-def-sentence",
+    "title": "Sentence",
+    "section": "Definitions",
+    "url": "/definitions/#def-sentence"
+  },
+  {
+    "id": "def-def-truth-structure",
+    "title": "Truth in a Structure (\u22a8)",
+    "section": "Definitions",
+    "url": "/definitions/#def-truth-structure"
+  },
+  {
+    "id": "def-def-fol-validity",
+    "title": "First-Order Validity and Satisfiability",
+    "section": "Definitions",
+    "url": "/definitions/#def-fol-validity"
+  },
+  {
+    "id": "def-def-model-theory",
+    "title": "Model of a Set of Formulae",
+    "section": "Definitions",
+    "url": "/definitions/#def-model-theory"
+  },
+  {
+    "id": "def-def-set-satisfiability",
+    "title": "Satisfiability of a Set of Formulae",
+    "section": "Definitions",
+    "url": "/definitions/#def-set-satisfiability"
+  },
+  {
     "id": "def-def-fol-entailment",
     "title": "First-Order Entailment",
     "section": "Definitions",
