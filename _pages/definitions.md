@@ -21,21 +21,21 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 * **Equivalence Relations & Quotients:**
   * [Relational Properties](#def-relation-properties) &bull; [Equivalence Relation](#def-equivalence-relation) &bull; [Equivalence Class](#def-equivalence-class) &bull; [Quotient Set](#def-quotient-set) &bull; [Partition](#def-partition)
 * **Order Theory:**
-  * [Strict & Weak Relations](#def-strict-weak-relations) &bull; [Poset & Total Order](#def-poset) &bull; [Initial Segment](#def-initial-segment) &bull; [Extremal Bounds & Min/Max](#def-bounds-min-max) &bull; [Chain](#def-chain) &bull; [Well-Ordering](#def-well-ordering) &bull; [Well-Founded Relation](#def-well-founded)
+  * [Strict & Weak Relations](#def-strict-weak-relations) &bull; [Poset & Total Order](#def-poset) &bull; [Initial Segment](#def-initial-segment) &bull; [Extremal Bounds & Min/Max](#def-bounds-min-max) &bull; [Chain](#def-chain) &bull; [Well-Ordering](#def-well-ordering) &bull; [Well-Founded Relation](#def-well-founded) &bull; [Bounded, Cofinal, Dense](#def-order-boundedness)
 * **Lattice Theory & Fixed Points:**
   * [Lattice](#def-lattice) &bull; [Complete Lattice](#def-complete-lattice) &bull; [Monotone Function](#def-monotone-function) &bull; [Fixed Point & Least Fixed Point (μf)](#def-fixed-point)
 * **Proof Theory & Deductive Systems:**
-  * [Proof System](#def-proof-system) &bull; [Formal Proof & Consequence (⊢)](#def-formal-proof) &bull; [Modus Ponens](#def-modus-ponens) &bull; [Tautology System](#def-tautology-system) &bull; [Hilbert System](#def-hilbert-system) &bull; [Consistency & Inconsistency](#def-consistency) &bull; [Soundness & Completeness](#def-soundness-completeness) &bull; [Proof Trees & Natural Deduction](#def-proof-tree)
+  * [Proof System](#def-proof-system) &bull; [Finite Satisfiability](#def-finitely-satisfiable) &bull; [Henkin Property](#def-henkin-property) &bull; [Maximal Consistency](#def-maximal-consistency) &bull; [Formal Proof & Consequence (⊢)](#def-formal-proof) &bull; [Modus Ponens](#def-modus-ponens) &bull; [Tautology System](#def-tautology-system) &bull; [Hilbert System](#def-hilbert-system) &bull; [Consistency & Inconsistency](#def-consistency) &bull; [Soundness & Completeness](#def-soundness-completeness) &bull; [Proof Trees & Natural Deduction](#def-proof-tree)
 * **First-Order Syntax & Prefix Weighting:**
-  * [Signature](#def-signature) &bull; [Alphabet of FOL](#def-fol-alphabet) &bull; [Terms (Trm)](#def-terms) &bull; [Formulae (Frm)](#def-fol-formulae) &bull; [Symbol Weight & Unique Readability](#def-symbol-weight) &bull; [Abbreviation Conventions](#def-abbreviations) &bull; [Functional Formulae](#def-functional-formula)
+  * [Signature](#def-signature) &bull; [Alphabet of FOL](#def-fol-alphabet) &bull; [Terms (Trm)](#def-terms) &bull; [Formulae (Frm)](#def-fol-formulae) &bull; [Free Variables (FV)](#def-free-variables) &bull; [Symbol Weight & Unique Readability](#def-symbol-weight) &bull; [Abbreviation Conventions](#def-abbreviations) &bull; [Functional Formulae](#def-functional-formula)
 * **Tarskian Semantics & Canonical Models:**
-  * [Structure & Universe](#def-structure) &bull; [Variable Assignment](#def-variable-assignment) &bull; [Term Valuation](#def-term-valuation) &bull; [Modified Assignment](#def-modified-assignment) &bull; [Tarskian Satisfaction (⊨)](#def-satisfaction) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Canonical Term Structure (Verifier)](#def-term-verifier) &bull; [Quotient Model](#def-quotient-model)
+  * [Structure & Universe](#def-structure) &bull; [Variable Assignment](#def-variable-assignment) &bull; [Term Valuation](#def-term-valuation) &bull; [Modified Assignment](#def-modified-assignment) &bull; [Model of a Theory](#def-model-theory) &bull; [Tarskian Satisfaction (⊨)](#def-satisfaction) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Canonical Term Structure (Verifier)](#def-term-verifier) &bull; [Quotient Model](#def-quotient-model)
 * **Axiomatic Set Theory (ZFC):**
   * [ZFC Axioms](#def-zfc-axioms) &bull; [Kuratowski Ordered Pair](#def-kuratowski-pair) &bull; [Successor & Inductive Sets (ω)](#def-successor-inductive) &bull; [Transitive Sets](#def-transitive-set) &bull; [Classes & The Universe V](#def-classes-universe)
 * **Ordinal Numbers & Transfinite Recursion:**
   * [Order Isomorphism & Embedding](#def-order-isomorphism) &bull; [Von Neumann Ordinals](#def-ordinals) &bull; [Ordinal Bounds (sup/inf)](#def-ordinal-bounds) &bull; [Successor & Limit Ordinals](#def-limit-ordinals) &bull; [Transfinite Recursion](#def-transfinite-recursion) &bull; [Ordinal Sequences & Limits](#def-ordinal-sequences)
 * **Choice & Cardinality:**
-  * [Axiom of Choice & ZFC⁻](#def-choice-zfc) &bull; [Cardinal Numbers (Initial Ordinals)](#def-cardinal-numbers) &bull; [Cardinal Ordering](#def-cardinal-ordering)
+  * [Axiom of Choice & ZFC⁻](#def-choice-zfc) &bull; [Cardinal Numbers (Initial Ordinals)](#def-cardinal-numbers) &bull; [Cardinal Ordering](#def-cardinal-ordering) &bull; [Cardinal Arithmetic Operations](#def-cardinal-arithmetic-ops)
 * **Theory of Computation:**
   * [Decidability](#def-decidability) &bull; [Semidecidability](#def-semidecidability) &bull; [Algorithmic Enumeration](#def-enumeration)
 * **Formal Languages:**
