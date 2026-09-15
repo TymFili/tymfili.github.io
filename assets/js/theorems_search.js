@@ -1146,6 +1146,14 @@
     "anchor": "def-axiom-replacement"
   },
   {
+    "id": "def-def-axiom-choice",
+    "title": "Axiom of Choice (AC)",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-choice",
+    "path": "/definitions/",
+    "anchor": "def-axiom-choice"
+  },
+  {
     "id": "def-def-set-theory-language",
     "title": "Language of Set Theory",
     "section": "Definitions",
@@ -1258,14 +1266,6 @@
     "anchor": "def-ordinal-sequence"
   },
   {
-    "id": "def-def-axiom-choice",
-    "title": "Axiom of Choice (AC) and ZFC\u207b",
-    "section": "Definitions",
-    "url": "/definitions/#def-axiom-choice",
-    "path": "/definitions/",
-    "anchor": "def-axiom-choice"
-  },
-  {
     "id": "def-def-cardinality-of-set",
     "title": "Cardinality of a Set",
     "section": "Definitions",
@@ -1322,11 +1322,9 @@
     "anchor": "def-enumerator"
   }
 ];
-
   function injectSearchItems() {
     const ninja = document.querySelector('ninja-keys');
     if (!ninja) return;
-
     if (Array.isArray(ninja.data)) {
       if (!ninja.data.some(item => item.id && item.id.startsWith('thm-'))) {
         const formatted = customItems.map(item => ({
@@ -1353,7 +1351,6 @@
       setTimeout(injectSearchItems, 100);
     }
   }
-
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', injectSearchItems);
   } else {

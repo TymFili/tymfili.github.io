@@ -1,0 +1,25 @@
+<footer class="sticky-bottom mt-5" role="contentinfo">
+  <div class="container">
+    &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
+    {% if site.last_updated %}
+      Last updated: {{ "now" | date: '%B %d, %Y' }}.
+    {% endif %}
+  </div>
+</footer>
+
+<style>
+  /* Dark mode footer override: max(r, g, b) <= 100 */
+  html[data-theme="dark"] footer,
+  html[data-theme="dark"] footer.sticky-bottom,
+  html[data-theme="dark"] footer.fixed-bottom,
+  html[data-theme="dark"] .footer-fixed,
+  html[data-theme="dark"] footer .container,
+  html[data-theme="dark"] footer * {
+    background-color: #24272e !important;
+    color: #adb5bd !important;
+    border-color: #1a1c20 !important;
+  }
+  html[data-theme="dark"] footer a {
+    color: #57b87b !important;
+  }
+</style>

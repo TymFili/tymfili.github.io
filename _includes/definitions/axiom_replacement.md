@@ -2,3 +2,4 @@
 > $$
 > \forall x \exists y \forall z \ (z \in y \iff \exists w \ (w \in x \land \varphi(w, z, p)))
 > $$
+> *Theories:* $$\mathrm{ZF}^-$$, $$\mathrm{ZFC}^-$$, $$\mathrm{ZFC}$$

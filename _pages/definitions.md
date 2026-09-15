@@ -38,12 +38,12 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
   * [Structure (𝔄)](#def-fol-structure) &bull; [Variable Assignment](#def-fol-assignment) &bull; [Term Valuation Function (s̄)](#def-fol-valuation-function) &bull; [Modified Assignment](#def-fol-modified-assignment) &bull; [Satisfaction Relation (⊨)](#def-fol-satisfaction) &bull; [Sentence](#def-sentence) &bull; [Truth in a Structure](#def-truth-structure) &bull; [First-Order Satisfiability, Unsatisfiability, Validity, and Invalidity](#def-fol-validity) &bull; [Model of a Set of Formulae](#def-model-theory) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Set Satisfiability (FOL)](#def-fol-set-satisfiability)
 * **Metatheory of Classical Logic:**
   * [Finite Satisfiability](#def-finitely-satisfiable) &bull; [Henkin Witness Property](#def-henkin-property) &bull; [Maximal Consistency](#def-maximally-consistent) &bull; [Canonical Term Structure (Γ-Verifier)](#def-term-verifier) &bull; [Quotient Model (Γ-Model)](#def-quotient-model)
-* **Axioms of ZFC⁻ (Chapter 7):**
+* **Axioms of Set Theory (Chapter 7):**
   * [Axiom of Extensionality (Ex)](#def-axiom-extensionality) &bull; [Axiom of Empty Set (ES)](#def-axiom-empty-set) &bull; [Axiom of Pair (Pa)](#def-axiom-pairing) &bull; [Axiom of Union (U)](#def-axiom-union) &bull; [Axiom of Power Set (PS)](#def-axiom-power-set) &bull; [Axiom of Infinity (I)](#def-axiom-infinity) &bull; [Axiom Schema of Specification (S)](#def-axiom-specification) &bull; [Axiom Schema of Replacement (R)](#def-axiom-replacement) &bull; [Axiom of Choice (AC)](#def-axiom-choice)
 * **Axiomatic Set Theory: Foundations & Classes:**
   * [Language of Set Theory](#def-set-theory-language) &bull; [Kuratowski Ordered Pair](#def-ordered-pair-kuratowski) &bull; [Successor Set](#def-successor-set) &bull; [Z⁻ and ZF⁻](#def-z-minus-zf-minus) &bull; [Natural Numbers (ω, ℕ)](#def-omega-natural-numbers) &bull; [Transitive Set](#def-transitive-set) &bull; [Classes and The Universe (V)](#def-class-proper-class)
 * **Axiomatic Set Theory: Ordinals & Choice:**
-  * [Order Isomorphism and Automorphism](#def-order-isomorphism) &bull; [Initial Segment Embedding (⊑)](#def-initial-segment-embedding) &bull; [Ordinal Number (Ord)](#def-ordinal-number) &bull; [Ordinal Supremum and Infimum (sup, inf)](#def-ordinal-sup-inf) &bull; [Successor and Limit Ordinals](#def-successor-limit-ordinal) &bull; [Transfinite Recursion](#def-transfinite-recursion) &bull; [Ordinal Sequences and Limits](#def-ordinal-sequence) &bull; [Axiom of Choice (AC) and ZFC⁻](#def-axiom-choice)
+  * [Order Isomorphism and Automorphism](#def-order-isomorphism) &bull; [Initial Segment Embedding (⊑)](#def-initial-segment-embedding) &bull; [Ordinal Number (Ord)](#def-ordinal-number) &bull; [Ordinal Supremum and Infimum (sup, inf)](#def-ordinal-sup-inf) &bull; [Successor and Limit Ordinals](#def-successor-limit-ordinal) &bull; [Transfinite Recursion](#def-transfinite-recursion) &bull; [Ordinal Sequences and Limits](#def-ordinal-sequence)
 * **Cardinal Numbers:**
   * [Cardinality of a Set](#def-cardinality-of-set) &bull; [Cardinal Number](#def-cardinal-number) &bull; [Cardinal Ordering (≤)](#def-cardinal-ordering) &bull; [Cardinal Arithmetic](#def-cardinal-arithmetic)
 * **Theory of Computation:**
@@ -636,7 +636,7 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 ---
 
 
-### Axioms of ZFC⁻
+### Axioms of Set Theory
 
 <h4 id="def-axiom-extensionality">Axiom of Extensionality (Ex)</h4>
 
@@ -685,6 +685,14 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 {% include definitions/axiom_replacement.md %}
 
 ---
+
+<h4 id="def-axiom-choice">Axiom of Choice (AC)</h4>
+
+{% include definitions/axiom_choice.md %}
+
+---
+
+### Axiomatic Set Theory: Foundations & Classes
 
 ### Axiomatic Set Theory: Foundations & Classes
 
@@ -771,12 +779,6 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 <h4 id="def-ordinal-sequence">Ordinal Sequences and Limits</h4>
 
 {% include definitions/ordinal_sequence.md %}
-
----
-
-<h4 id="def-axiom-choice">Axiom of Choice (AC) and ZFC⁻</h4>
-
-{% include definitions/axiom_choice.md %}
 
 ---
 

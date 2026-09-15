@@ -1,5 +1,5 @@
-> **Definition:** The *Axiom of Choice* ($$\mathbf{AC}$$) asserts that for any set of non-empty sets $$\mathcal{A}$$, there exists a choice function $$f \colon \mathcal{A} \longrightarrow \bigcup \mathcal{A}$$ such that:
+> **Axiom (Choice, $$\mathbf{AC}$$):** For any set of non-empty sets $$\mathcal{A}$$, there exists a choice function:
 > $$
-> \forall A \in \mathcal{A} \ f(A) \in A
+> \exists f \colon \mathcal{A} \longrightarrow \bigcup \mathcal{A} \ \forall A \in \mathcal{A} \ (f(A) \in A)
 > $$
-> We define $$\mathrm{ZFC}^- := \mathrm{ZF}^- \cup \{\mathbf{AC}\}$$.
+> *Theories:* $$\mathrm{ZFC}^-$$, $$\mathrm{ZFC}$$

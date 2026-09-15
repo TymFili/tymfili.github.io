@@ -2,3 +2,4 @@
 > $$
 > \exists x \ (\emptyset \in x \land \forall y \ (y \in x \rightarrow y \cup \{y\} \in x))
 > $$
+> *Theories:* $$\mathrm{Z}^-$$, $$\mathrm{ZF}^-$$, $$\mathrm{ZFC}^-$$, $$\mathrm{ZFC}$$
