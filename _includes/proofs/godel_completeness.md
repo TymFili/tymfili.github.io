@@ -1,8 +1,8 @@
 Let $$\Gamma$$ be consistent. 
 
-By the Henkin construction and Lindenbaum’s lemma, we extend $$\Gamma$$ to a complete consistent theory $$\Delta$$ containing witness constants. 
+By the [Henkin Witness Construction](#henkin-constants) and [Lindenbaum's Lemma](#lindenbaum-lemma), we extend $$\Gamma$$ to a complete consistent theory $$\Delta$$ containing witness constants. 
 
-The canonical quotient term structure $$\mathfrak{A}' := \mathfrak{A} / E^\mathfrak{A}$$ satisfies $$\Delta$$. Because $$\Gamma \subseteq \Delta$$, we have:
+By the [Fundamental Truth Lemma](#term-model-truth), the canonical quotient term structure $$\mathfrak{A}' := \mathfrak{A} / E^\mathfrak{A}$$ satisfies $$\Delta$$. Because $$\Gamma \subseteq \Delta$$, we have:
 $$
 \mathfrak{A}' \models \Gamma
 $$

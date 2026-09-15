@@ -1,4 +1,4 @@
-By the Knaster–Tarski Theorem, $$S^* = \inf \{S \subseteq X \mid F(S) \subseteq S\} = \bigcap \{S \subseteq X \mid F(S) \subseteq S\}$$. 
+By the [Knaster–Tarski Theorem](#knaster-tarski), $$S^* = \inf \{S \subseteq X \mid F(S) \subseteq S\} = \bigcap \{S \subseteq X \mid F(S) \subseteq S\}$$. 
 
 If $$F(T) \subseteq T$$, then $$T$$ is one of the sets in this intersection, so $$S^* \subseteq T$$.
 

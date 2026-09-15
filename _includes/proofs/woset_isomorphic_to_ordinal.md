@@ -1,4 +1,4 @@
-Uniqueness follows from the fact that the only automorphism of a well-ordered set is the identity.
+Uniqueness follows from [Uniqueness of Order Automorphisms](#woset-automorphism).
 
 Given a well-ordered set $$X$$, define the class function:
 $$

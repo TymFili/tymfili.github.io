@@ -2,7 +2,7 @@ Define the relation:
 $$
 f := \{(x, y) \in X \times Y \mid \mathrm{X}_x \cong_{\operatorname{Ord}} \mathrm{Y}_y\}
 $$
-Because an isomorphism cannot map a well-ordered set onto a proper initial segment of itself, $$f$$ is a functional, injective, order-preserving map whose domain and range are initial segments of $$X$$ and $$Y$$.
+By [Wosets and Initial Segments](#woset-initial-segment), an isomorphism cannot map a well-ordered set onto a proper initial segment of itself. Thus $$f$$ is a functional, injective, order-preserving map whose domain and range are initial segments of $$X$$ and $$Y$$.
 
 If $$\operatorname{dom} f \neq X$$ and $$\operatorname{ran} f \neq Y$$, let $$x_0 := \min(X \setminus \operatorname{dom} f)$$ and $$y_0 := \min(Y \setminus \operatorname{ran} f)$$. Then:
 $$

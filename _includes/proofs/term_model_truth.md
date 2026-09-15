@@ -6,7 +6,7 @@ $$
 $$
 by the inductive hypothesis.
 
-If $$\neg \forall x \psi(x) \in \Delta$$, then by the Henkin construction, the witness formula satisfies $$\neg \psi(c_{k}) \in \Delta$$ for some Henkin constant $$c_{k}$$. 
+If $$\neg \forall x \psi(x) \in \Delta$$, then by the [Henkin Witness Construction](#henkin-constants), the witness formula satisfies $$\neg \psi(c_{k}) \in \Delta$$ for some Henkin constant $$c_{k}$$. 
 
 Since $$c_k \in \vert \mathfrak{A} \vert$$, this directly contradicts that $$\psi(t) \in \Delta$$ for all terms $$t \in \vert \mathfrak{A} \vert$$. The remaining connective steps follow directly from maximal consistency.
 

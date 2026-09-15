@@ -6,6 +6,6 @@ $$
 $$
 Let $$\Delta := \bigcup_{n \in \mathbb{N}} \Delta_n$$. Then $$\Delta$$ is finitely satisfiable. 
 
-For any propositional variable $$p$$, define $$\mathcal{I}(p) = \operatorname{True} \iff p \in \Delta$$. By structural induction on formulae, the extended interpretation $$\hat{\mathcal{I}}$$ satisfies $$\Delta$$, and thus satisfies $$\Sigma \subseteq \Delta$$.
+For any propositional variable $$p$$, define $$\mathcal{I}(p) = \mathrm{True} \iff p \in \Delta$$. By structural induction on formulae, the extended interpretation $$\hat{\mathcal{I}}$$ satisfies $$\Delta$$, and thus satisfies $$\Sigma \subseteq \Delta$$.
 
 <div style="text-align: right;">$$\boldsymbol{Q.E.D.}$$</div>

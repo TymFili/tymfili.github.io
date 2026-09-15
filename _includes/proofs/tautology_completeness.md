@@ -1,8 +1,8 @@
-By Compactness, $$\Sigma \models \phi$$ implies there exists a finite subset $$\Sigma_0 = \{\psi_0, \dots, \psi_n\} \subseteq \Sigma$$ such that:
+By the [Propositional Compactness Theorem](#compactness-theorem), $$\Sigma \models \phi$$ implies there exists a finite subset $$\Sigma_0 = \{\psi_0, \dots, \psi_n\} \subseteq \Sigma$$ such that:
 $$
 \Sigma_0 \models \phi
 $$
-By the Propositional Deduction Theorem, this is equivalent to:
+By the [Propositional Deduction Theorem](#deduction-theorem), this is equivalent to:
 $$
 \models \psi_0 \rightarrow \psi_1 \rightarrow \dots \rightarrow \phi
 $$
