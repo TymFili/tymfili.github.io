@@ -1,4 +1,4 @@
-// Search engine integration with automatic modal closing and deep scrolling
+// Search engine integration with automatic modal closing, sanitization, and deep scrolling
 (function() {
   const customItems = [
   {
@@ -331,7 +331,7 @@
   },
   {
     "id": "thm-semidecidable-closure",
-    "title": "Closure Properties of [Semidecidable](/definitions/#def-semidecidable-set) Sets",
+    "title": "Closure Properties of Semidecidable Sets",
     "section": "Theorems & Proofs",
     "url": "/theorems/#semidecidable-closure",
     "path": "/theorems/",
@@ -1080,6 +1080,70 @@
     "url": "/definitions/#def-quotient-model",
     "path": "/definitions/",
     "anchor": "def-quotient-model"
+  },
+  {
+    "id": "def-def-axiom-extensionality",
+    "title": "Axiom of Extensionality (Ex)",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-extensionality",
+    "path": "/definitions/",
+    "anchor": "def-axiom-extensionality"
+  },
+  {
+    "id": "def-def-axiom-empty-set",
+    "title": "Axiom of Empty Set (ES)",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-empty-set",
+    "path": "/definitions/",
+    "anchor": "def-axiom-empty-set"
+  },
+  {
+    "id": "def-def-axiom-pairing",
+    "title": "Axiom of Pair (Pa)",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-pairing",
+    "path": "/definitions/",
+    "anchor": "def-axiom-pairing"
+  },
+  {
+    "id": "def-def-axiom-union",
+    "title": "Axiom of Union (U)",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-union",
+    "path": "/definitions/",
+    "anchor": "def-axiom-union"
+  },
+  {
+    "id": "def-def-axiom-power-set",
+    "title": "Axiom of Power Set (PS)",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-power-set",
+    "path": "/definitions/",
+    "anchor": "def-axiom-power-set"
+  },
+  {
+    "id": "def-def-axiom-infinity",
+    "title": "Axiom of Infinity (I)",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-infinity",
+    "path": "/definitions/",
+    "anchor": "def-axiom-infinity"
+  },
+  {
+    "id": "def-def-axiom-specification",
+    "title": "Axiom Schema of Specification (S)",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-specification",
+    "path": "/definitions/",
+    "anchor": "def-axiom-specification"
+  },
+  {
+    "id": "def-def-axiom-replacement",
+    "title": "Axiom Schema of Replacement (R)",
+    "section": "Definitions",
+    "url": "/definitions/#def-axiom-replacement",
+    "path": "/definitions/",
+    "anchor": "def-axiom-replacement"
   },
   {
     "id": "def-def-set-theory-language",

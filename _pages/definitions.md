@@ -38,6 +38,8 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
   * [Structure (𝔄)](#def-fol-structure) &bull; [Variable Assignment](#def-fol-assignment) &bull; [Term Valuation Function (s̄)](#def-fol-valuation-function) &bull; [Modified Assignment](#def-fol-modified-assignment) &bull; [Satisfaction Relation (⊨)](#def-fol-satisfaction) &bull; [Sentence](#def-sentence) &bull; [Truth in a Structure](#def-truth-structure) &bull; [First-Order Satisfiability, Unsatisfiability, Validity, and Invalidity](#def-fol-validity) &bull; [Model of a Set of Formulae](#def-model-theory) &bull; [First-Order Entailment](#def-fol-entailment) &bull; [Set Satisfiability (FOL)](#def-fol-set-satisfiability)
 * **Metatheory of Classical Logic:**
   * [Finite Satisfiability](#def-finitely-satisfiable) &bull; [Henkin Witness Property](#def-henkin-property) &bull; [Maximal Consistency](#def-maximally-consistent) &bull; [Canonical Term Structure (Γ-Verifier)](#def-term-verifier) &bull; [Quotient Model (Γ-Model)](#def-quotient-model)
+* **Axioms of ZFC⁻ (Chapter 7):**
+  * [Axiom of Extensionality (Ex)](#def-axiom-extensionality) &bull; [Axiom of Empty Set (ES)](#def-axiom-empty-set) &bull; [Axiom of Pair (Pa)](#def-axiom-pairing) &bull; [Axiom of Union (U)](#def-axiom-union) &bull; [Axiom of Power Set (PS)](#def-axiom-power-set) &bull; [Axiom of Infinity (I)](#def-axiom-infinity) &bull; [Axiom Schema of Specification (S)](#def-axiom-specification) &bull; [Axiom Schema of Replacement (R)](#def-axiom-replacement) &bull; [Axiom of Choice (AC)](#def-axiom-choice)
 * **Axiomatic Set Theory: Foundations & Classes:**
   * [Language of Set Theory](#def-set-theory-language) &bull; [Kuratowski Ordered Pair](#def-ordered-pair-kuratowski) &bull; [Successor Set](#def-successor-set) &bull; [Z⁻ and ZF⁻](#def-z-minus-zf-minus) &bull; [Natural Numbers (ω, ℕ)](#def-omega-natural-numbers) &bull; [Transitive Set](#def-transitive-set) &bull; [Classes and The Universe (V)](#def-class-proper-class)
 * **Axiomatic Set Theory: Ordinals & Choice:**
@@ -630,6 +632,57 @@ Welcome to the central dictionary of mathematical definitions. This archive esta
 <h4 id="def-quotient-model">Quotient Model (Γ-Model)</h4>
 
 {% include definitions/quotient_model.md %}
+
+---
+
+
+### Axioms of ZFC⁻
+
+<h4 id="def-axiom-extensionality">Axiom of Extensionality (Ex)</h4>
+
+{% include definitions/axiom_extensionality.md %}
+
+---
+
+<h4 id="def-axiom-empty-set">Axiom of Empty Set (ES)</h4>
+
+{% include definitions/axiom_empty_set.md %}
+
+---
+
+<h4 id="def-axiom-pairing">Axiom of Pair (Pa)</h4>
+
+{% include definitions/axiom_pairing.md %}
+
+---
+
+<h4 id="def-axiom-union">Axiom of Union (U)</h4>
+
+{% include definitions/axiom_union.md %}
+
+---
+
+<h4 id="def-axiom-power-set">Axiom of Power Set (PS)</h4>
+
+{% include definitions/axiom_power_set.md %}
+
+---
+
+<h4 id="def-axiom-infinity">Axiom of Infinity (I)</h4>
+
+{% include definitions/axiom_infinity.md %}
+
+---
+
+<h4 id="def-axiom-specification">Axiom Schema of Specification (S)</h4>
+
+{% include definitions/axiom_specification.md %}
+
+---
+
+<h4 id="def-axiom-replacement">Axiom Schema of Replacement (R)</h4>
+
+{% include definitions/axiom_replacement.md %}
 
 ---
 
