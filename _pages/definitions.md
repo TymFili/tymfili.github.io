@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 ---
 
-Welcome to the central dictionary of mathematical definitions. This archive establishes the formal notation and concepts from [Tymoteusz Filipiak's Lecture Notes on Mathematical Logic](/assets/pdf/logic.pdf), serving as the foundational lexicon for the blog and the [Theorems & Proofs Library](/theorems/).
+Welcome to the central dictionary of mathematical definitions. This archive establishes the formal notation and concepts from [My Lecture Notes on Mathematical Logic](/assets/pdf/logic.pdf), serving as the foundational lexicon for the blog and the [Theorems & Proofs Library](/theorems/).
 
 ---
 
