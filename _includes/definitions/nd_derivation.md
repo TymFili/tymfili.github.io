@@ -1,0 +1,1 @@
+> **Definition:** We say $$\Sigma$$ proves $$\phi$$ in Natural Deduction, written $$\Sigma \vdash \phi$$, if there exists a finite proof tree with root $$\phi$$ such that every undischarged (open) assumption belongs to $$\Sigma$$.

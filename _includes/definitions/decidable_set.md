@@ -1,0 +1,1 @@
+> **Definition:** A set $$A \subseteq \mathbb{N}$$ is *decidable* (or computable) if there exists an algorithm that, on input $$n \in \mathbb{N}$$, returns **Yes** if $$n \in A$$, and **No** if $$n \notin A$$.

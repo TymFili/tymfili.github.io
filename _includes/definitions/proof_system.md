@@ -1,0 +1,1 @@
+> **Definition:** A *proof system* is a triple $$(\mathscr{L}, \mathscr{R}, \mathscr{A})$$, where $$\mathscr{L}$$ is a formal language, $$\mathscr{R}$$ is a set of rules of inference, and $$\mathscr{A}$$ is a set of axioms.

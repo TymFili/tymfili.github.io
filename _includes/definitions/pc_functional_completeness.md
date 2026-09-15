@@ -1,0 +1,1 @@
+> **Definition:** A set of logical connectives $$\mathscr{C}$$ is *functionally complete* if every possible formula is semantically equivalent to some formula containing only connectives from $$\mathscr{C}$$.

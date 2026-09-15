@@ -1,0 +1,1 @@
+> **Definition:** A set of formulae $$\Sigma$$ *entails* $$\varphi$$, written $$\Sigma \models \varphi$$, if every interpretation that satisfies $$\Sigma$$ also satisfies $$\varphi$$. We write $$\phi \models \psi$$ for $$\{\phi\} \models \psi$$, and $$\models \phi$$ for $$\emptyset \models \phi$$.

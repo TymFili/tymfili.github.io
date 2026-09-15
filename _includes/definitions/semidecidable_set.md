@@ -1,0 +1,1 @@
+> **Definition:** A set $$A \subseteq \mathbb{N}$$ is *semidecidable* (or recursively enumerable) if there exists an algorithm that, on input $$n \in \mathbb{N}$$, returns **Yes** if $$n \in A$$, and runs forever (or halts without output) if $$n \notin A$$.

@@ -1,0 +1,1 @@
+> **Definition:** An algorithm *enumerates* $$A$$ if it lists the elements of $$A$$ such that every element of $$A$$ is eventually listed in finite time, and no elements outside $$A$$ are ever listed.

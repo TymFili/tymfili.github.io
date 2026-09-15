@@ -1,0 +1,1 @@
+> **Definition:** A *proof* in a proof system $$(\mathscr{L}, \mathscr{R}, \mathscr{A})$$ is a finite sequence of formulae in $$\mathscr{L}$$, where each formula is either an axiom, an assumption, or follows from preceding formulae via an inference rule.

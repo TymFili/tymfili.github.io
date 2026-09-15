@@ -1,0 +1,1 @@
+> **Definition:** We say $$\Sigma \models \varphi$$ if for every structure $$\mathfrak{A}$$ and assignment $$s$$, if $$\mathfrak{A} \models \psi[s]$$ for all $$\psi \in \Sigma$$, then $$\mathfrak{A} \models \varphi[s]$$.

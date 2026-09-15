@@ -1,0 +1,1 @@
+> **Definition:** We write $$\Sigma \vdash \phi$$, read as *"$$\Sigma$$ proves $$\phi$$"*, if there exists a formal proof of $$\phi$$ where all active assumptions belong to $$\Sigma$$. A formula $$\varphi$$ is a *theorem* of a proof system if $$\emptyset \vdash \varphi$$, written simply as $$\vdash \varphi$$.
